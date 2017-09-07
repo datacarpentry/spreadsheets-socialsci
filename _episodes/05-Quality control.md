@@ -1,3 +1,17 @@
+---
+title: "Quality control"
+teaching: 10
+exercises: 5
+questions:
+- "How can we carry out basic quality control and quality assurance in spreadsheets? "
+- "What spreadsheet aids are available to assist me when inputting data?"
+objectives:
+- "Use data validation on input"
+- "Use the Excel Data Entry form"
+keypoints:
+- ""
+---
+
 ## Validating data on input
 
 By default you can type any kind of nonsense into any cell of a spreadsheet.
