@@ -45,13 +45,17 @@ We will look at a couple of simple examples.
 2. In the Data Tools section of the Data tab select Validation tools.
 
 ![Data_validation_01](../fig/spreadsheets_Data_validation_01.png)
+
 3. From the Allow dropdown box select 'Whole number'. 
 4. The window content will change. The value in the data box will say 'between' and Min and Max boxes
 will be provided for you to specify a range 
+
 ![Data_validation_02](../fig/spreadsheets_Data_validation_02.png)
+
 5. Fill in the min and max values as you like and click OK
 6. In you selected cell try putting in a value within your chosen range and then outside the range.
    In the first instance the value will be accepted and in the second an erro message will be produced.
+   
 ![Data_validation_03](../fig/spreadsheets_Data_validation_03.png)
 
 
