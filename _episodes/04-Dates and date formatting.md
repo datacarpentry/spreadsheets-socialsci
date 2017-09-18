@@ -9,8 +9,8 @@ objectives:
 - "Breakdown date fields into components"
 keypoints:
 - "Internally dates are stored as numbers"
-- "Splitting dates into components can make life easier"
 - "Some dates may be mis-interpreted by the spreadsheet program"
+- "Splitting dates into components can make life easier"
 ---
 
 ## Storing dates in a spreadsheet
