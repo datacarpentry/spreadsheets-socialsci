@@ -9,7 +9,9 @@ objectives:
 - "Use data validation on input"
 - "Use the Excel Data Entry form"
 keypoints:
-- ""
+- "In general you can type any kind of data into any cell in a spreadsheet"
+- "Excel does provide tools which allow you to restrict the type of data and ranges of values you can enter"
+- "Using Excel tables can make data entry simpler, by automatically inserting new rows complete with data validation rules when needed"
 ---
 
 ## Validating data on input
