@@ -70,8 +70,8 @@ data table more like a set of notes.
 * we stop using consistent defined values for variables
 * We introduce white space and merge cells - to make it look more readable
 
-Essentially we need to the spreadsheet contents to a simple table design, with the rows and columns 
-following the guidelines for Tidy data as indicated by Hadley Whickham in his paper ......  [Link]
+Essentially we need the spreadsheet contents to be a simple table design, with the rows and columns 
+following the guidelines for Tidy data as indicated by Hadley Whickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10) 
 
 
 ## The simple guidelines
