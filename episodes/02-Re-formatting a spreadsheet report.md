@@ -20,7 +20,7 @@ report rather than a single data table.
 We will highlight the problems with the layout and then provide instructions on how it might be changed to be 
 more usable for analysis.
 
-The spreadsheet can be downloaded from [here]
+The spreadsheet can be downloaded from [here](../data/report_data_o.xlsx)
 
 The problems that we can see are as follows:
 
@@ -28,7 +28,7 @@ The problems that we can see are as follows:
 * There are two header line types with different data items in each
 * One of the header line has two seperate data items
 
-What we would want is a spreadsheet which looks more like this [link_to_cleaned]
+What we would want is a spreadsheet which looks more like [this](../data/report_data_c.xlsx)
 
 
 In this final version, we have removed all of the white space and the information in the header lines 
