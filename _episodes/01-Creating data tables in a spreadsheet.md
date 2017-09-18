@@ -60,7 +60,7 @@ To finish this section we want to outline some best practices for the creation o
 We typically think of data as tables of data. The columns of the table representing variables and the rows 
 of the table representing observations. Spreadsheets are very good at recording data in this way.
 
-![simple spreadsheet](../fig/...)
+![simple_spreadsheet](../fig/spreadsheet_simple_data_01.png)
 
 But then we get carried away with the functionality provided by the spreadsheet program and start treating our 
 data table more like a set of notes.
