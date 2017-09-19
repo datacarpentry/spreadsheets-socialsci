@@ -56,7 +56,7 @@ This makes CSV an almost univeral portable format.
 > ## Exercise
 > 1. create an Excel spreadsheet with the following data in it 
 > 
-> ![link_to simple_data](spreadsheet_simple_data_01.png)
+> ![link_to_simple_data](spreadsheet_simple_data_01.png)
 > 
 > 2. Save the spreadsheet as a .csv file using
 >    File | Save as   and select .csv fromm  the drop down box for the filetype.
