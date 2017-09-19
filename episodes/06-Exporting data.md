@@ -55,7 +55,7 @@ This makes CSV an almost univeral portable format.
 ## Exercise
 1. create an Excel spreadsheet with the following data in it 
 
-[link_to simple_data]
+[link_to simple_data](spreadsheet_simple_data_01.png)
 
 2. Save the spreadsheet as a .csv file using
    File | Save as   and select .csv fromm  the drop down box for the filetype.
@@ -92,7 +92,8 @@ so that when combined you would have complete date information in each row of th
 
 The spreadsheet called August_2017_readings.xlsx has only two columns; Day and Reading. We want to create a new column to include the filename.
 
-[August_2017_readings.xlsx](../fig/....)
+![August_2017_readings](../fig/Spreadsheets_dates_04.png)
+
 
 We can add a new column, give it the name of 'Full_Filename_and_sheet' and in the cells below add the formula '=CELL("filename")'
 CELL is an Excel built in function which can be used to return various different pieces of information one of which is the filename
@@ -102,9 +103,13 @@ If we just want the filename, then we can extract it from the full name with ano
 '=RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))'. A2 is the cell with the full path and tab name.
 If you wanted the Tab name by itself, you could use the formula '=RIGHT(A2,LEN(A2)-FIND("]",A2))'
 
+A copy of the spreadsheet with these modifications is available [here](../data/August_2017_readings_sol.xlsx)
+
 ## Exercise
 
-Rather than using the CELL function to get the path and filename and then using this result to extract just the file name into a seperate column, write a formula which will do these actionsa as a single step.
+Rather than using the CELL function to get the path and filename and then using this result to extract just the file name into a seperate column, write a formula which will do these actions as a single step.
+
+Use the August_2017_readings_sol.xlsx file as the starting point.
 
 ## Solution
 
