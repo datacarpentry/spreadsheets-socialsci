@@ -100,23 +100,35 @@ CELL is an Excel built in function which can be used to return various different
 of the spreadsheet. In fact as our column name suggest, it gives not only the full path of the file but also the tab name as well.
 
 If we just want the filename, then we can extract it from the full name with another formula; 
-'=RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))'. A2 is the cell with the full path and tab name.
-If you wanted the Tab name by itself, you could use the formula '=RIGHT(A2,LEN(A2)-FIND("]",A2))'
+~~~
+
+'=RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))'
+
+~~~
+
+A2 is the cell with the full path and tab name. If you wanted the Tab name by itself, you could use the formula 
+
+~~~
+
+'=RIGHT(A2,LEN(A2)-FIND("]",A2))'
+
+~~~
 
 A copy of the spreadsheet with these modifications is available [here](../data/August_2017_readings_sol.xlsx)
 
-## Exercise
-
-Rather than using the CELL function to get the path and filename and then using this result to extract just the file name into a seperate column, write a formula which will do these actions as a single step.
-
-Use the August_2017_readings_sol.xlsx file as the starting point.
-
-## Solution
-
-In our original formula to extract the the filename, we referenced the cell A2 which contained the result of the CELL("filename") function. To combine the two we only need to replace all of the references of 'A2' with 'CELL("filename") in the formula for extracting the filename.
-
-'=RIGHT(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1),LEN(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1))-FIND("[",CELL("filename")))'
- 
-If you get #VALUE returned, it is most likely that you have not saved the spreadsheet and given it a name.
-
+> ## Exercise
+> 
+> Rather than using the CELL function to get the path and filename and then using this result to extract just the file name into a seperate column, write a formula which will do these actions as a single step.
+> 
+> Use the August_2017_readings_sol.xlsx file as the starting point.
+> 
+> > ## Solution
+> > 
+> > In our original formula to extract the the filename, we referenced the cell A2 which contained the result of the CELL("filename") function. To combine the two we only need to replace all of the references of 'A2' with 'CELL("filename") in the formula for extracting the filename.
+> > 
+> > '=RIGHT(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1),LEN(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1))-FIND("[",CELL("filename")))'
+> >  
+> > If you get #VALUE returned, it is most likely that you have not saved the spreadsheet and given it a name.
+> {: .solution}
+{: .challenge}
 
