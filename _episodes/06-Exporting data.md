@@ -33,14 +33,15 @@ If you tried to load the .xlsx file directly into a text editor, the result woul
 would simply try to display the characters in the compressed data file.
 
 
-## Exercise
-
-1. Copy an .xlsx file and rename it as a .zip file.
-   Extract the folders/files form the .zip file
-   Find the XML file corresponding to one of the tabs in the spreadsheet and open it in any text editor.
-   Can you find the spreadsheet data in it? How easy would it be to use in this format?
-2. Try opening a .xlsx file directly into a Text editor. 
-   Can you find the spreadsheet data in it? How easy would it be to use in this format?
+> ## Exercise
+> 
+> 1. Copy an .xlsx file and rename it as a .zip file.
+>    Extract the folders/files form the .zip file
+>    Find the XML file corresponding to one of the tabs in the spreadsheet and open it in any text editor.
+>    Can you find the spreadsheet data in it? How easy would it be to use in this format?
+> 2. Try opening a .xlsx file directly into a Text editor. 
+>    Can you find the spreadsheet data in it? How easy would it be to use in this format?
+{: .challenge}
 
 ## Saving spreadsheet data as a csv file
 
@@ -52,32 +53,34 @@ It is also very easy to read .csv files in programming languages like Python or 
 
 This makes CSV an almost univeral portable format. 
 
-## Exercise
-1. create an Excel spreadsheet with the following data in it 
-
-[link_to simple_data](spreadsheet_simple_data_01.png)
-
-2. Save the spreadsheet as a .csv file using
-   File | Save as   and select .csv fromm  the drop down box for the filetype.
-
-3. Load the file back into Excel by double-clicking the filename. Does the data look the same as it was?
-
-4. Open the .csv file in a text editor. What does the data look like?
-
-## Solution
-
-1. When the .csv file created from the .xlsx file in Excel is opened it looks just as it did when it was saved.
-2. When you open the file in a text editor you will see that the data from cell  cell B4 has been placed in quotes.
-   Excel does this automatically as it detected that the data included a comma. 
-
-Most applications will ignore commas in quoted strings when reading a .csv file, but it is not guaranteed. 
-It is also not guaranteed that an application writing a csv file will put strings in quotes if there are commas.
-
-If commas are causing problems an alternative to csv is tsv. 't' stands for Tab. Instead of commas seperating the values, the Tab character is used.
-All applications that will save as a csv file will also allow you to save as a tsv file.
-
-A tsv file has an additional advantage in that when you load it into a text editor, the editor interprets the Tab characters, so all of the columns will
-line up with there column names.
+> ## Exercise
+> 1. create an Excel spreadsheet with the following data in it 
+> 
+> [link_to simple_data](spreadsheet_simple_data_01.png)
+> 
+> 2. Save the spreadsheet as a .csv file using
+>    File | Save as   and select .csv fromm  the drop down box for the filetype.
+> 
+> 3. Load the file back into Excel by double-clicking the filename. Does the data look the same as it was?
+> 
+> 4. Open the .csv file in a text editor. What does the data look like?
+> 
+> > ## Solution
+> > 
+> > 1. When the .csv file created from the .xlsx file in Excel is opened it looks just as it did when it was saved.
+> > 2. When you open the file in a text editor you will see that the data from cell  cell B4 has been placed in quotes.
+> >    Excel does this automatically as it detected that the data included a comma. 
+> > 
+> > Most applications will ignore commas in quoted strings when reading a .csv file, but it is not guaranteed. 
+> > It is also not guaranteed that an application writing a csv file will put strings in quotes if there are commas.
+> > 
+> > If commas are causing problems an alternative to csv is tsv. 't' stands for Tab. Instead of commas seperating the values, the Tab character is used.
+> > All applications that will save as a csv file will also allow you to save as a tsv file.
+> > 
+> > A tsv file has an additional advantage in that when you load it into a text editor, the editor interprets the Tab characters, so all of the columns will
+> > line up with there column names.
+> {: .solution}
+{: .challenge}
 
 
 ## Saving filenames with the spreadsheet data
@@ -95,14 +98,22 @@ The spreadsheet called August_2017_readings.xlsx has only two columns; Day and R
 ![August_2017_readings](../fig/Spreadsheets_dates_04.png)
 
 
-We can add a new column, give it the name of 'Full_Filename_and_sheet' and in the cells below add the formula '=CELL("filename")'
+We can add a new column, give it the name of 'Full_Filename_and_sheet' and in the cells below add the formula 
+
+~~~
+
+=CELL("filename")
+
+~~~
+
 CELL is an Excel built in function which can be used to return various different pieces of information one of which is the filename
 of the spreadsheet. In fact as our column name suggest, it gives not only the full path of the file but also the tab name as well.
 
 If we just want the filename, then we can extract it from the full name with another formula; 
+
 ~~~
 
-'=RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))'
+=RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))
 
 ~~~
 
