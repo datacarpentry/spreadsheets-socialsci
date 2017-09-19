@@ -56,7 +56,7 @@ This makes CSV an almost univeral portable format.
 > ## Exercise
 > 1. create an Excel spreadsheet with the following data in it 
 > 
-> [link_to simple_data](spreadsheet_simple_data_01.png)
+> ![link_to simple_data](spreadsheet_simple_data_01.png)
 > 
 > 2. Save the spreadsheet as a .csv file using
 >    File | Save as   and select .csv fromm  the drop down box for the filetype.
@@ -101,9 +101,7 @@ The spreadsheet called August_2017_readings.xlsx has only two columns; Day and R
 We can add a new column, give it the name of 'Full_Filename_and_sheet' and in the cells below add the formula 
 
 ~~~
-
 =CELL("filename")
-
 ~~~
 
 CELL is an Excel built in function which can be used to return various different pieces of information one of which is the filename
@@ -112,17 +110,13 @@ of the spreadsheet. In fact as our column name suggest, it gives not only the fu
 If we just want the filename, then we can extract it from the full name with another formula; 
 
 ~~~
-
 =RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))
-
 ~~~
 
 A2 is the cell with the full path and tab name. If you wanted the Tab name by itself, you could use the formula 
 
 ~~~
-
-'=RIGHT(A2,LEN(A2)-FIND("]",A2))'
-
+=RIGHT(A2,LEN(A2)-FIND("]",A2))
 ~~~
 
 A copy of the spreadsheet with these modifications is available [here](../data/August_2017_readings_sol.xlsx)
@@ -137,8 +131,10 @@ A copy of the spreadsheet with these modifications is available [here](../data/A
 > > 
 > > In our original formula to extract the the filename, we referenced the cell A2 which contained the result of the CELL("filename") function. To combine the two we only need to replace all of the references of 'A2' with 'CELL("filename") in the formula for extracting the filename.
 > > 
-> > '=RIGHT(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1),LEN(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1))-FIND("[",CELL("filename")))'
-> >  
+> > ~~~
+> > =RIGHT(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1),LEN(LEFT(CELL("filename"),FIND("]",CELL("filename")) - 1))-FIND("[",CELL("filename")))'
+> > ~~~
+> >
 > > If you get #VALUE returned, it is most likely that you have not saved the spreadsheet and given it a name.
 > {: .solution}
 {: .challenge}
