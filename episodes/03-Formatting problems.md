@@ -18,6 +18,7 @@ keypoints:
 - "Avoid spaces, numbers and special characters in column headers."
 - "Avoid special characters in your data."
 - "Record metadata in a separate plain text file."
+
 ---
 ## Data formatting problems
 
@@ -57,3 +58,13 @@ Meta data is data which describes data. In a table, the column names are counted
 
 
 ![Metatdata example](../fig/Spreadsheets_metadata_01.png)
+
+The example above is fromthe UKDataService and is from the file which accompanies the SN7577 dataset which we looked at in the SQL Lesson. You can downlod the full document [here](../data/audit_of_political_engagement_11_ukda_data_dictionary.rtf) 
+
+This file is always packaged with the actual data file because it is essential to understanding the data. 
+
+The actual information provided in the matadata file will differ from one dataset to another. But you wold expect to be told the range of values expected (if possible) the the type of the varibles, in this case not only that they are numeric but equally important that they are Nominal, that 5.0 should not be considered greater than 1.0 only differnet. You also need to be told how missing data is being represented.
+
+All of this information will be needed as you plan your analysis of the data.
+
+
