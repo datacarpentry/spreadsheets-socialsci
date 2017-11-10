@@ -100,10 +100,10 @@ To do this;
 4. Select a cell in the top row and from the Insert menu bar select Table from the Tables section.
 ![Data_validation_05](../fig/spreadsheets_Data_validation_05.png) 
 5. Check the box 'My table has header' and extend the size of the table from one row to two by changing the last 1 to a 2. Then click OK.
-6. A table will be created with your column headings anda single blank row beneath them. 
+6. A table will be created with your column headings and a single blank row beneath them. 
 7. You can enter data into this blank row. Any cell which has data validation set up for it will be restricted in accordance with the data validation you set up.
 8. When you have entered data into the last column of the table and hit the Tab key, a new row of the table will be created and the cursor will be placed in the first column of it. 
-9 In this new row and all subsequent rows added to the table, the data validation for all of the columns originally set up with data validation will be repeated.
+9. In this new row and all subsequent rows added to the table, the data validation for all of the columns originally set up with data validation will be repeated.
 
 
 
