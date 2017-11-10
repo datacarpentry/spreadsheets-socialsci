@@ -29,8 +29,6 @@ Excel allows the user to specify a variety of data validations to be applied to 
 
 Although validation is not applied retrospectively, if a cell to which validation has subsequently been applied contains a value which would fail the validation, then a green triangle is placed in the top left corner of the cell as a warning but the value in the cell is not removed.
 
-Validation cannot be applied retrospetively. The validation criteria must be put in place before the cell is populated.
-
 Details of the different types of validation possible and how to set them up are available at this [link](https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249)
 
 
