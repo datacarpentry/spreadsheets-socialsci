@@ -54,7 +54,7 @@ We have alluded to some of the possibilities in the guidelines in the first sect
 
 ## Metadata
 
-Meta data is data which describes data. In a table, the column names are counted as metadata, but the majority of metadata for a table or dataset is held seperately in a seperate radable file. The terms 'codebook' and 'data dictionary' are also used to refer to metadata sources.
+Meta data is data which describes data. In a table, the column names are counted as metadata, but the majority of metadata for a table or dataset is held seperately in a seperate readable file. The terms 'codebook' and 'data dictionary' are also used to refer to metadata sources.
 
 
 ![Metatdata example](../fig/Spreadsheets_metadata_01.png)
