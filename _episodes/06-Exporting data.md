@@ -82,7 +82,7 @@ This makes CSV an almost univeral portable format.
 > > All applications that will save as a csv file will also allow you to save as a tsv file.
 > > 
 > > A tsv file has an additional advantage in that when you load it into a text editor, the editor interprets the Tab characters, so all of the columns will
-> > line up with there column names.
+> > line up with their column names.
 > {: .solution}
 {: .challenge}
 
