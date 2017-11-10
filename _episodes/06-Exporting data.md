@@ -92,12 +92,14 @@ This makes CSV an almost univeral portable format.
 Normally the data that we are interested in is contained within the spreadsheet. However it is possible that the name 
 of the spreadsheet file also contains data that we are interested in.
 
-Supposing you had a set of files containing daily instrument readings form some system. 
+Supposing you had a set of files containing daily instrument readings from some system. 
 There is a seperate file for each month of each year. The files are named 'Month_yyyy_readings.xlsx'. 
 If you wanted to combine all of the files together, it would be convenient to include the filename information as part of the data,
 so that when combined you would have complete date information in each row of the combined file.
 
-The spreadsheet called August_2017_readings.xlsx has only two columns; Day and Reading. We want to create a new column to include the filename.
+The spreadsheet called August_2017_readings.xlsx has only two columns; Day and Reading. 
+
+We want to create a new column to include the filename.
 
 ![August_2017_readings](../fig/Spreadsheets_dates_04.png)
 
@@ -117,7 +119,9 @@ If we just want the filename, then we can extract it from the full name with ano
 =RIGHT(LEFT(A2,FIND("]",A2) - 1),LEN(LEFT(A2,FIND("]",A2) - 1))-FIND("[",A2))
 ~~~
 
-A2 is the cell with the full path and tab name. If you wanted the Tab name by itself, you could use the formula 
+A2 is the cell with the full path and tab name. 
+
+If you wanted the Tab name by itself, you could use the formula 
 
 ~~~
 =RIGHT(A2,LEN(A2)-FIND("]",A2))
