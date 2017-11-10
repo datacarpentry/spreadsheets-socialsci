@@ -6,6 +6,7 @@ questions:
 - "What are some common challenges with formatting data in spreadsheets and how can we avoid them?"
 objectives:
 - "Recognise a variety of formatting problems within spreadsheets"
+- "Recognise the importance of Metadata"
 keypoints:
 - "Avoid using multiple tables within one spreadsheet."
 - "Avoid spreading data across multiple tabs (but do use a new tab to record data cleaning or manipulations)."
@@ -18,6 +19,7 @@ keypoints:
 - "Avoid spaces, numbers and special characters in column headers."
 - "Avoid special characters in your data."
 - "Record metadata in a separate plain text file."
+- "Metadata is essential to the understanding of the data."
 
 ---
 ## Data formatting problems
