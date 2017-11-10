@@ -68,8 +68,8 @@ will be provided for you to specify a range
 4. The window will change to include a Source box.
 ![Data_validation_04](../fig/spreadsheets_Data_validation_04.png) 
 5. In the source box you can type a comma seperated list of values that you want to accept. Then click OK.
-6. The cell which has had the data validation applied to it will now have a drop-down arrow against it. When you click the arrow you will be able to select a value from your list. If you simply type a value which is not on the list you will get an error message.
-
+6. The cell which has had the data validation applied to it will now have a drop-down arrow against it (when the cell is selected). When you click the arrow you will be able to select a value from your list. If you simply type a value which is not on the list you will get an error message.
+  
 Typing a list of values for simple choices like True and False or Red, Amber, Green might be convenient, if the list is longer it makes sense to create the list as a small table (in a seperate tab of the workbook), give the table a name and then reference the table name as the source in the Source box.
 
 Using a table in this way makes the process more flexible. If you add or remove contents from the table, then these are immediately reflected in any *New* cell entries based on this source. You can also have different cells refer to the same source.
