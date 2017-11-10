@@ -18,7 +18,7 @@ This is fine if you only intend to use the data in the same application that it 
 can make it difficult to open the spreadsheet files in other applications that you may want to use to 
 process the data.
 
-In future versions of Excel Microsoft make make changes to the format, so that existing files are not even readable by the latest versions of Excel.
+In future versions of Excel Microsoft may make changes to the format, so that existing files are not even readable by the latest versions of Excel.
 
 
 The .xlsx format used by versions of Excel since 2007 is in fact a folder of compressed XML files. 
