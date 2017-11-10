@@ -36,10 +36,14 @@ would simply try to display the characters in the compressed data file.
 > ## Exercise
 > 
 > 1. Copy an .xlsx file and rename it as a .zip file.
->    Extract the folders/files form the .zip file
+> 
+>    Extract the folders/files form the .zip file.
+> 
 >    Find the XML file corresponding to one of the tabs in the spreadsheet and open it in any text editor.
+> 
 >    Can you find the spreadsheet data in it? How easy would it be to use in this format?
 > 2. Try opening a .xlsx file directly into a Text editor. 
+> 
 >    Can you find the spreadsheet data in it? How easy would it be to use in this format?
 {: .challenge}
 
