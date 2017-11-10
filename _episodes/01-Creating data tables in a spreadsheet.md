@@ -92,7 +92,7 @@ following the guidelines for Tidy data as indicated by Hadley Whickham in his pa
 The guidelines above should result in simple, easy to understand data tables. For simple data entry 
 there should be no difficulty is applying them.
 
-Although spreadsheets are not ideal for analysis purposes, due to the lack of an audit trail of what has been done 
+Despite this spreadsheets are not ideal for analysis purposes, due to the lack of an audit trail of what has been done 
 in the drag and drop, point and click environment, creating derived columns using simple formulae may be acceptable
 and convenient. 
 
