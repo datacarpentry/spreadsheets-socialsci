@@ -31,7 +31,6 @@ Although validation is not applied retrospectively, if a cell to which validatio
 
 Details of the different types of validation possible and how to set them up are available at this [link](https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249)
 
-
 We will look at a couple of simple examples.
 
 1. Restrict data to a numeric range
@@ -41,7 +40,7 @@ We will look at a couple of simple examples.
 
 ### Restrict data to a numeric range
 
-1. select cell for which you wish to apply the restriction
+1. select the cell or cells for which you wish to apply the restriction
 2. In the Data Tools section of the Data tab select Validation tools.
 
 ![Data_validation_01](../fig/spreadsheets_Data_validation_01.png)
@@ -63,7 +62,7 @@ will be provided for you to specify a range
 ### Restrict data to entries from a list
 
 
-1. select cell for which you wish to apply the restriction
+1. select the cell or cells for which you wish to apply the restriction
 2. In the Data Tools section of the Data tab select Validation tools.
 3. From the Allow dropdown box select 'List'. 
 4. The window will change to include a Source box.
