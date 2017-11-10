@@ -55,7 +55,7 @@ This can be demonstrated as dollows
 1. Type a valid date in your local date format into a cell. 
 2. Select the cell, rightmouse click and select Format cells...
 3. In the Format Cells window change the category from date to General and click OK
-4. Your date is now displayed a number.
+4. Your date is now displayed as a number.
 5. Reverse the process to change the display back to a recognisable date
 
 
