@@ -22,7 +22,7 @@ keypoints:
 ---
 ## Data formatting problems
 
-In the report spreadsheet example, it was not the actual data that was the problem, it was the way it was layed out 
+In the report spreadsheet example, it was not the actual data that was the problem, it was the way it was laid out 
 in the spreadsheet.
 
 In this episode we will consider how the data itself can cause problems. 
