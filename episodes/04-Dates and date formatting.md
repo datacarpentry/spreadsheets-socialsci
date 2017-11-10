@@ -103,7 +103,7 @@ Excel does provide a set of functions which allow parts of dates to be extracted
 ![Spreadsheet Extract](../fig/Spreadsheets_dates_01.png)
 
 In the spreadsheet segment above, the dates were entered into the Date column. 
-All of the other colmns have been populated using formulas which make use of the Data column values.
+All of the other colmns have been populated using formulas which make use of the Date column values.
 Using the date in cell b2 as an example. The other column values in row 2 have been created using the following formulas
 
 | column name | Formula used |
