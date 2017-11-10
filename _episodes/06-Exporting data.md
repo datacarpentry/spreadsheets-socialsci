@@ -14,7 +14,7 @@ keypoints:
 ## Spreadsheet storage formats
 
 Excel and other spreadsheet applications store the data in their own proprietary formats. 
-This is fine if you only intend to use the data inthe same application that it was created in, but it
+This is fine if you only intend to use the data in the same application that it was created in, but it
 can make it difficult to open the spreadsheet files in other applications that you may want to use to 
 process the data.
 
