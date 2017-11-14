@@ -80,7 +80,7 @@ To give us more control over how Excel interprets our data, we need to explicitl
 
 1. Open an empty Excel workbook. 
 2. From the data ribbon, select 'From Text/CSV' from the 'Get & Transform data' section
-3. Navigate to and select the required file from the File Open dialog. 
+3. Navigate to and select the required file (dates1.csv) from the File Open dialog. 
 4. In the data load dialog, the first few rows of your data is shown. On the Right hand side above the data pane there is a dropdown box which labelled 'Data Type Detection'. The default value for this is 'Based on first 200 rows'. The first (only) column of our small dataset contains valid dates with 2 digit years. You can see that some have been interpreted as 20th century dates and some as 21st century dates.
 
 ![Spreadsheets_dates_05](../fig/Spreadsheets_dates_05.png)
@@ -97,8 +97,19 @@ Because of the potential problems with interpreting dates, it can be easier to r
 
 Excel does provide a set of functions which allow parts of dates to be extracted
 
-## Exercise 
-
+> ## Exercise 
+> 
+> 1. open a blank excel workbook and type any valid date in any valid format in to cell A1.
+> 2. In adjacent cells type '=Year(A1)', 'Month(A1)' and 'Day(A1)'
+> 3. When you get to the point of typing the '(' in each case, what does the popup help tip say?
+> 
+> > ## Solution
+> > 
+> > In each case the function returns the required part of the date as a number.
+> > The popup tip suggests that the single required parameter is a number, which is what is in A1 despite you seeing it as a formatted date.
+> > 
+> {: .solution}
+{: .challenge}
  
 ![Spreadsheet Extract](../fig/Spreadsheets_dates_01.png)
 
