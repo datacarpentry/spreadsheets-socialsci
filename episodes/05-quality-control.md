@@ -81,14 +81,15 @@ Using the data validation functionality of Excel is a very powerful way of reduc
 
 You may have spotted a slight flaw in the plan though.
 
-## Exercise  
-
-What makes the processes described above somewhat impractical?
-
-## Solution
-
-The validation needs to be applied to each cell or cells in advance. Instead of selecting individual cells, you can select a complete column. Even if the first row contains a column name, as the validation is not applied retrospectively, this will not cause a problem.
-
+> ## Discussion  
+> 
+> What makes the processes described above somewhat impractical?
+> 
+> > ## Solution
+> > 
+> > The validation needs to be applied to each cell or cells in advance. Instead of selecting individual cells, you can select a complete column. Even if the first row contains a column name, as the validation is not applied retrospectively, this will not cause a problem.
+> {: .solution}
+{: .discussion}
 
 A better way to apply data validation on data entry is to create a proper data table in Excel.
 
