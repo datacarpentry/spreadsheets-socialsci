@@ -21,19 +21,21 @@ I made it clear that it was a UK version of Excel because different countries wr
 
 This regional variation is handled automatically by the spreadsheet program so that when you are typing in dates they appear as you would expect. If you try to type in a US format date into a UK version of Excel, it may or may not be treated as a date.
 
-## Exercise
-
-Type the following 'Dates' into three ajacent cells in an Excel spreadsheet; '13/06/88', '07/05/88' and '06/13/88'
-
-1. Which ones have been interpreted as dates?
-2. How can you tell?
-3. What kind of problems can be caused by dates not being interpreted correctly?
-
-## Solution
-
-1. This will depend on your local verion of Excel. For the UK the first 2 will be treated as dates and in the US the last two will be treated as dates.
-2. You can tell if Excel has treated your input as a date in these cases as it will change the '88' to '1988' for dates. For the one that isn't recognised as a date it is assumed to be a string of characters with no specific meaning.
-3. If the input is is not recognised as a date it will be left as a string. This means that any date related operations you try to perform on this input is likely to fail. A simple example would be sorting. If you sort a list of dates they will appear in chronological date order. If you sort a list of strings, which just look like dates then the sorted list will be very different.
+> ## Exercise
+> 
+> Type the following 'Dates' into three ajacent cells in an Excel spreadsheet; '13/06/88', '07/05/88' and '06/13/88'
+> 
+> 1. Which ones have been interpreted as dates?
+> 2. How can you tell?
+> 3. What kind of problems can be caused by dates not being interpreted correctly?
+> 
+> > ## Solution
+> > 
+> > 1. This will depend on your local verion of Excel. For the UK the first 2 will be treated as dates and in the US the last two will be treated as dates.
+> > 2. You can tell if Excel has treated your input as a date in these cases as it will change the '88' to '1988' for dates. For the one that isn't recognised as a date it is assumed to be a string of characters with no specific meaning.
+> > 3. If the input is is not recognised as a date it will be left as a string. This means that any date related operations you try to perform on this input is likely to fail. A simple example would be sorting. If you sort a list of dates they will appear in chronological date order. If you sort a list of strings, which just look like dates then the sorted list will be very different.
+> {: .solution}
+{: .challenge}
 
 The more dangerous problem, because it could be harder to spot, is when the input is interpreted as a date, but the wrong date. The date '07/05/88' might be interpretted as the 7th of May or the 5th of July depending on the version of Excel.
 
@@ -50,14 +52,14 @@ We have already noted that when you type in a date, Excel may re-format what you
 
 This can be demonstrated as dollows
 
-## Exercise
-
-1. Type a valid date in your local date format into a cell. 
-2. Select the cell, rightmouse click and select Format cells...
-3. In the Format Cells window change the category from date to General and click OK
-4. Your date is now displayed as a number.
-5. Reverse the process to change the display back to a recognisable date
-
+> ## Exercise
+> 
+> 1. Type a valid date in your local date format into a cell. 
+> 2. Select the cell, rightmouse click and select Format cells...
+> 3. In the Format Cells window change the category from date to General and click OK
+> 4. Your date is now displayed as a number.
+> 5. Reverse the process to change the display back to a recognisable date
+{: .challenge}
 
 Storing dates as numbers is quite convenient for the spreadsheet program as it allows simple date arithmetic to be performed easily. If you subtract one date from another, you get the number of days difference between them. If you add 10 to a date you get the date 10 days after the original date.
 
