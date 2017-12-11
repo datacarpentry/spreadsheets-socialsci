@@ -30,7 +30,7 @@ in the spreadsheet.
 In this episode we will consider how the data itself can cause problems. 
 We have alluded to some of the possibilities in the guidelines in the first section
 
-## Exercise 
+> ## Exercise 
 > 
 > Have a look at the spreadsheet [here](../data/SAFI_results_2.xlsx) and
 > see how many potential problems you can identify.
