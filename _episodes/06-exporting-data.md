@@ -97,7 +97,7 @@ There is a seperate file for each month of each year. The files are named 'Month
 If you wanted to combine all of the files together, it would be convenient to include the filename information as part of the data,
 so that when combined you would have complete date information in each row of the combined file.
 
-The spreadsheet called August_2017_readings.xlsx has only two columns; Day and Reading. 
+The spreadsheet called August_2017_readings.xlsx has only two columns; Day and Reading. It can be downloaded from [here](../data/August_2017_readings.xlsx).
 
 We want to create a new column to include the filename.
 
