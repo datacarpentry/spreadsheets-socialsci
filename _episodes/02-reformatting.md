@@ -45,26 +45,23 @@ Convert the report spreadsheet into a clean data table.
 ### Solution
 
 1. Take a copy of the spreadsheet we wish to change to perform the subsequent tasks on. - Never edit the original data.
-2. There are currently 3 empty columns on the left of the spreadsheet. We want 4 to work with.
-   So we will add a new column on the left of the spreadsheet 
-   'Select col A, righ mouse click and select insert' 
-3. We need to take the Year value from the first header and associate it with each of the data rows. We will put this information in column 'C'
-   Select the cell b4 and insert the formula '=IF($F4="Year",$G4,$B3)'. Drag this formula down to the bottom of the data. For each cell the value of 2015 should be repeated.
-4. We are now going to apply similar formulas to extract the 2nd header information items into columns.
-   Select the cell c4 and insert the formula '=IF($D4="Month",$E4,$C3)'.  Drag this formula down to the bottom of the data. For each cell the value of Jan or Feb should be repeated.
+2. We need to take the Year value from the first header and associate it with each of the data rows. We will put this information in column 'B'
+   Select the cell B4 and insert the formula `=IF($F4="Year",$G4,$B3)`. Drag this formula down to the bottom of the data. For each cell the value of 2015 should be repeated.
+3. We are now going to apply similar formulas to extract the 2nd header information items into columns.
+   Select the cell C4 and insert the formula `=IF($D4="Month",$E4,$C3)`.  Drag this formula down to the bottom of the data. For each cell the value of Jan or Feb should be repeated.
    With the exception of the first 3 which will be 0. 
-   Select the cell a4 and insert the formula  '=IF($H4="Region",$I4,$A3)'. Drag this formula down to the bottom of the data. For each cell the value of North or South should be repeated.
+   Select the cell A4 and insert the formula  `=IF($H4="Region",$I4,$A3)`. Drag this formula down to the bottom of the data. For each cell the value of North or South should be repeated.
    With the exception of the first 3 which will be 0. 
-5. Select any cell with data in it and then from the Insert menu bar select insert Table. Excel should suggest a range which covers all of the data. If it doesn't change the values of the range accordingly and click OK.
+4. Select any cell with data in it and then from the Insert menu bar select insert Table. Excel should suggest a range which covers all of the data. If it doesn't change the values of the range accordingly and click OK.
    The created table will have column names of 'Column1', 'Column2' etc.
-6. We now need to convert all of our formulas into values. To do this select any cell in the table and type `Ctrl+A` to select the whole table. 
+5. We now need to convert all of our formulas into values. To do this select any cell in the table and type `Ctrl+A` to select the whole table. 
    Right mouse click and select copy. Right mouse click again and select Paste values.
-7. We now have all of the data that we need in the form of a table, we just need to remove all of the white space by deleting all of the rows which do not contain Day or Reading values and then insert our own Header row
+6. We now have all of the data that we need in the form of a table, we just need to remove all of the white space by deleting all of the rows which do not contain Day or Reading values and then insert our own Header row
    containing the column headings.
-8. Select the filter arrow on 'Column4' and on the text filter select  only 'Day', 'Month' and (blanks). These represent the values in this column that we need
+7. Select the filter arrow on 'Column4' and on the text filter select  only 'Day', 'Month' and (blanks). These represent the values in this column that we need
    to delete. After these rows have been filtered, select them all and delete them, then remove the filter on Column4.
-9. Select any cell in the table and from the Table | Design toolbar select 'convert to range'.
-10 Delete any blank rows at the top and empty columns on the right and then rename the remaining columns to more meaningful names like; Region, Year, Month, Day and Reading.
+8. Select any cell in the table and from the `Table | Design` toolbar select `convert to range`.
+9. Delete any blank rows at the top and empty columns on the right and then rename the remaining columns to more meaningful names like; Region, Year, Month, Day and Reading.
 
 
 
