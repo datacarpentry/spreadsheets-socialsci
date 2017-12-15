@@ -26,7 +26,7 @@ The problems that we can see are as follows:
 
 * White space to the top and to the left of the data.
 * There are two header line types with different data items in each
-* One of the header line has two seperate data items
+* One of the header line has two separate data items
 
 What we would want is a spreadsheet which looks more like [this](../data/report_data_c.xlsx)
 
@@ -38,7 +38,7 @@ has been converted into columns of the data table. We had to add our own header 
 
 ## Exercise 
 
-This is a walkthrough exercise with the instructor.
+This is a walk-through exercise with the instructor.
 
 Convert the report spreadsheet into a clean data table.
 
@@ -67,7 +67,7 @@ These represent the values in this column that we need to delete. After these ro
 
 
 
-These instructions apply spefically to this particular spreadsheet and its layout. 
+These instructions apply specifically to this particular spreadsheet and its layout. 
 For other spreadsheets the instructions would have to be adapted. 
 
 The formulas would have to be changed, but the general format would be the same. You are usually moving data from a heading row into a set of columns. But you have to allow for the possibility that there may be multiple heading rows with different data for a different set of rows.
