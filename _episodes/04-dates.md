@@ -79,7 +79,8 @@ There is a further problem. If I type in a date of '6/6/29', Excel treats this a
 In most cases to load a csv file into Excel, you can just double-click the filename in file explorer. Unfortunately when you do this, Excel will automatically treat any column which appears to have dates in it as a date column. This is not always what we want. 
 
 To give us more control over how Excel interprets our data, we need to explicitly load the csv file into Excel.
-For this exercise we will use the dates1.csv file which you can download from [here](../data/dates1.csv). Store it anywhere you like on your Laptop.
+For this exercise we will use the dates1.csv file which you can download from [here](../data/dates_1.csv). Store it anywhere you like on your Laptop.
+
 
 1. Open an empty Excel workbook. 
 2. From the data ribbon, select 'From Text/CSV' from the 'Get & Transform data' section
