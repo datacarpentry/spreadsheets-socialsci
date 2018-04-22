@@ -3,10 +3,21 @@ layout: page
 title: Setup
 permalink: /setup/
 ---
+
 > ## Data
+> You need to download some files to follow this lesson:
+>
+> 1. Download
+>    [data-spreadsheets.zip]({{site.baseurl}}/data/data-spreadsheets.zip)
+>    and move the file to your Desktop.
+> 2. Unzip/extract the file
+>    (ask your instructor if you need help with this step).
+>    You should end up with a new folder called data-spreadsheets
+>        on your Desktop.
+>
+> #### About the data
 > FIX ME
 {: .prereq}
-
 
 > ## Software
 {: .prereq}
