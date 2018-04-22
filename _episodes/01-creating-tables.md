@@ -47,11 +47,12 @@ the spreadsheet can cause issues when documenting the work or trying to demonstr
 The real problem with data in spreadsheets is that you may have simply inherited the spreadsheet and could
 not exercise any control in its construction or entry of the data within it.
 
-In the next episode we will look at how you may be able to deal with some of these problems by re-formatting the data.
+> ## Tip
+> * In the next episode we will look at how you may be able to deal with some of these problems by re-formatting the data.
+> * In later sections we discuss using the functionality of Excel to make data entry easier and reduce the number of errors.
+{: .callout}
 
-In later sections we will look at how you can use the functionality of Excel to make data entry easier and more error free.
-
-To finish this section we want to outline some best practices for the creation of data tables within a spreadsheet.
+We finish this section by outlining some best practices for the creation of data tables within a spreadsheet.
 
 
 
