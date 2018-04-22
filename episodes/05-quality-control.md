@@ -127,8 +127,12 @@ To do this;
 8. When you have entered data into the last column of the table and hit the Tab key, a new row of the table will be created and the cursor will be placed in the first column of it.
 9. In this new row and all subsequent rows added to the table, the data validation for all of the columns originally set up with data validation will be repeated.
 
-## The Excel Data Entry form
-
-In older versions of Excel there was a data entry form which allowed you to input single records (rows of data) by completing a pop-up form. Although this is still available it does not appear on the default menu and toolbars. The basic functionality of inserting rows is essentially superseded by the use of defined tables and entering data directly into them as we have done in steps 7 and 8 above. The above method has the advantage of stopping data entry as soon as you try to place invalid data in a cell covered by a data validation rule.
-
-In the old Data entry form the data validation rules were only checked when a compiled record was being inserted.
+> ## Tip: The Excel Data Entry form
+>
+> In older versions of Excel there was a data entry form which allowed you to input single records (rows of data) by completing a pop-up form.
+> This is still available but  does not appear on the default menu and toolbars.
+> The basic functionality of inserting rows is essentially superseded by the use of defined tables and entering data directly into them as we have done in steps 7 and 8 above.
+> The above method has the advantage of stopping data entry as soon as you try to place invalid data in a cell covered by a data validation rule.
+>
+> In the old Data entry form the data validation rules were only checked when a compiled record was being inserted.
+{: .callout}
