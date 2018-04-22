@@ -16,7 +16,7 @@ keypoints:
 
 In this lesson, we’re going to talk about:
 
-- Using best practice to create your own data tables in spreadsheets 
+- Using best practice to create your own data tables in spreadsheets
 - Reformatting existing spreadsheets (using Excel)
 - Recognising and reformatting dates in spreadsheets
 - Basic quality control; using data validation and Data entry forms (in Excel)
@@ -24,10 +24,10 @@ In this lesson, we’re going to talk about:
 
 ### Spreadsheet programs
 
-Many spreadsheet programs are available. We will use Microsoft Excel in our examples. 
+Many spreadsheet programs are available. We will use Microsoft Excel in our examples.
 Although it is not open source software it is very widely available and used.
 
-Free spreadsheet programs such as LibreOffice and OpenOffice are available.  
+Free spreadsheet programs such as LibreOffice and OpenOffice are available.
 The functionality of these may differ from Excel, but in general they can be used to perform similar tasks.
 
 
@@ -38,16 +38,16 @@ Often they are used for presentation of data or summaries of the data or graphs 
 
 Because they are being aimed at presentation, the data may be laid out in ways which are 'easy on the eye'.
 
-This type of report layout formatting, complete with white space, merged cells, colour and grids may aid 
+This type of report layout formatting, complete with white space, merged cells, colour and grids may aid
 readability, but they do not aid processing of the data or the portability of the data.
 
-Similarly, including data summaries, complex functions and graphs, using the provided drag and drop features of 
+Similarly, including data summaries, complex functions and graphs, using the provided drag and drop features of
 the spreadsheet can cause issues when documenting the work or trying to demonstrate data quality and consistency.
 
-The real problem with data in spreadsheets is that you may have simply inherited the spreadsheet and could 
+The real problem with data in spreadsheets is that you may have simply inherited the spreadsheet and could
 not exercise any control in its construction or entry of the data within it.
 
-In the next episode we will look at how you may be able to deal with some of these problems by re-formatting the data. 
+In the next episode we will look at how you may be able to deal with some of these problems by re-formatting the data.
 
 In later sections we will look at how you can use the functionality of Excel to make data entry easier and more error free.
 
@@ -57,12 +57,14 @@ To finish this section we want to outline some best practices for the creation o
 
 ## Creating a spreadsheet to hold data
 
-We typically think of data as tables of data. The columns of the table representing variables and the rows 
-of the table representing observations. Spreadsheets are very good at recording data in this way.
+When we usually think of 'data', our mind often thinks of information contained in tables.
+The columns of the table representing variables and the rows
+of the table representing observations.
+Spreadsheets are very good at recording data in this way.
 
 ![simple_spreadsheet](../fig/spreadsheet_simple_data_01.png)
 
-But then we get carried away with the functionality provided by the spreadsheet program and start treating our 
+But then we get carried away with the functionality provided by the spreadsheet program and start treating our
 data table more like a set of notes.
 
 * we use colour codes to indicate values
@@ -70,8 +72,8 @@ data table more like a set of notes.
 * we stop using consistent defined values for variables
 * We introduce white space and merge cells - to make it look more readable
 
-Essentially we need the spreadsheet contents to be a simple table design, with the rows and columns 
-following the guidelines for Tidy data as indicated by Hadley Whickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10) 
+Essentially we need the spreadsheet contents to be a simple table design, with the rows and columns
+following the guidelines for Tidy data as indicated by Hadley Whickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10)
 
 
 ## The simple guidelines
@@ -89,16 +91,16 @@ following the guidelines for Tidy data as indicated by Hadley Whickham in his pa
 
 ## More detailed guidelines
 
-The guidelines above should result in simple, easy to understand data tables. For simple data entry 
+The guidelines above should result in simple, easy to understand data tables. For simple data entry
 there should be no difficulty is applying them.
 
-Despite this spreadsheets are not ideal for analysis purposes, due to the lack of an audit trail of what has been done 
+Despite this spreadsheets are not ideal for analysis purposes, due to the lack of an audit trail of what has been done
 in the drag and drop, point and click environment, creating derived columns using simple formulae may be acceptable
-and convenient. 
+and convenient.
 
-For more more complex spreadsheets you can employ further best practices to make them not only more readable but also 
+For more more complex spreadsheets you can employ further best practices to make them not only more readable but also
 more maintainable. This document [Twenty principles for good spreadsheet practice](http://www.icaew.com/~/media/corporate/files/technical/information%20technology/excel%20community/166%20twenty%20principles%20for%20good%20spreadsheet%20practice.ashx)
 from the ICAEW has some useful further advice.
 
-Always remember, the more complex the spreadsheet, the more likely that it will contain errors. 
+Always remember, the more complex the spreadsheet, the more likely that it will contain errors.
 Googling 'Spreadsheet Errors' or more specifically 'Reinhart and Rogoff' will allow you to investigate how bad things can get.
