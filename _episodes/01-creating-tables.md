@@ -33,19 +33,28 @@ The functionality of these may differ from Excel, but in general they can be use
 
 ## Problems with Spreadsheets
 
-Although spreadsheets are good as a data entry tool, they are in practice used for a variety of tasks.
-Often they are used for presentation of data or summaries of the data or graphs and charts derived from the data.
+Spreadsheets are good for data entry,
+    but in reality we tend to use spreadsheet programs for much more than data entry.
+We use them to create data tables for publications,
+    to generate summary statistics,
+    and make figures.
+Laying out spreadsheets in this way often adds some difficulty when we want
+    to take our data from the spreadsheet and use it in another program.
+Additional white space, merged cells, colour and grids
+    may aid readability but are not easily handled by other programs
+    that take our spreadsheet as an input to further analysis.
 
-Because they are being aimed at presentation, the data may be laid out in ways which are 'easy on the eye'.
+Generating statistics and figures in spreadsheets, should be done with caution.
+The graphical, drag and drop nature of spreadsheet programs, ,means that it can be very difficult, if not impossible, to replicate your steps (much less retrace anyone else’s).
+This is particularly true if your stats or figures require complex calculations.
+Furthermore, when performing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells.
+This often makes it to demonstrate data quality and consistency in our analysis.
 
-This type of report layout formatting, complete with white space, merged cells, colour and grids may aid
-readability, but they do not aid processing of the data or the portability of the data.
-
-Similarly, including data summaries, complex functions and graphs, using the provided drag and drop features of
-the spreadsheet can cause issues when documenting the work or trying to demonstrate data quality and consistency.
-
-The real problem with data in spreadsheets is that you may have simply inherited the spreadsheet and could
-not exercise any control in its construction or entry of the data within it.
+Even when we are aware of some of the limitations that data in spreadsheets presents,
+    often we have inherited spreadsheets from another colleague or data provider.
+In these situations we cannot exercise any control in its construction
+    or entry of the data within it.
+Nevertheless it is important to be aware of the limitations these data may present, and know how to assess if any problems are present and how to overcome them.
 
 > ## Tip
 > * In the next episode we will look at how you may be able to deal with some of these problems by re-formatting the data.
