@@ -104,10 +104,6 @@ The following guidelines offer advice on how to keep spreadsheets as simple as p
 
 ## More detailed guidelines
 
-The guidelines above should result in easy to understand data tables.
-
-For simple data entry there should be no difficulty in applying them.
-
 Often, spreadsheets we come across are more elaborate, and contain more than data values.
 We often come across spreadsheets where some columns are the result of complex
     formulas combining other columns of data and applying transformations to them.
@@ -116,8 +112,9 @@ Despite the convenience and ease with which we can work this way,
 This is because there is a the lack of an audit trail of what has been done
 in the drag and drop, point and click environment in which these more elaborate spreasheets are often constructed.
 
-For more complex spreadsheets you can employ further best practices to make them not only more readable but also
-more maintainable. This document [Twenty principles for good spreadsheet practice](http://www.icaew.com/~/media/corporate/files/technical/information%20technology/excel%20community/166%20twenty%20principles%20for%20good%20spreadsheet%20practice.ashx)
+For more complex spreadsheets there are additional best practices available
+    to make them not only more readable but also more maintainable.
+[Twenty principles for good spreadsheet practice](http://www.icaew.com/~/media/corporate/files/technical/information%20technology/excel%20community/166%20twenty%20principles%20for%20good%20spreadsheet%20practice.ashx)
 from the ICAEW has some useful further advice.
 
 Always remember, the more complex the spreadsheet, the more likely that it will contain errors.
