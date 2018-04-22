@@ -57,23 +57,34 @@ To finish this section we want to outline some best practices for the creation o
 
 ## Creating a spreadsheet to hold data
 
-When we usually think of 'data', our mind often thinks of information contained in tables.
-The columns of the table representing variables and the rows
-of the table representing observations.
+When we usually think of 'data', our mind often thinks of information
+    contained in tables.
+Within this table, we think of columns representing variables
+    and the rows representing observations.
 Spreadsheets are very good at recording data in this way.
 
 ![simple_spreadsheet](../fig/spreadsheet_simple_data_01.png)
 
-But then we get carried away with the functionality provided by the spreadsheet program and start treating our
-data table more like a set of notes.
+Once we have data organized this way, it is easy to get drawn into adding
+    additional information and/or styling to our data.
+This is often due to us wanting to make the data simpler to understand and
+    the amount of functionality modern spreadsheet software provide.
+In a sense, the more additional information we add to the table or data,
+    the more our data begin to look like a set of notes.
+Typical additions we make to data include:
 
-* we use colour codes to indicate values
-* we have multiple tables in a single sheet
-* we stop using consistent defined values for variables
-* We introduce white space and merge cells - to make it look more readable
+* The use of colour codes to indicate values
+* Adding multiple tables in a single sheet
+* Inconsistently defined values for variables, or inconsitent variable naming conventions
+* Introduction of white space and the merging of cells - to make it look more readable
 
-Essentially we need the spreadsheet contents to be a simple table design, with the rows and columns
-following the guidelines for Tidy data as indicated by Hadley Whickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10)
+You can set things up in different ways in spreadsheets -
+    often incorporating many of these points from above.
+However, some of these choices can limit your ability to
+    work with the data in other programs or
+    have the you-of-6-months-from-now or your collaborator work with the data.
+We advocate keeping spreadsheet contents to be a simple table design,
+    with the rows and columns following the guidelines for Tidy data as indicated by Hadley Wickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10).
 
 
 ## The simple guidelines
