@@ -92,12 +92,9 @@ If you type a value which is not on the list you will get an error message.
 > You can also have different cells refer to the same table of acceptable inputs.
 {: .callout}
 
-
-
-
 ## Creating tables for data entry
 
-Using the data validation functionality of Excel is a very powerful way of reducing erroneous data being entered into your data table.
+The data validation functionality of Excel is a very powerful way of reducing erroneous data being entered into your data table.
 
 You may have spotted a slight flaw in the plan though.
 
@@ -115,18 +112,20 @@ A better way to apply data validation on data entry is to create a proper data t
 
 To do this;
 
-1. In the top row of an empty worksheet (because you only want one table per worksheet) type in the column names for your data, in the order in which you expect to enter them.
-2. On the next row select the cell in the column for which you wish to apply data validation
-3. Set up the appropriate validation for this cell and repeat for any cells in the second row whose columns  you wish to apply data validation to.
-4. Select a cell in the top row and from the Insert menu bar select Table from the Tables section.
-![Data_validation_05](../fig/spreadsheets_Data_validation_05.png)
+1. In the top row of an empty worksheet type in the column names for your data, in the order in which you expect to enter them.
+2. On the next row select the cell in the column for which you wish to apply data validation.
+3. Set up the appropriate validation for this cell.
+4. Repeat the validation step for all cells in the second row whose columns  you wish to apply data validation to.
+5. Select a cell in the row where the column names are entered.
+6. Go to the Insert menu, go to the Tables Section and select 'Table.'
+
+    ![Data_validation_05](../fig/spreadsheets_Data_validation_05.png)
+
 5. Check the box 'My table has header' and extend the size of the table from one row to two by changing the last 1 to a 2. Then click OK.
 6. A table will be created with your column headings and a single blank row beneath them.
-7. You can enter data into this blank row. Any cell which has data validation set up for it will be restricted in accordance with the data validation you set up.
+7. You can enter data into this blank row. Any cell which has data validation set up for it will be restricted using with the data validation you set up.
 8. When you have entered data into the last column of the table and hit the Tab key, a new row of the table will be created and the cursor will be placed in the first column of it.
 9. In this new row and all subsequent rows added to the table, the data validation for all of the columns originally set up with data validation will be repeated.
-
-
 
 ## The Excel Data Entry form
 
