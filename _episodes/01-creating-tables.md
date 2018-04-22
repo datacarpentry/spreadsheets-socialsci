@@ -89,6 +89,8 @@ We advocate keeping spreadsheet contents to be a simple table design,
 
 ## The simple guidelines
 
+The following guidelines offer advice on how to keep spreadsheets as simple as possible:
+
 1. One table per spreadsheet (or one per spreadsheet tab) at most
 2. Start in cell A1
 3. First row is for column names
@@ -102,14 +104,19 @@ We advocate keeping spreadsheet contents to be a simple table design,
 
 ## More detailed guidelines
 
-The guidelines above should result in simple, easy to understand data tables. For simple data entry
-there should be no difficulty is applying them.
+The guidelines above should result in easy to understand data tables.
 
-Despite this spreadsheets are not ideal for analysis purposes, due to the lack of an audit trail of what has been done
-in the drag and drop, point and click environment, creating derived columns using simple formulae may be acceptable
-and convenient.
+For simple data entry there should be no difficulty in applying them.
 
-For more more complex spreadsheets you can employ further best practices to make them not only more readable but also
+Often, spreadsheets we come across are more elaborate, and contain more than data values.
+We often come across spreadsheets where some columns are the result of complex
+    formulas combining other columns of data and applying transformations to them.
+Despite the convenience and ease with which we can work this way,
+    spreadsheets are not ideal for these purposes.
+This is because there is a the lack of an audit trail of what has been done
+in the drag and drop, point and click environment in which these more elaborate spreasheets are often constructed.
+
+For more complex spreadsheets you can employ further best practices to make them not only more readable but also
 more maintainable. This document [Twenty principles for good spreadsheet practice](http://www.icaew.com/~/media/corporate/files/technical/information%20technology/excel%20community/166%20twenty%20principles%20for%20good%20spreadsheet%20practice.ashx)
 from the ICAEW has some useful further advice.
 
