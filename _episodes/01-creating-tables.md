@@ -11,6 +11,16 @@ keypoints:
 - "Careful design of your own spreadsheets will make then easily usable and portable to other systems"
 ---
 
+> ## Things You’ll Need To Complete This Tutorial
+> #### Spreadsheet Software
+> To work through this tutorial you will need access to a spreadsheet program.
+> Many computers come with a pre-installed spreadsheet program like Excel
+> or Numbers.
+> If you do not have a spreadsheet program, install one using the instructions
+> in the link below.
+> * [Instructions to install a spreadsheet program.]({{site.baseurl}}/setup/)
+>
+{: .prereq}
 
 ## Spreadsheets outline
 
@@ -62,8 +72,6 @@ Nevertheless it is important to be aware of the limitations these data may prese
 {: .callout}
 
 We finish this section by outlining some best practices for the creation of data tables within a spreadsheet.
-
-
 
 ## Creating a spreadsheet to hold data
 
