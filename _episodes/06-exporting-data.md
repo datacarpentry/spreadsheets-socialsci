@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - "Data stored in common spreadsheet formats will often not be read correctly into data anlysis software, introducing errors into your data."
 - "Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
-- "TSV format is more appropriate than CSV for data containing commas."
+- "TSV format is more appropriate than CSV for data containing commas, like free-response survey data."
 ---
 
 Storing the data you're going to work with for your analyses in Excel
