@@ -3,14 +3,13 @@ title: "Dates and date formatting"
 teaching: 10
 exercises: 5
 questions:
-- "What are good approaches for handling dates in spreadsheets? "
+- "What are good approaches for handling dates in spreadsheets?"
 objectives:
-- "Recognise mal-formed or suspicious date formats"
-- "Breakdown date fields into components"
+- "Recognise problematic or suspicious date formats."
+- "Use formulas to separate dates into their component values (e.g. Month, Day, Year)."
 keypoints:
-- "Internally dates are stored as numbers"
-- "Some dates may be mis-interpreted by the spreadsheet program"
-- "Splitting dates into components can make life easier"
+- "Use extreme caution when working with date data."
+- "Splitting dates into their component values can make them easier to handle."
 ---
 
 ## Storing dates in a spreadsheet

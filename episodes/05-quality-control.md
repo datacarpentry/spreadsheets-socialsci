@@ -3,15 +3,13 @@ title: "Quality control"
 teaching: 10
 exercises: 5
 questions:
-- "How can we carry out basic quality control and quality assurance in spreadsheets? "
-- "What spreadsheet aids are available to assist me when inputting data?"
+- "How can we carry out basic quality control and quality assurance in spreadsheets?"
 objectives:
-- "Use data validation on input"
-- "Use the Excel Data Entry form"
+- "Apply quality control techniques to identify errors in spreadsheets and limit incorrect data entry."
 keypoints:
-- "In general you can type any kind of data into any cell in a spreadsheet"
-- "Excel does provide tools which allow you to restrict the type of data and ranges of values you can enter"
-- "Using Excel tables can make data entry simpler, by automatically inserting new rows complete with data validation rules when needed"
+- "Always copy your original spreadsheet file and work with a copy so you don't affect the raw data."
+- "Use data validation to prevent accidentally entering invalid data."
+- "Use Excel tables to insert new rows into your spreadsheet while maintaining data validation rules."
 ---
 
 ## Validating data on input

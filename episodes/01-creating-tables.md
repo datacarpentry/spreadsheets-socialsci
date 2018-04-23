@@ -1,14 +1,13 @@
 ---
-title: "Creating data tables in a spreadsheet"
+title: "Creating data tables in Spreadsheets"
 teaching: 15
 exercises: 0
 questions:
-- "How should I design and format my spreadsheet?"
+- "What are the basic principles for using spreadsheets for good data organization?"
 objectives:
-- "Employ best practices when creating spreadsheet data"
+- "Describe best practices for data entry and formatting in spreadsheets."
 keypoints:
-- "If you inherit data in a spreadsheet, you may have to re-structure the data to make it usable and/or consistent "
-- "Careful design of your own spreadsheets will make then easily usable and portable to other systems"
+- "Organizing your data tables according to tidy data principles will make them easier for you and others to use for analysis."
 ---
 
 > ## Things You’ll Need To Complete This Tutorial
@@ -114,7 +113,7 @@ The following guidelines offer advice on how to keep spreadsheets as simple as p
 3. First row is for column names
 4. No spaces in column names
 5. Only a single variable in each column
-6. Use a consistent format for the column values. i.e. don't mix date formats, consistency when representing boolean values
+6. Use a consistent format for the column values. (i.e. don't mix date formats, consistency when representing boolean values (e.g. "TRUE" vs "True"))
 7. One observation per row.
 8. Static data columns first, then measured or recorded data columns then calculated columns
 9. Keep formulas simple

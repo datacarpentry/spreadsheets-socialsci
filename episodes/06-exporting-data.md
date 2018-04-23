@@ -5,10 +5,12 @@ exercises: 10
 questions:
 - "How can we export data from spreadsheets in a way that is useful for downstream applications?"
 objectives:
-- "Save a tab as a csv file"
-- "Add a column indicating the filename"
+- "Store spreadsheet data in universal file formats."
+- "Export data from a spreadsheet to a CSV file."
+- "Add a column to a dataframe to indicate the filename."
 keypoints:
-- ""
+- "Data stored in common spreadsheet formats will often not be read correctly into data anlysis software, introducing errors into your data."
+- "Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
 ---
 
 ## Spreadsheet storage formats
