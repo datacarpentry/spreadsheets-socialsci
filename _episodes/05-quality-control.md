@@ -45,7 +45,7 @@ We will look at a couple of simple examples.
 
 ![Data_validation_01](../fig/spreadsheets_Data_validation_01.png)
 
-3. From the Allow dropdown box select 'Whole number'. 
+3. From the Allow drop down box select 'Whole number'. 
 4. The window content will change. The value in the data box will say 'between' and Min and Max boxes
 will be provided for you to specify a range 
 
@@ -53,7 +53,7 @@ will be provided for you to specify a range
 
 5. Fill in the min and max values as you like and click OK
 6. In you selected cell try putting in a value within your chosen range and then outside the range.
-   In the first instance the value will be accepted and in the second an erro message will be produced.
+   In the first instance the value will be accepted and in the second an error message will be produced.
    
 ![Data_validation_03](../fig/spreadsheets_Data_validation_03.png)
 
@@ -64,13 +64,13 @@ will be provided for you to specify a range
 
 1. select the cell or cells for which you wish to apply the restriction
 2. In the Data Tools section of the Data tab select Validation tools.
-3. From the Allow dropdown box select 'List'. 
+3. From the Allow drop-down box select 'List'. 
 4. The window will change to include a Source box.
 ![Data_validation_04](../fig/spreadsheets_Data_validation_04.png) 
-5. In the source box you can type a comma seperated list of values that you want to accept. Then click OK.
+5. In the source box you can type a comma separated list of values that you want to accept. Then click OK.
 6. The cell which has had the data validation applied to it will now have a drop-down arrow against it (when the cell is selected). When you click the arrow you will be able to select a value from your list. If you simply type a value which is not on the list you will get an error message.
   
-Typing a list of values for simple choices like True and False or Red, Amber, Green might be convenient, if the list is longer it makes sense to create the list as a small table (in a seperate tab of the workbook), give the table a name and then reference the table name as the source in the Source box.
+Typing a list of values for simple choices like True and False or Red, Amber, Green might be convenient, if the list is longer it makes sense to create the list as a small table (in a separate tab of the workbook), give the table a name and then reference the table name as the source in the Source box.
 
 Using a table in this way makes the process more flexible. If you add or remove contents from the table, then these are immediately reflected in any *New* cell entries based on this source. You can also have different cells refer to the same source.
 
@@ -110,9 +110,9 @@ To do this;
 
 ## The Excel Data Entry form
 
-In older versions of Excel there was a data entry form which allowed you to input single records (rows of data) by completing a pop-up form. Although this is still available it does not appear on the default menu and toolbars. The basic functionality of inserting rows is essentially superceded by the use of defined tables and entering data directly into them as we have done in steps 7 and 8 above. The above method has the advantage of stopping data entry as soon as you try to place invalid data in a cell covered by a data validation rule.
+In older versions of Excel there was a data entry form which allowed you to input single records (rows of data) by completing a pop-up form. Although this is still available it does not appear on the default menu and toolbars. The basic functionality of inserting rows is essentially superseded by the use of defined tables and entering data directly into them as we have done in steps 7 and 8 above. The above method has the advantage of stopping data entry as soon as you try to place invalid data in a cell covered by a data validation rule.
 
-In the old Data entry form the data validation rules were only checked when a compled record was being inserted. 
+In the old Data entry form the data validation rules were only checked when a compiled record was being inserted. 
 
 
 
