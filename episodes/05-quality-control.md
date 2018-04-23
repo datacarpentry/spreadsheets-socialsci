@@ -22,7 +22,7 @@ Even if we are not facing constraints from the software, as a researcher we ofte
 It is also possible that the nature of the data contained in the table allows us place additional restrictions on the acceptable values for cells in a column.
 For example a column recording age should be numeric, greater than 0 and is unlikely to be greater than 120.
 
-Excel allows the us to specify a variety of data validations to be applied to a cell content.
+Excel allows us to specify a variety of data validations to be applied to cell contents.
 If the validation fails an error is raised and the data we entered does not go into the particular cell.
 In addition to providing validation when we enter data, Excel allows us to add validations to data that has already been entered.
 The validation is not applied retrospectively, so that data are removed.
