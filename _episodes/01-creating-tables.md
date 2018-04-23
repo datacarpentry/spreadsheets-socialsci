@@ -94,7 +94,7 @@ However, some of these choices can limit your ability to
     work with the data in other programs or
     have the you-of-6-months-from-now or your collaborator work with the data.
 We advocate keeping spreadsheet contents to be a simple table design,
-    with the rows and columns following the guidelines for Tidy data as indicated by Hadley Wickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10).
+    with the rows and columns following the guidelines for creating "Tidy data" as indicated by Hadley Wickham in his paper ['Tidy Data'](https://www.jstatsoft.org/article/view/v059i10).
 
 
 ## The simple guidelines
