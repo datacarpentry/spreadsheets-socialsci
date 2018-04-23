@@ -76,8 +76,8 @@ An important note for backwards compatibility: you can open CSV files in Excel!
 > > ## Solution
 > > 
 > > 1. When the .csv file created from the .xlsx file in Excel is opened it looks just as it did when it was saved.
-> > 2. When you open the file in a text editor you will see that the data from cell  cell B4 has been placed in quotes.
-> >    Excel does this automatically as it detected that the data included a comma. 
+> > 2. When you open the file in a text editor you will see that the data from cell  cell B3 has been placed in quotes.
+> >    Excel does this automatically as it detected that the data included at least one comma. 
 > > 
 > > Most applications will ignore commas in quoted strings when reading a .csv file, but it is not guaranteed. 
 > > It is also not guaranteed that an application writing a csv file will put strings in quotes if there are commas.
