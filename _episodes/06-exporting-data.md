@@ -1,63 +1,65 @@
 ---
 title: "Exporting data"
 teaching: 10
-exercises: 10
+exercises: 5
 questions:
 - "How can we export data from spreadsheets in a way that is useful for downstream applications?"
 objectives:
 - "Store spreadsheet data in universal file formats."
 - "Export data from a spreadsheet to a CSV file."
-- "Add a column to a dataframe to indicate the filename."
 keypoints:
 - "Data stored in common spreadsheet formats will often not be read correctly into data anlysis software, introducing errors into your data."
 - "Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
+- "TSV format is more appropriate than CSV for data containing commas."
 ---
 
-## Spreadsheet storage formats
+Storing the data you're going to work with for your analyses in Excel
+default file format (`*.xls` or `*.xlsx` - depending on the Excel
+version) isn't a good idea. Why?
 
-Excel and other spreadsheet applications store the data in their own proprietary formats. 
-This is fine if you only intend to use the data in the same application that it was created in, but it
-can make it difficult to open the spreadsheet files in other applications that you may want to use to 
-process the data.
+- Because it is a proprietary format, and it is possible that in
+the future, technology won’t exist (or will become sufficiently
+rare) to make it inconvenient, if not impossible, to open the file.
 
-In future versions of Excel Microsoft may make changes to the format, so that existing files are not even readable by the latest versions of Excel.
+- Other spreadsheet software may not be able to open files
+saved in a proprietary Excel format.
 
+- Different versions of Excel may handle data
+differently, leading to inconsistencies.
 
-The .xlsx format used by versions of Excel since 2007 is in fact a folder of compressed XML files. 
-You can rename a .xlsx file as a .zip file and extract the individual files. 
-Amongst other things there will be an XML file for each of the tabs in your spreadsheet.
+- Finally, more journals and grant agencies are requiring you
+to deposit your data in a data repository, and most of them don't
+accept Excel format. It needs to be in one of the formats
+discussed below.
 
-You could load this XML file into a text editor and read the data in it. But XML is a very verbose data format, designed originally for 
-transferring data between one computer application and another. You may be able to read it but it would not be in the nice tabular format
-that you see when it is loaded into Excel.
+- The above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.
 
-If you tried to load the .xlsx file directly into a text editor, the result would be gibberish as the text editor 
-would simply try to display the characters in the compressed data file.
+As an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that 
+there are multiple defaults for different versions of the software, and you can switch between them all. So, say you’re
+compiling Excel-stored data from multiple sources. There’s dates in each file- Excel interprets them as their own internally consistent
+serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it
+using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it wouldn’t
+necessarily be flagged by any data cleaning methods if your ranges overlap.
 
+Storing data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values
+or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas,
+hence 'comma separated values' or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file
+using just about any software, including plain text editors like TextEdit or NotePad. 
+Data in a CSV file can also be easily imported into other formats and
+environments, such as SQLite and R. We're not tied to a certain version of a certain expensive program when we work with CSV files, so
+it's a
+good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV
+easily, although they may give you a warning during the file export.
 
-> ## Exercise
-> 
-> 1. Copy an .xlsx file and rename it as a .zip file.
-> 
->    Extract the folders/files form the .zip file.
-> 
->    Find the XML file corresponding to one of the tabs in the spreadsheet and open it in any text editor.
-> 
->    Can you find the spreadsheet data in it? How easy would it be to use in this format?
-> 2. Try opening a .xlsx file directly into a Text editor. 
-> 
->    Can you find the spreadsheet data in it? How easy would it be to use in this format?
-{: .challenge}
+To save a file you have opened in Excel in CSV format:
 
-## Saving spreadsheet data as a csv file
+1. From the top menu select 'File' and 'Save as'.
+2. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
+3. Double check the file name and the location where you want to save it and hit 'Save'.
 
-CSV  stands for Comma Seperated Values. As the name suggests data items are stored seperated by commas. 
-If there is a header row, then this is stored in the same way.
-This makes a .csv file not only human readable, but it is a format that can also be read by any other data or 
-statistical analysis applications such as Stata or SPSS.
-It is also very easy to read .csv files in programming languages like Python or R.
+An important note for backwards compatibility: you can open CSV files in Excel!
 
-This makes CSV an almost univeral portable format. 
+![Saving an Excel file to CSV](../fig/excel-to-csv.png)
 
 > ## Exercise
 > 1. create an Excel spreadsheet with the following data in it 
