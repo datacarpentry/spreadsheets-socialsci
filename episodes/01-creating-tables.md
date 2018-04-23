@@ -27,8 +27,8 @@ In this lesson, we’re going to talk about:
 Many spreadsheet programs are available. We will use Microsoft Excel in our examples. 
 Although it is not open source software it is very widely available and used.
 
-Free spreadsheet programs such as LibreOffice and Openoffice are available.  
-The functionanilty of these may differ from Excel, but in general they can be used to perform similar tasks.
+Free spreadsheet programs such as LibreOffice and OpenOffice are available.  
+The functionality of these may differ from Excel, but in general they can be used to perform similar tasks.
 
 
 ## Problems with Spreadsheets
@@ -77,7 +77,7 @@ following the guidelines for Tidy data as indicated by Hadley Whickham in his pa
 ## The simple guidelines
 
 1. One table per spreadsheet (or one per spreadsheet tab) at most
-2. Start in cell a1
+2. Start in cell A1
 3. First row is for column names
 4. No spaces in column names
 5. Only a single variable in each column
