@@ -64,7 +64,7 @@ An important note for backwards compatibility: you can open CSV files in Excel!
 > ## Exercise
 > 1. create an Excel spreadsheet with the following data in it 
 > 
-> ![link_to_simple_data](../fig/spreadsheet_simple_data_01.png)
+> ![link_to_simple_data](../fig/spreadsheet_simple_data.png)
 > 
 > 2. Save the spreadsheet as a .csv file using
 >    File | Save as   and select .csv fromm  the drop down box for the filetype.
