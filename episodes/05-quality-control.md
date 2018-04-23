@@ -55,7 +55,7 @@ When we want to restrict data in some cells to be *numeric* we proceed as follow
 
 We have now provided a restriction.
 To test it out, go to one of the cells where we set the restriction to apply.
-If you enter a value that is withing the allowed range, your input will be accepted and written into the cell.
+If you enter a value that is within the allowed range, your input will be accepted and written into the cell.
 If you enter a value outside the chosen range, the following error box will appear:
 
 ![Data_validation_03](../fig/spreadsheets_Data_validation_03.png)
