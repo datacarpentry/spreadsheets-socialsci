@@ -84,7 +84,7 @@ If you type a value which is not on the list you will get an error message.
 
 
 > ## Tip
-> Typing a list of values for simple choices like True and False or Red, Amber, Green might be convenient, but if the list is longer it makes sense to create the it as a small table (in a separate tab of the workbook).
+> Typing a list of values for simple choices like True and False or Red, Amber, Green might be convenient, but if the list is longer it makes sense to create it as a small table (in a separate tab of the workbook).
 > We can give the table a name and then reference the table name as the source of acceptable inputs when the source box appears in the Data Validation pop-out.
 >
 > Using a table in this way makes the data entry process more flexible.
@@ -123,13 +123,13 @@ To do this;
 
 5. Check the box 'My table has header' and extend the size of the table from one row to two by changing the last 1 to a 2. Then click OK.
 6. A table will be created with your column headings and a single blank row beneath them.
-7. You can enter data into this blank row. Any cell which has data validation set up for it will be restricted using with the data validation you set up.
+7. You can enter data into this blank row. Any cell which has data validation set up for it will be restricted using the data validation you set up.
 8. When you have entered data into the last column of the table and hit the Tab key, a new row of the table will be created and the cursor will be placed in the first column of it.
 9. In this new row and all subsequent rows added to the table, the data validation for all of the columns originally set up with data validation will be repeated.
 
 > ## Tip: The Excel Data Entry form
 >
-> In older versions of Excel there was a data entry form which allowed you to input single records (rows of data) by completing a pop-up form.
+> In older versions of Excel, there was a data entry form which allowed you to input single records (rows of data) by completing a pop-up form.
 > This is still available but  does not appear on the default menu and toolbars.
 > The basic functionality of inserting rows is essentially superseded by the use of defined tables and entering data directly into them as we have done in steps 7 and 8 above.
 > The above method has the advantage of stopping data entry as soon as you try to place invalid data in a cell covered by a data validation rule.
