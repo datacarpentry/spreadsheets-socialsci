@@ -30,7 +30,7 @@ Instead, if a partcular cell would fail the validation check a green triangle is
 
 Details of the different types of validation possible and how to set them up are available [here](https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249)
 
-In what follows, ee will look at two examples:
+In what follows, we will look at two examples:
 
 1. Restricting data to a numeric range
 2. Restricting data to entries from a list
