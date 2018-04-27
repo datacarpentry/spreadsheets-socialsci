@@ -17,7 +17,6 @@ keypoints:
 - "Include only one piece of information in a cell."
 - "Avoid spaces, numbers and special characters in column headers."
 - "Avoid special characters in your data."
-- "Record metadata in a separate plain text file."
 ---
 
 ## Common Spreadsheet Errors
@@ -84,6 +83,8 @@ usually a zero, say the number of cows that an informant has, in a
 region where most farmers have goats and no cows. Why bother
 writing in the number zero in that column, when it's mostly zeros?
 
+![filling in zeros](../fig/zeros-example.png)
+
 However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured
 or counted it. A blank cell means that it wasn't measured and the computer will interpret it as an unknown value (otherwise known as a
 null value). 
@@ -127,8 +128,7 @@ such a way that you will not need to merge cells to organize your data.
 
 ## <a name="units"></a> Placing comments or units in cells
 
-**Example**: Your data was collected, in part, by a summer student who you later found out was mis-identifying some of your species, some
-of the time. You want a way to note these data are suspect.
+**Example**: Some of your informants only irrigate their plots at certain times of the year. You've added this information as notes directly into the cell with the data. 
 
 **Solution**: Most analysis software can't see Excel or LibreOffice comments, and would be confused by comments placed within your data
 cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in
@@ -139,11 +139,10 @@ another field and specify the units the cell is in.
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
-**Example**: You find one male, and one female of the same species. You enter this as 1M, 1F.
+**Example**: Your informant has multiple livestock of different types. You record this information as "3, (oxen , cows)" to indicate that there are three total livestock, which is a mixture of oxen and cows.
 
 **Solution**: Don't include more than one piece of information in a cell. This will limit the ways in which you can analyze your data. 
-If you need both these measurements, design your data sheet to include this information. For example, include one column for number of
-individuals and a separate column for sex.
+If you need both these types of information (the total number of animals and the types), design your data sheet to include this information. For example, include a separate column for each type of livestock. 
 
 ## <a name="field_name"></a> Using problematic field names
 Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
@@ -152,7 +151,7 @@ with numbers.
 
 Underscores (`_`) are a good alternative to spaces. Consider writing names in camel case (like this: ExampleFileName) to improve
 readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months, but don't overdo it with names
-that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your fields.
+that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your variable names.
 
 **Examples**  
 
@@ -163,39 +162,24 @@ that are excessively long. Including the units in the field names avoids confusi
 	<td> <b>Avoid </b></td><br />
 </tr>
 <tr>
-	<td> Max_temp_C</td>
-	<td> MaxTemp </td>
-	<td> Maximum Temp (°C) </td>
+	<td> wall_type </td>
+	<td> WallType </td>
+	<td> wall type </td>
 </tr>
 <tr>
-	<td> Precipitation_mm</td>
-	<td> Precipitation</td>
-	<td> precmm </td>
+	<td> longitude </td>
+	<td> GpsLongitude </td>
+	<td> gps:Longitude </td>	
 </tr>	
 <tr>
-	<td> Mean_year_growth</td>
-	<td> MeanYearGrowth </td>
-	<td> Mean growth/year</td>	
-</tr>	
-<tr>
-	<td> sex </td>
-	<td> sex </td>	
+	<td> gender </td>
+	<td> gender </td>	
 	<td> M/F </td>
 </tr>
-<tr>	
-	<td> weight </td>
-	<td> weight </td>	
-	<td> w.</td>	
-</tr>
-<tr>	
-	<td> cell_type </td>
-	<td> CellType </td>
-	<td> Cell Type </td>
-</tr>
 <tr>
-	<td> Observation_01 </td>
-	<td> first_observation</td>
-	<td> 1st Obs</td>
+	<td> Informant_01 </td>
+	<td> first_informant</td>
+	<td> 1st Inf</td>
 </tr>
 </table>
 
