@@ -1,5 +1,5 @@
 ---
-title: "Formatting problems"
+title: "Formatting data tables in Spreadsheets"
 teaching: 15
 exercises: 20
 questions:
@@ -9,17 +9,9 @@ objectives:
 - "Describe the importance of metadata."
 - "Identify metadata that should be included with a dataset."
 keypoints:
-- "Avoid using multiple tables within one spreadsheet."
-- "Avoid spreading data across multiple tabs (but do use a new tab to record data cleaning or manipulations)."
-- "Record zeros as zeros."
-- "Use an appropriate null value to record missing data."
-- "Don't use formatting to convey information or to make your spreadsheet look pretty."
-- "Place comments in a separate column."
-- "Record units in column headers."
-- "Include only one piece of information in a cell."
-- "Avoid spaces, numbers, and special characters in column headers."
-- "Avoid special characters in your data."
-- "Record metadata in a separate plain text file."
+- "Never modify your raw data. Always make a copy before making any changes."
+- "Keep track of all of the steps you take to clean your data."
+- "Organize your data according to tidy data principles."
 ---
 ## Data formatting problems
 
@@ -139,15 +131,15 @@ later in this workshop.
 > 
 > We're going to take a messy version of the SAFI data and describe how we would clean it up.
 >
-> 1. Download the data by clicking [here]().
+> 1. Download the [messy data](../data/SAFI_messy.xlsx?raw=true).
 > 2. Open up the data in a spreadsheet program. 
-> 3. You can see that there are two tabs. Two field assistants conducted the surveys, one
-in 2013 and one in 2014, and they both kept track of the data in their own way. Now
-you're the person in charge of this project and you want to be able to 
-start analyzing the data.   
-> 4. With the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet. 
+> 3. Notice that there are two tabs. Two researchers conducted the interviews,
+one in Mozambique and the other in Tanzania. They both structured their data 
+tables in a different way. Now, you're the person in charge of this project and 
+you want to be able to start analyzing the data.   
+> 4. With the person next to you, identify what is wrong with this spreadsheet. Discuss the steps you would need to take to clean up the two tabs, and to put them all together in one spreadsheet. 
 >
-> **Important** Do not forget our first piece of advice, the
+> **Important** Do not forget our first piece of advice, to
 > create a new file (or tab) for the cleaned data, never
 > modify your original (raw) data.
 > 
@@ -156,17 +148,73 @@ start analyzing the data.
 > 
 > > ## Solution
 > > - Take about 10 minutes to work on this exercise.
-> > - All the mistakes in [02-common-mistakes](../02-common-mistakes) are present in the messy dataset. If
+> > - All the mistakes listed in [the next episode](../02-common-mistakes) are present in the messy dataset. If this
 > > exercise is done during a workshop, ask people what they saw as wrong with
-> > the data data. As they bring up different points, you can refer to [02-common-mistakes](../02-common-mistakes)
+> > the data. As they bring up different points, you can refer to [the next episode](../02-common-mistakes)
 > > or expand a bit on the point they brought up.
-> > - If you get a response where they've fixed the date, you can pause and go to the [03-dates-as-data](../03-dates-as-data) lesson. Or you can say you'll come back to dates at the end. 
 > {: .solution}
 {: .challenge}
 
-An excellent reference, in particular with regard to R scripting is
+An excellent reference on spreadsheet organization, in particular with regard to R scripting is:
 
 > Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
 > Statistical Software. [http://www.jstatsoft.org/v59/i10](http://www.jstatsoft.org/v59/i10).
+
+### Metadata
+
+Recording data about your data (“metadata”) is essential. You may be on intimate
+terms with your dataset while you are 
+collecting and analysing it, but the chances that you will still remember 
+the exact wording of the question you asked about your
+informants' water use (the data recorded in the column `water use`), for
+example, are slim.  
+
+As well, there are many reasons other people may want to examine or use your data - to understand your findings, to verify your findings,
+to review your submitted publication, to replicate your results, to design a 
+similar study, or even to archive your data for access and 
+re-use by others. While digital data by definition are machine-readable, 
+understanding their meaning is a job for human beings. The 
+importance of documenting your data during the collection and analysis phase of 
+your research cannot be overestimated, especially if your
+research is going to be part of the scholarly record.  
+
+However, metadata should not be contained in the data file itself. Unlike a table 
+in a paper or a supplemental file, metadata (in the 
+form of legends) should not be included in a data file since this information is 
+not data, and including it can disrupt how computer 
+programs interpret your data file. Rather, metadata should be stored as a 
+separate file in the same directory as your data file, 
+preferably in plain text format with a name that clearly associates it with your 
+data file. Because metadata files are free text format,
+they also allow you to encode comments, units, information about how null values 
+are encoded, etc. that are important to document but can
+disrupt the formatting of your data file.  
+
+Additionally, file or database level metadata describes how files that make up 
+the dataset relate to each other; what format are they are 
+in; and whether they supercede or are superceded by previous files. A 
+folder-level readme.txt file is the classic way of accounting for 
+all the files and folders in a project.  
+
+(Text on metadata adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).)
+
+> ## Exercise
+> Download a [clean version of this dataset](../data/SAFI_messy.xlsx?raw=true). This data has many more variables that were not included in the messy spreadsheet and is formatted according to tidy data principles. 
+> Discuss this data with a partner and make a list of some of the types of metadata that
+> should be recorded about this dataset. It may be helpful to start by asking
+> yourself, "What is not immediately obvious to me about this data? What 
+> questions would I need to know the answers to in order to analyze and interpret
+> this data?"
+> > ## Solution
+> > Some types of metadata that should be recorded and made available with the 
+> > data are: 
+> > - the exact wording of questions used in the interviews (if interviews were structured) or general prompts used (if interviews were semi-structured) 
+> > - a description of the type of data allowed in each column (e.g. the allowed range for numerical data with a restricted range, a list of allowed options for categorical variables, whether data in a numerical column should be continuous or discrete)
+> > - definitions of any categorical variables (e.g. definitions of "burntbricks" and "sunbricks") 
+> > - definitions of what was counted as a "room", a "plot", etc. (e.g. was there a minimum size)
+> > - learners may come up with additional questions to add to this list
+> {: .solution}
+{: .challenge}
+
 
 
