@@ -12,6 +12,8 @@ keypoints:
 - "Splitting dates into their component values can make them easier to handle."
 ---
 
+## Date formats in spreadsheets
+
 Dates in spreadsheets are often stored in a single column. While this seems the
 most natural way to record dates, it actually is not best
 practice. A spreadsheet application will display the dates in a
@@ -23,6 +25,42 @@ spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice,
 Gnumeric, etc.) are usually guaranteed to be compatible only within the same
 family of products. If you will later need to export the data and need to
 conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
+
+Spreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.
+
+![Many formats, many ambiguities](../fig/excel_dates_1.jpg)
+
+But these "features" often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. 
+
+## Dates stored as integers
+
+The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
+
+> ## Excel's date systems
+> Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
+different serial number than the [1900 date system](https://support.microsoft.com/kb/180162). Because of this,
+[dates must be checked for accuracy when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
+{: .callout}
+
+This serial number thing can actually be useful in some circumstances. By using
+the above functions we can easily add days, months or years to a given date.
+Say you had a research plan where you needed to conduct interviews with a 
+set of informants every ninety days for a year.
+In another cell, you could type:
+
+=B2+90
+
+And it would return
+
+30-Sep
+
+because it understands the date as a number `41822`, and `41822 + 90 = 41912`
+which Excel interprets as the 30th day of September, 2014. It retains the format (for the most
+part) of the cell that is being operated upon, (unless you did some sort of
+formatting to the cell before, and then all bets are off). Month and year
+rollovers are internally tracked and applied.
+
+## Regional date formating
 
 When you enter a date into a spreadsheet it looks like a date although the spreadsheet may 
 display different text from what you input. For example if you enter '7/12/88' into your
@@ -42,7 +80,7 @@ example data collected in January of multiple years with data collected in Febru
 
 > ## Separating dates into components
 >
-> Download and open the [dates.xlsx]((../data/dates.xlsx?raw=true) file. This file
+> Download and open the [dates.xlsx](../data/dates.xlsx?raw=true) file. This file
 > contains a subset of the data from the SAFI interviews, including the dates on which the 
 > interviews were conducted. 
 > 
@@ -87,65 +125,9 @@ example data collected in January of multiple years with data collected in Febru
 > {: .solution}
 {: .challenge}
 
-## Historical data
-
-Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data
-from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.
-If you’re working with historic data, be extremely careful with your dates!
-
-Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
-different serial number than the [1900 date system](https://support.microsoft.com/kb/180162). Because of this,
-[dates must be checked for accuracy when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
-
-## Data formats in spreadsheets
-
-Spreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.
-
-![Many formats, many ambiguities](../fig/excel_dates_1.jpg)
-
-But these "features" often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. 
-
-### Dates stored as integers
-
-The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
-
-(But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )
-
-This serial number thing can actually be useful in some circumstances. By using
-the above functions we can easily add days, months or years to a given date.
-Say you had a research plan where you needed to conduct interviews with a 
-set of informants every ninety days for a year.
-In another cell, you could type:
-    
-    =B2+90
-    
-And it would return
-
-    30-Sep
-
-because it understands the date as a number `41822`, and `41822 + 90 = 41912`
-which Excel interprets as the 30th day of September, 2014. It retains the format (for the most
-part) of the cell that is being operated upon, (unless you did some sort of
-formatting to the cell before, and then all bets are off). Month and year
-rollovers are internally tracked and applied.
-
-Which brings us to the many different ways Excel provides in how it displays dates. If you refer to the figure above, you’ll see that
-there are many ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not
-fully aware of which format you’re using, you can end up actually entering your data in a way that Excel will badly misinterpret. 
-
-> ## Exercise  
-> What happens to the dates in our dates.xlsx workbook if we save this sheet in Excel (in `csv` format) and then open the file in a plain text editor (like TextEdit or Notepad)? What happens to the dates if we then open the `csv` file in Excel?
-> > ## Solution
-> > - Click to the "dates" tab of the workbook and double-click on any of the values in the `Date collected` column. Notice that the dates display with the year 2015.   
-> > - Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`. Click `Save`.  
-> > - You will see a pop-up that says "This workbook cannot be saved in the selected file format because it contains multiple sheets." Choose `Save Active Sheet`.   
-> > - Navigate to the file in your finder application. Right click and select `Open With`. Choose a plain text editor application and view the file. Notice that the dates display as month/day without any year information.   
-> > - Now right click on the file again and open with Excel. Notice that the dates display with the current year, not 2015.   
-> > As you can see, exporting data from Excel and then importing it back into Excel fundamentally changed the data!  
-> {: .solution}
-{: .challenge}
-
-> ## Caution!
-> You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems if you use other software to manipulate the file.
+> ## Historical data
+> 
+> Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data
+> from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.
+> If you’re working with historic data, be extremely careful with your dates!
 {: .callout}
-
