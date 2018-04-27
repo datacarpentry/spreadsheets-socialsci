@@ -12,6 +12,7 @@ keypoints:
 - "Never modify your raw data. Always make a copy before making any changes."
 - "Keep track of all of the steps you take to clean your data."
 - "Organize your data according to tidy data principles."
+- "Record metadata in a separate plain text file."
 ---
 ## Data formatting problems
 
