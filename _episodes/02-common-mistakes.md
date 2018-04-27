@@ -20,8 +20,6 @@ keypoints:
 - "Record metadata in a separate plain text file."
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-
 ## Common Spreadsheet Errors
 
 This lesson is meant to be used as a reference for discussion as learners identify issues with the messy dataset discussed in the
@@ -39,9 +37,6 @@ There are a few potential errors to be on the lookout for in your own data as we
 - [Entering more than one piece of information in a cell](#info)
 - [Using problematic field names](#field_name)
 - [Using special characters in data](#special)
-- [Inclusion of metadata in data table](#metadata)
-- [Date formatting](../03-dates-as-data/)
-
 
 ## <a name="tables"></a> Using multiple tables
 
@@ -53,12 +48,11 @@ which sees each row as an observation. You’re also potentially using the same
 field name in multiple places, which will make it harder to clean your data up
 into a usable form. The example below depicts the problem:
 
-![multiple tabs](../fig/2_datasheet_example.jpg)
+![multiple tables](../fig/multiple-tables-example.png)
 
-In the example above, the computer will see (for example) row 4 and assume that all columns A-AF 
-refer to the same sample. This row actually represents four distinct samples 
-(sample 1 for each of four different collection dates - May 29th, June 12th, June 19th, and June 26th), 
-as well as some calculated summary statistics (an average (avr) and standard error of measurement (SEM)) for two of those samples. Other rows are similarly problematic.
+In the example above, the computer will see (for example) row 24 and assume that all columns A-J 
+refer to the same sample. This row actually represents two distinct samples 
+(information about livestock for informant 1 and information about plots for informant 2). Other rows are similarly problematic.
 
 ## <a name="tabs"></a> Using multiple tabs
 
@@ -86,8 +80,8 @@ Instead you can freeze the column headers so that they remain visible even when 
 ## <a name="zeros"></a> Not filling in zeros
 
 It might be that when you're measuring something, it's
-usually a zero, say the number of times a rabbit
-is observed in the survey. Why bother
+usually a zero, say the number of cows that an informant has, in a
+region where most farmers have goats and no cows. Why bother
 writing in the number zero in that column, when it's mostly zeros?
 
 However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured
@@ -108,18 +102,18 @@ analyze your data. It is essential to use a clearly defined and consistent null 
 Blanks (most applications) and NA (for R) are good choices. White et al, 2013, explain good choices for indicating null values for different software applications in their article:
 [Nine simple ways to make it easier to (re)use your data.](http://library.queensu.ca/ojs/index.php/IEE/article/view/4608/4898) Ideas in Ecology and Evolution.
 
-![White et al.](../fig/3_white_table_1.jpg)
+![White et al.](../fig/white_table_1.jpg)
 
 
 ## <a name="formatting"></a> Using formatting to convey information 
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
-![formatting](../fig/formatting.png)
+![formatting](../fig/bad-formatting.png)
 
 **Solution**: create a new field to encode which data should be excluded.
 
-![good formatting](../fig/good_formatting.png)
+![good formatting](../fig/better-formatting.png)
 
 
 ## <a name="formatting_pretty"></a> Using formatting to make the data sheet look pretty
@@ -141,6 +135,7 @@ cells. As described above for formatting, create another field if you need to ad
 cells: ideally, all the measurements you place in one column should be in the same unit, but if for some reason they aren’t, create
 another field and specify the units the cell is in.
 
+![comments in cells](../fig/comments-in-cells.png)
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
@@ -216,31 +211,3 @@ relational database, dangerous things may occur, such as lines being cut in half
 
 General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if
 it were a simple web form that can only contain text and spaces.
-
-
-## <a name="metadata"></a> Inclusion of metadata in data table
-
-**Example**: You add a legend at the top or bottom of your data table explaining column meaning, units, exceptions, etc.
-
-**Solution**: Recording data about your data (“metadata”) is essential. You may be on intimate terms with your dataset while you are 
-collecting and analysing it, but the chances that you will still remember that the variable "sglmemgp" means single member of group, for
-example, or the exact algorithm you used to transform a variable or create a derived one, after a few months, a year, or more are slim.  
-
-As well, there are many reasons other people may want to examine or use your data - to understand your findings, to verify your findings,
-to review your submitted publication, to replicate your results, to design a similar study, or even to archive your data for access and 
-re-use by others. While digital data by definition are machine-readable, understanding their meaning is a job for human beings. The 
-importance of documenting your data during the collection and analysis phase of your research cannot be overestimated, especially if your
-research is going to be part of the scholarly record.  
-
-However, metadata should not be contained in the data file itself. Unlike a table in a paper or a supplemental file, metadata (in the 
-form of legends) should not be included in a data file since this information is not data, and including it can disrupt how computer 
-programs interpret your data file. Rather, metadata should be stored as a separate file in the same directory as your data file, 
-preferably in plain text format with a name that clearly associates it with your data file. Because metadata files are free text format,
-they also allow you to encode comments, units, information about how null values are encoded, etc. that are important to document but can
-disrupt the formatting of your data file.  
-
-Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are 
-in; and whether they supercede or are superceded by previous files. A folder-level readme.txt file is the classic way of accounting for 
-all the files and folders in a project.  
-
-(Text on metadata adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).)
