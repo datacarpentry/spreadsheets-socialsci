@@ -1,20 +1,18 @@
 ---
 title: "Dates as data"
 teaching: 10
-exercises: 3
+exercises: 5
 questions:
 - "What are good approaches for handling dates in spreadsheets?"
 objectives:
-- "Describe how dates are stored and formatted in spreadsheets."
-- "Describe the advantages of alternative date formatting in spreadsheets."
-- "Demonstrate best practices for entering dates in spreadsheets."
+- "Recognise problematic or suspicious date formats."
+- "Use formulas to separate dates into their component values (e.g. Month, Day, Year)."
 keypoints:
-- "Treating dates as multiple pieces of data rather than one makes them easier to handle."
+- "Use extreme caution when working with date data."
+- "Splitting dates into their component values can make them easier to handle."
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-
-Dates in spreadsheets are stored in a single column. While this seems the
+Dates in spreadsheets are often stored in a single column. While this seems the
 most natural way to record dates, it actually is not best
 practice. A spreadsheet application will display the dates in a
 seemingly correct way (to a human observer) but how it actually handles
@@ -23,60 +21,75 @@ and stores the dates may be problematic.
 In particular, please remember that functions that are valid for a given
 spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice,
 Gnumeric, etc.) are usually guaranteed to be compatible only within the same
-famly of products. If you will later need to export the data and need to
+family of products. If you will later need to export the data and need to
 conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
 
-> ## Exercise 
+When you enter a date into a spreadsheet it looks like a date although the spreadsheet may 
+display different text from what you input. For example if you enter '7/12/88' into your
+Excel spreadsheet it may display as '07/12/1988' (depending on your version of Excel). These
+are different ways of formatting the same date. 
+
+Different countries write dates differently. If you are in the UK, for example, you will interpret
+the date above as the 7th day of December, however a research from the US will interpret the same entry as the 12th day of July. This regional variation is handled automatically by your
+spreadsheet program so that when you are typing in dates they appear as you would expect. If you 
+try to type in a US format date into a UK version of Excel, it may or may not be treated as a 
+date.
+
+This regional variation is one good reason to treat dates, not as a single data point, but as 
+three distinct pieces of data (month, day, and year). Separating dates into their component parts
+will avoid this confusion, while also giving the added benefit of allowing you to compare, for
+example data collected in January of multiple years with data collected in February of multiple years.
+
+> ## Separating dates into components
 >
-> Challenge: pulling month, day and year out of dates 
+> Download and open the [dates.xlsx]((../data/dates.xlsx?raw=true) file. This file
+> contains a subset of the data from the SAFI interviews, including the dates on which the 
+> interviews were conducted. 
+> 
+> Choose the tab of the spreadsheet that corresponds to the way you format dates in your
+> location (either day first `DD_MM_YEAR`, or month first `MM_DD_YEAR`). 
+> 
+> Extract the components of the date to new columns. For this we 
+> can use the built in Excel functions:
 >
-> - In the `dates` tab of your spreadsheet you have the data from 2014 plot 3. 
-> There's a `Date collected` column.
-> - Let’s extract month, day and year from the dates to new columns. For this we 
-> can use the built in Excel functions
+> `=MONTH()`    
+> `=DAY()`  
+> `=YEAR()`
 >
-> `MONTH()`    
-> `DAY()`  
-> `YEAR()`
+> Apply each of these formulas to its entire column. 
+> Make sure the new column is formatted as a number and not as a date.
 >
-> (Make sure the new column is formatted as a number and not as a date.)
->
-> You can see that even though you wanted the year to be 2014, your spreadsheet program
-> automatically interpreted it as 2015, the year you entered the data.
+> We now have each component of our date isolated in it's own column. This will allow us 
+> to group our data with respect to month, year, or day of month for our analyses and will
+> also prevent problems when passing data between different versions of spreadsheet 
+> software (as for example when sharing data with collaborators in different countries).
 >
 > > ## Solution
-> > ![dates, exersize 1](../fig/solution_exercise_1_dates.png)
-> > {: .output}
+> > ![dates exercise 1](../fig/solution_exercise_1_dates.png)
+> > 
+> > Note that this solution shows the dates in `MM_DD_YEAR` format. 
 > {: .solution}
 {: .challenge}
 
-> ## Exercise
+
+> ## Default year
 > 
-> Challenge: pulling hour, minute and second out of the current time 
->
-> Current time and date are best retrieved using the functions `NOW()`, which
-> returns the current date and time, and `TODAY()`, which returns the current
-> date. The results will be formatted according to your computer's settings.
+> Using the same spreadsheet you used for the previous exercise, add another data point
+> in the `interview_date` column by typing either `11/17` (if your location uses `MM/DD` formatting)
+> or `17/11` (if your location uses `DD/MM` formatting). The `Day`, `Month`, and `Year` columns
+> should populate for this new data point. What year is shown in the `Year` column?
 > 
-> 1) Extract the year, month and day from the current date and time string
-> returned by the `NOW()` function.  
-> 2) Calculate the current time using `NOW()-TODAY()`.   
-> 3) Extract the hour, minute and second from the current time using
-> functions `HOUR()`, `MINUTE()` and `SECOND()`.  
-> 4) Press `F9` to force the spreadsheet to recalculate the `NOW()` function,
-> and check that it has been updated.  
 > > ## Solution
-> > 1) To get the year, type `=YEAR(NOW())` into any cell in your spreadsheet. To get the month, type `=MONTH(NOW())`. To get the day, type `=DAY(NOW())`.  
-> > 2) Typing `=NOW()-TODAY()` will result in a decimal value that is not easily human parsable to a clock-based time. You will need to use the strategies in the third part of this challenge to convert this decimal value to readable time.  
-> > 3) To extract the hour, type `=HOUR(NOW()-TODAY())` and similarly for minute and second.  
+> > If no year is specified, the spreadsheet program will assume you mean the current year
+> > and will insert that value. This may be incorrect if you are working with historical data so
+> > be very cautious when working with data that does not have a year specified within its date
+> > variable.
 > {: .solution}
 {: .challenge}
 
-## Preferred date format
+## Historical data
 
-It is much safer to store dates with [MONTH, DAY and YEAR](#day) in separate columns or as [YEAR and DAY-OF-YEAR](#doy) in separate columns.
-
-**Note**: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data
+Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data
 from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.
 If you’re working with historic data, be extremely careful with your dates!
 
@@ -88,7 +101,7 @@ different serial number than the [1900 date system](https://support.microsoft.co
 
 Spreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.
 
-![Many formats, many ambiguities](../fig/5_excel_dates_1.jpg)
+![Many formats, many ambiguities](../fig/excel_dates_1.jpg)
 
 But these "features" often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. 
 
