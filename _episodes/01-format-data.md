@@ -200,7 +200,7 @@ all the files and folders in a project.
 (Text on metadata adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).)
 
 > ## Exercise
-> Download a [clean version of this dataset](../data/SAFI_messy.xlsx?raw=true). This data has many more variables that were not included in the messy spreadsheet and is formatted according to tidy data principles. 
+> Download a [clean version of this dataset](../data/SAFI_clean.csv?raw=true) and open the file with your spreadsheet program. This data has many more variables that were not included in the messy spreadsheet and is formatted according to tidy data principles. 
 > Discuss this data with a partner and make a list of some of the types of metadata that
 > should be recorded about this dataset. It may be helpful to start by asking
 > yourself, "What is not immediately obvious to me about this data? What 
