@@ -124,7 +124,9 @@ later in this workshop.
 > 
 > This is a real dataset, however, it has been simplified for this workshop.
 > If you're interested in exploring the full dataset further, but you can 
-> download it [from Figshare](FIXME add link) and work with it using exactly the same tools we’ll learn about today.  
+> download it from Figshare and work with it using exactly the same tools we’ll learn about today.  
+> 
+> For more information about the dataset and to download it from Figshare, check out the [Social Sciences workshop data page](http://www.datacarpentry.org/socialsci-workshop/data).
 {: .callout}
 
 
