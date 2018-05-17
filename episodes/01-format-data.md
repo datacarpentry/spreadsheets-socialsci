@@ -1,7 +1,7 @@
 ---
 title: "Formatting data tables in Spreadsheets"
 teaching: 15
-exercises: 20
+exercises: 15
 questions:
 - "What are some common challenges with formatting data in spreadsheets and how can we avoid them?"
 objectives:
