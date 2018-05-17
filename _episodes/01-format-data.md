@@ -156,7 +156,10 @@ you want to be able to start analyzing the data.
 > {: .solution}
 {: .challenge}
 
-An excellent reference on spreadsheet organization, in particular with regard to R scripting is:
+Two excellent references on spreadsheet organization are:
+
+> Karl W. Broman & Kara H. Woo, *Data Organization in Spreadsheets*, Vol. 72, Issue 1, 2018, The American Statistician.
+> [https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 
 > Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
 > Statistical Software. [http://www.jstatsoft.org/v59/i10](http://www.jstatsoft.org/v59/i10).
