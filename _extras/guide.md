@@ -1,74 +1,113 @@
-## Setup
+---
+layout: page
+title: "Instructor Notes"
+permalink: /guide/
+---
 
-There is no specific setup requied for this lesson, although it is assumed that Excel will be available. 
-Providing Excel files can be opened in some spreadsheet system most of the examples should work. 
-Episode 2 makes more exteensive use of Excel formulas, I do not know how well they translate to other systems. But the whole episode is an Instructor led walkthrough.
+## Instructor notes
 
+## Lesson motivation and learning objectives
 
-## The datasets used
+The purpose of this lesson is not to teach how to do data analysis in spreadsheets, 
+but to teach good data organization and how to do some data cleaning and 
+quality control in a spreadsheet program.
 
-All of the datasets used have been placed in the data folder.
+## Lesson design
 
-They should be downloaded to the local machine before use.
+#### [Introduction](../00-intro/)
 
+* Introduce that we're teaching data organization, and that we're using
+spreadsheets, because most people do data entry in spreadsheets or 
+have data in spreadsheets.
+* Emphasize that we are teaching good practice in data organization and that
+this is the foundation of their research practice. Without organized and clean
+data, it will be difficult for them to apply the things we're teaching in the
+rest of the workshop to their data.
+* Much of their lives as a researcher will be spent on this 'data wrangling' stage, but
+some of it can be prevented with good strategies for data collection up front.
+* Tell that we're not teaching data analysis or plotting in spreadsheets, because it's
+very manual and also not reproducible. That's why we're teaching SQL, R, Python!
+* Now let's talk about spreadsheets, and when we say spreadsheets, we mean any program that
+does spreadsheets like Excel or LibreOffice. Most learners are probably using Excel.
+* Ask the audience any things they've accidentally done in spreadsheets. Talk about an example of your own, like that you accidentally sorted only a single column and not the rest
+of the data in the spreadsheet. What are the pain points!?
+* As people answer highlight some of these issues with spreadsheets
 
+#### [Formatting data](../01-format-data/)
 
-## The Lessons
+* Go through the point about keeping track of your steps and keeping raw data raw
+* Go through the cardinal rule of spreadsheets about columns, rows and cells
+* Hand them a messy data file and have them pair up and work together to clean up the data.
+*Give them 15 minutes to do this.*
+* Ask for what people did to clean the data. As they bring up different points you can
+refer to them in the [Common formatting problems](../02-common-mistakes/) file, or expand a bit on the point they brought up.
+All these mistakes are present in the messy
+dataset.
+* If you get a response where they've fixed the date, you can pause and go to the
+[dates](../03-dates-as-data/) lesson. Or you can say you'll come back to dates at the end. 
+There's an exercise in that file about how to change the
+date into three columns using Excel's built in MONTH, DAY, YEAR functions. Have them
+run through that exercise. 
 
-[Creating data tables in a spreadsheet](link)
+#### [Common formatting problems](../02-common-mistakes/)
 
-This episode covers general problems with spreadsheets and provides some best practice advice when creating your own.
+* **Don't go through this chapter** except to refer to as responses to the exercise in
+the previous chapter.
 
-There is an invitation to research spreadsheet failures 
+#### [Dates as data](../03-dates-as-data/)
 
-[Re-formatting a spreadsheet report](link)
+* Do the exercise and make the point about dates either in reponse to a learner bringing
+up date as an issue during the responses, or at the end of the response time.
 
-This episode starts with the observation that you sometimes have to deal with other people less than perfect spreadsheet.
+#### [Quality assurance](../04-quality-assurance/)
 
-Using a 'spreadsheet' designed as a report, a set of instructions are provided to make it more useable.
+The challenge with this lesson is that the instructor's version of the spreadsheet software is going to look different than about half the room's. It makes
+it challenging to show where you can find menu options and navigate through.
 
-Thisis intended as a walkthrough exercise with the instructor.
+Instead discuss the concepts of quality control, and how things like sorting can help you find outliers in your data.
 
-Some knowledge of using Excel formulas might be useful, butthe steps are small and explained. 
+#### [Exporting data](../05-exporting-data/)
 
-[Formatting problems](link)
+* Have the students export their cleaned data as CSV. Reiterate again the need for
+data in this format for the other tools we'll be using.
 
-This episode uses a created spreadsheet loosley based on SAFI data to illustrate a variety of bad practices
+#### Concluding points
 
-It is essentially a single exercise to spot as many as possible and the solution is the explanation of what they are and why you should avoid them.
+* Now your data is organized so that a computer can read and understand it. This
+let's you use the full power of the computer for your analyses as we'll see in the
+rest of the workshop. 
+* While your data is now neatly organized, it still might have errors or missing data
+or other problems. It's like you put all your data in the right drawers, but the
+drawers might still be messy. The next lesson is going to teach you OpenRefine which 
+is great for data cleaning and for some of the quality control that we touched on 
+in this lesson. It also has the advantage that it automatically keeps track of the
+steps you take. 
 
-There is also a discussion of Metadata, what it is and why in general it should be seperate from the actual data. It is illustrated by reference to the SN7577 data dictionary.
+## Technical tips and tricks
 
-[Dates and date formatting](link)
+Provide information on setting up your environment for learners to view your 
+live coding (increasing text size, changing text color, etc), as well as 
+general recommendations for working with coding tools to best suit the 
+learning environment.
 
-The internal representation of dates and the external presentation of dates are discussed.
+## Common problems
 
-Various ways of getting dates wrong are covered, especially when reading in from a file.
+#### Excel looks and acts different on different operating systems
 
-Ways of influencing how dates are imported are shown.
+The main challenge with this lesson is that Excel looks very different and how you
+do things is even different between Mac and PC, and between different versions of
+Excel. So, the presenter's environment will only be the same as some of the learners. 
 
-Various Excel date manipulation functions are demonstrated. 
+We need better notes and screenshots of how things work on both Mac and PC. But we
+likely won't be able to cover all the different versions of Excel. 
 
-The effects of treating dates as strings is illustrated.
+If you have a helper who has experience with the other OS than you, it would be good
+to prep them to help with this lesson and tell how people to do things in the other OS.
 
-[Quality control](link)
+#### People are not interactive or responsive on the Exercise
 
-This episode is rather Excel specific. It describes the data input and data validation fucntionality of Excel, as well as the use of Data tables.
-
-Other Spreadsheet programs may have something similar.
-
-The benefits of data validation on input are explained.
-
-[Exporting data](link)
-
-This episode covers the Excel file storage format. And explains how you can dissect it.
-
-It explains the advantage of saving files to csv format and shows how to do it.
-
-It covers some of the things that can go wrong with csv formatted files.
-
-An example of adding the filename of the spreadsheet as part of the data of the spreadsheet is shown.
-This requires quite complex manipulation of Excel formulas and use of string functions. You could stop after the '=CELL("filename") step if you wanted.
-
-
+This lesson depends on people working on the exercise and responding with things
+that are fixed. If your audience is reluctant to participate, start out with
+some things on your own, or ask a helper for their answers. This generally gets
+even a reluctant audience started. 
 
