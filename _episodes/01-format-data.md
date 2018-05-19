@@ -134,7 +134,8 @@ later in this workshop.
 > 
 > For more information about the dataset and to download it from Figshare, check
 out the [Social Sciences workshop data
-page](http://www.datacarpentry.org/socialsci-workshop/data). {: .callout}
+page](http://www.datacarpentry.org/socialsci-workshop/data).
+{: .callout}
 
 
 > ## Exercise
