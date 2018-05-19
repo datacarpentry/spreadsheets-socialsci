@@ -40,16 +40,16 @@ We will look at two examples:
 
 ### Restricting data to a numeric range
 
-Looking again at the [clean version of the SAFI dataset](../data/SAFI_clean.csv?raw=true), we see that there are several columns
-with numeric data. One example of this is the column `no_membrs`
-representing the number of people in the household. We would expect
-this always to be a positive integer, and so we should reject values
-like `1.5` and `-8` as entry errors. We would also reject values 
-over a certain maximum - for example and entry like `90` is probably
-the result of the researcher inputting `9` and their finger slipping
-and also hitting the `0` key. It is up to you as the researcher to
-decide what a reasonable maximum value would be for your data, here
-we will assume that there are no families with greater than 30 members. 
+Looking again at the [clean version of the SAFI
+dataset](https://ndownloader.figshare.com/files/11492171), we see that there are
+several columns with numeric data. One example of this is the column `no_membrs`
+representing the number of people in the household. We would expect this always
+to be a positive integer, and so we should reject values like `1.5` and `-8` as
+entry errors. We would also reject values over a certain maximum - for example
+and entry like `90` is probably the result of the researcher inputting `9` and
+their finger slipping and also hitting the `0` key. It is up to you as the
+researcher to decide what a reasonable maximum value would be for your data,
+here we will assume that there are no families with greater than 30 members.
 
 
 1\. Select the `no_membrs` column.
