@@ -72,13 +72,20 @@ An important note for backwards compatibility: you can open CSV files in Excel!
 {: .callout}
 
 
-> ## Caveats on commas
+> ## What to do when your data contain commas
 > 
-> In some datasets, the data values themselves may include commas (,). In that case, the software which you use (including Excel)
-> will most likely incorrectly display the data in columns. This is because the commas which are a part of the data values will be
-> interpreted as delimiters.
+> In some datasets, the data values themselves may include commas (,). In that
+> case, you need to make sure that the commas are properly escaped when saving
+> the file. Otherwise, the software which you use (including Excel) will most
+> likely incorrectly display the data in columns. This is because the commas
+> which are a part of the data values will be interpreted as delimiters.
 >
-> If you are working with data that contains commas, you likely will need to use another delimiter when working in a spreadsheet. In this
-> case, consider using tabs as your delimiter and working with TSV files. TSV files can be exported from spreadsheet
-> programs in the same way as CSV files. For more of a discussion on data formats and potential issues with commas within datasets see [the Ecology Spreadsheets lesson discussion page](http://www.datacarpentry.org/spreadsheet-ecology-lesson/discuss/).
-{: .callout}
+> If you are working with data that contains commas, the fields should be
+> enclosed with double quotes. The spreadsheet software should do the right
+> thing ([LibreOffice](https://www.libreoffice.org/download/download/) provides
+> comprehensive options to import and export CSV files). However, it is always a
+> good idea to double check that the file you are exporting can be read in
+> correctly. For more of a discussion on data formats and potential issues with
+> commas within datasets see [the Ecology Spreadsheets lesson discussion
+> page](http://www.datacarpentry.org/spreadsheet-ecology-lesson/discuss/). {:
+> .callout}
