@@ -124,7 +124,7 @@ later in this workshop.
 > countries in eastern sub-Saharan Africa (Mozambique and Tanzania). These
 > interviews were conducted between November 2016 and June 2017 and probed
 > household features (e.g. construction materials used, number of household
-> members), agricultrual practices (e.g. water usage), and assets (e.g. number
+> members), agricultural practices (e.g. water usage), and assets (e.g. number
 > and types of livestock).
 > 
 > This is a real dataset, however, it has been simplified for this workshop. If

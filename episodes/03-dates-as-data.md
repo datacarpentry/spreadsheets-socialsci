@@ -60,7 +60,7 @@ part) of the cell that is being operated upon, (unless you did some sort of
 formatting to the cell before, and then all bets are off). Month and year
 rollovers are internally tracked and applied.
 
-## Regional date formating
+## Regional date formatting
 
 When you enter a date into a spreadsheet it looks like a date although the spreadsheet may 
 display different text from what you input. For example if you enter '7/12/88' into your
