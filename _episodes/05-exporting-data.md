@@ -89,3 +89,5 @@ An important note for backwards compatibility: you can open CSV files in Excel!
 > commas within datasets see [the Ecology Spreadsheets lesson discussion
 > page](http://www.datacarpentry.org/spreadsheet-ecology-lesson/discuss/). {:
 > .callout}
+
+{% include links.md %}
