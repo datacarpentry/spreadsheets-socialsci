@@ -27,7 +27,7 @@ Excel allows us to specify a variety of data validations to be applied to cell c
 If the validation fails an error is raised and the data we entered does not go into the particular cell.
 In addition to providing validation when we enter data, Excel allows us to add validations to data that has already been entered.
 The validation is not applied retrospectively, so that data are removed.
-Instead, if a partcular cell would fail the validation check a triangle is placed in the top left corner of the cell as a warning.
+Instead, if a particular cell would fail the validation check a triangle is placed in the top left corner of the cell as a warning.
 
 We will be working with a couple of examples of data validation
 rules but many others exist. For an overview of data validation rules
