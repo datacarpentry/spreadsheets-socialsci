@@ -87,7 +87,7 @@ An important note for backwards compatibility: you can open CSV files in Excel!
 > good idea to double check that the file you are exporting can be read in
 > correctly. For more of a discussion on data formats and potential issues with
 > commas within datasets see [the Ecology Spreadsheets lesson discussion
-> page](http://www.datacarpentry.org/spreadsheet-ecology-lesson/discuss/). {:
-> .callout}
+> page](http://www.datacarpentry.org/spreadsheet-ecology-lesson/discuss/).
+{: .callout}
 
 {% include links.md %}
