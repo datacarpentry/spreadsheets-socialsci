@@ -195,3 +195,5 @@ relational database, dangerous things may occur, such as lines being cut in half
 
 General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if
 it were a simple web form that can only contain text and spaces.
+
+{% include links.md %}

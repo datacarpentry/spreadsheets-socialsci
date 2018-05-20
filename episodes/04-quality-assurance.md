@@ -148,3 +148,5 @@ If you type a value which is not on the list you will get an error message. This
 > data validation rules for each column when you set up your 
 > spreadsheet (i.e. before you enter any data). 
 {: .callout}
+
+{% include links.md %}

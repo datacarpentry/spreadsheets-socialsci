@@ -131,3 +131,5 @@ example data collected in January of multiple years with data collected in Febru
 > from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.
 > If you’re working with historic data, be extremely careful with your dates!
 {: .callout}
+
+{% include links.md %}
