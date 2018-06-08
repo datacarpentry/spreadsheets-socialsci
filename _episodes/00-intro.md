@@ -62,7 +62,7 @@ Generating statistics and figures in spreadsheets, should be done with caution.
 The graphical, drag and drop nature of spreadsheet programs means that it can be very difficult, if not impossible, to replicate your steps (much less retrace anyone else’s).
 This is particularly true if your stats or figures require complex calculations.
 Furthermore, when performing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells.
-This often makes it to demonstrate data quality and consistency in our analysis.
+This often makes it difficult to demonstrate data quality and consistency in our analysis.
 
 Even when we are aware of some of the limitations that data in spreadsheets presents,
 often we have inherited spreadsheets from another colleague or data provider.
