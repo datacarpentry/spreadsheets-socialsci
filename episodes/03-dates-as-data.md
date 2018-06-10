@@ -39,7 +39,7 @@ The first thing you need to know is that Excel stores dates as numbers - see the
 > ## Excel's date systems
 > Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
 different serial number than the [1900 date system](https://support.microsoft.com/kb/180162). Because of this,
-[dates must be checked for accuracy when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
+[dates must be checked for accuracy when exporting data from Excel](http://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
 {: .callout}
 
 This serial number thing can actually be useful in some circumstances. By using
