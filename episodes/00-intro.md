@@ -17,7 +17,7 @@ keypoints:
 > or Numbers.
 > If you do not have a spreadsheet program, install one using the instructions
 > in the link below.
-> * [Instructions to install a spreadsheet program.]({{site.baseurl}}/setup/)
+> * [Instructions to install a spreadsheet program.]({{site.baseurl}}/setup.html)
 >
 {: .prereq}
 
