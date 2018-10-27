@@ -28,12 +28,16 @@ title: Setup
 > To interact with spreadsheets, we can use LibreOffice, Microsoft Excel,
 > Gnumeric, or other programs. Commands may differ a bit between programs, but
 > the general ideas for thinking about spreadsheets are the same.
-> 
+>
 > For this lesson, if you don't have a spreadsheet program already, you can use
 > LibreOffice. It's a free, open source spreadsheet program.
-> 
+>
+> macOS users who use Apple's Numbers application should note that it does not
+> contain some of the features (particularly data validation) that we will
+> be using. Please use LibreOffice or Microsoft Excel instead.
+>
 > #### Windows
-> 
+>
 > - Download the Installer
 > - Install LibreOffice by going to [the installation
 >   page](https://www.libreoffice.org/download/libreoffice-fresh/). The version
@@ -42,18 +46,18 @@ title: Setup
 > - Install LibreOffice
 > - Once the installer is downloaded, double click on it and LibreOffice should
 >   install.
-> 
+>
 > #### Mac OS X
-> 
+>
 > - Download the Installer
 >  - Install LibreOffice by going to [the installation
 >    page](https://www.libreoffice.org/download/libreoffice-fresh/). The version
 >    for Mac should automatically be selected. Click Download Version X.X.X
->    (whichever is the most recent version). 
+>    (whichever is the most recent version).
 > - Install LibreOffice
 > - Once the installer is downloaded, double click on it and LibreOffice should
 >   install.
-> 
+>
 > #### Linux
 >
 > - Download the Installer
