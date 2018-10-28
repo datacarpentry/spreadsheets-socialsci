@@ -8,8 +8,8 @@ permalink: /guide/
 
 ## Lesson motivation and learning objectives
 
-The purpose of this lesson is not to teach how to do data analysis in spreadsheets, 
-but to teach good data organization and how to do some data cleaning and 
+The purpose of this lesson is not to teach how to do data analysis in spreadsheets,
+but to teach good data organization and how to do some data cleaning and
 quality control in a spreadsheet program.
 
 ## Lesson design
@@ -17,7 +17,7 @@ quality control in a spreadsheet program.
 #### [Introduction](../00-intro/)
 
 * Introduce that we're teaching data organization, and that we're using
-spreadsheets, because most people do data entry in spreadsheets or 
+spreadsheets, because most people do data entry in spreadsheets or
 have data in spreadsheets.
 * Emphasize that we are teaching good practice in data organization and that
 this is the foundation of their research practice. Without organized and clean
@@ -39,15 +39,18 @@ of the data in the spreadsheet. What are the pain points!?
 * Go through the cardinal rule of spreadsheets about columns, rows and cells
 * Hand them a messy data file and have them pair up and work together to clean up the data.
 *Give them 15 minutes to do this.*
+* Learners who are using LibreOffice for the workshop will have problems with the dataset
+as the default for LibreOffice is to treat tabs, commas, and semicolons as delimiters. This
+can be fixed when opening LibreOffice by deselecting the "semicolons" and "tabs" checkboxes.
 * Ask for what people did to clean the data. As they bring up different points you can
 refer to them in the [Common formatting problems](../02-common-mistakes/) file, or expand a bit on the point they brought up.
 All these mistakes are present in the messy
 dataset.
 * If you get a response where they've fixed the date, you can pause and go to the
-[dates](../03-dates-as-data/) lesson. Or you can say you'll come back to dates at the end. 
+[dates](../03-dates-as-data/) lesson. Or you can say you'll come back to dates at the end.
 There's an exercise in that file about how to change the
 date into three columns using Excel's built in MONTH, DAY, YEAR functions. Have them
-run through that exercise. 
+run through that exercise.
 
 #### [Common formatting problems](../02-common-mistakes/)
 
@@ -58,6 +61,10 @@ the previous chapter.
 
 * Do the exercise and make the point about dates either in response to a learner bringing
 up date as an issue during the responses, or at the end of the response time.
+* If learners are using a non-English language version of Excel, the `=MONTH()`, `=DAY()`, and other date
+functions won't work for them. They will need to type in their language's equivalent of that word in the formula.
+* The spreadsheet for this episode has two tabs. The first tab is data stored as `DD-MM-YYYY`,
+the second is `MM-DD-YYYY`. If learners use the wrong tab for their location, they will get a `#VALUE` error.
 
 #### [Quality assurance](../04-quality-assurance/)
 
@@ -75,19 +82,19 @@ data in this format for the other tools we'll be using.
 
 * Now your data is organized so that a computer can read and understand it. This
 let's you use the full power of the computer for your analyses as we'll see in the
-rest of the workshop. 
+rest of the workshop.
 * While your data is now neatly organized, it still might have errors or missing data
 or other problems. It's like you put all your data in the right drawers, but the
-drawers might still be messy. The next lesson is going to teach you OpenRefine which 
-is great for data cleaning and for some of the quality control that we touched on 
+drawers might still be messy. The next lesson is going to teach you OpenRefine which
+is great for data cleaning and for some of the quality control that we touched on
 in this lesson. It also has the advantage that it automatically keeps track of the
-steps you take. 
+steps you take.
 
 ## Technical tips and tricks
 
-Provide information on setting up your environment for learners to view your 
-live coding (increasing text size, changing text color, etc), as well as 
-general recommendations for working with coding tools to best suit the 
+Provide information on setting up your environment for learners to view your
+live coding (increasing text size, changing text color, etc), as well as
+general recommendations for working with coding tools to best suit the
 learning environment.
 
 ## Common problems
@@ -96,18 +103,22 @@ learning environment.
 
 The main challenge with this lesson is that Excel looks very different and how you
 do things is even different between Mac and PC, and between different versions of
-Excel. So, the presenter's environment will only be the same as some of the learners. 
+Excel. So, the presenter's environment will only be the same as some of the learners.
 
 We need better notes and screenshots of how things work on both Mac and PC. But we
-likely won't be able to cover all the different versions of Excel. 
+likely won't be able to cover all the different versions of Excel.
 
 If you have a helper who has experience with the other OS than you, it would be good
 to prep them to help with this lesson and tell how people to do things in the other OS.
+
+#### Apple Numbers
+Apple Numbers does not have data validation, which is needed for part of this lesson. A note
+is included in the setup instructions pointing Numbers users to either Microsoft Excel
+or LibreOffice.
 
 #### People are not interactive or responsive on the Exercise
 
 This lesson depends on people working on the exercise and responding with things
 that are fixed. If your audience is reluctant to participate, start out with
 some things on your own, or ask a helper for their answers. This generally gets
-even a reluctant audience started. 
-
+even a reluctant audience started.
