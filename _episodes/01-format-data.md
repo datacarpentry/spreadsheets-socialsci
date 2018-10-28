@@ -16,7 +16,7 @@ keypoints:
 ---
 ## Data formatting problems
 
-The most common mistake made is treating spreadsheet programs like lab notebooks, that is, 
+The most common mistake made is treating spreadsheet programs like lab notebooks, that is,
 relying on context, notes in the margin,
 spatial layout of data and fields to convey information. As humans, we
 can (usually) interpret these things, but computers don't view information the same way, and
@@ -24,9 +24,9 @@ unless we explain to the computer what every single thing means (and
 that can be hard!), it will not be able to see how our data fit
 together.
 
-Using the power of computers, we can manage and analyze data in much more 
+Using the power of computers, we can manage and analyze data in much more
 effective and faster ways, but to use that power, we have to set up
-our data for the computer to be able to understand it (and computers are very 
+our data for the computer to be able to understand it (and computers are very
 literal).
 
 This is why it’s extremely important to set up well-formatted
@@ -56,7 +56,7 @@ what you did when Reviewer #3 asks for a different analysis, you should
 
 - create a new file or tab with your cleaned or analyzed data. Don't modify
 the original dataset, or you will never know where you started!
-- keep track of the steps you took in your clean up or analysis. You should track 
+- keep track of the steps you took in your clean up or analysis. You should track
 these steps as you would any step in an experiment. You can
 do this in another text file, or a good option is to create a new tab in your spreadsheet
 with your notes. This way the notes and data stay together.
@@ -80,36 +80,36 @@ The cardinal rules of using spreadsheet programs for data:
    ensures that anyone can use the data, and is required by
    most data repositories.
 
-For instance, we're going to be working with data from a study of 
+For instance, we're going to be working with data from a study of
 agricultural practices among farmers in two countries in eastern
 sub-Saharan Africa (Mozambique and Tanzania). Researchers conducted
-interviews with farmers in these countries to collect data on 
-household statistics (e.g. number of household members, 
-number of meals eaten per day, availability of water), 
-farming practices (e.g. water usage), and assets (e.g. number of farm plots, 
+interviews with farmers in these countries to collect data on
+household statistics (e.g. number of household members,
+number of meals eaten per day, availability of water),
+farming practices (e.g. water usage), and assets (e.g. number of farm plots,
 number of livestock). They also recorded the dates and locations of
-each interview. 
+each interview.
 
 If they were to keep track of the data like this:
 
 ![multiple-info example](../fig/multiple-info.png)
 
 the problem is that number of livestock and type of livestock are in
-the same field. So, if they wanted to 
+the same field. So, if they wanted to
 look at the average number of livestock owned, or the average number of each type
 of livestock,
 it would be hard to do this using this data setup. If instead we put the count
-of each type of livestock in it's own column, this would make analysis 
-much easier. The rule of thumb, when setting up a datasheet, is that each 
-variable (in this case, each type of livestock) should have its own column, 
-each observation should have its own row, and each cell should contain only a 
-single value. Thus, the example above should look like this: 
+of each type of livestock in it's own column, this would make analysis
+much easier. The rule of thumb, when setting up a datasheet, is that each
+variable (in this case, each type of livestock) should have its own column,
+each observation should have its own row, and each cell should contain only a
+single value. Thus, the example above should look like this:
 
 ![single-info example](../fig/single-info.png)
 
 Notice that this now allows us to make statements about the number of each type of
-animal that a farmer owns, while still allowing us to say things about the 
-total number of livestock. All we need to do is sum the values in each row to 
+animal that a farmer owns, while still allowing us to say things about the
+total number of livestock. All we need to do is sum the values in each row to
 find a total. We'll be learning how to do this computationally and reproducibly
 later in this workshop.
 
@@ -126,24 +126,30 @@ later in this workshop.
 > household features (e.g. construction materials used, number of household
 > members), agricultural practices (e.g. water usage), and assets (e.g. number
 > and types of livestock).
-> 
+>
 > This is a real dataset, however, it has been simplified for this workshop. If
 > you're interested in exploring the full dataset further, but you can download
 > it from Figshare and work with it using exactly the same tools we’ll learn
 > about today.
-> 
+>
 > For more information about the dataset and to download it from Figshare, check
 out the [Social Sciences workshop data
 page](http://www.datacarpentry.org/socialsci-workshop/data).
 {: .callout}
 
+> ## LibreOffice Users
+> The default for LibreOffice is to treat tabs, commas, and semicolons as delimiters.
+> This behavior can cause problems with both the data for this lesson and other data
+> you might want to use. This can be fixed when opening LibreOffice by deselecting
+> the "semicolons" and "tabs" checkboxes.
+{: .callout}
 
 > ## Exercise
-> 
+>
 > We're going to take a messy version of the SAFI data and describe how we would clean it up.
 >
 > 1. Download the [messy data](https://ndownloader.figshare.com/files/11502824).
-> 2. Open up the data in a spreadsheet program. 
+> 2. Open up the data in a spreadsheet program.
 > 3. Notice that there are two tabs. Two researchers conducted the interviews,
 >    one in Mozambique and the other in Tanzania. They both structured their
 >    data tables in a different way. Now, you're the person in charge of this
@@ -154,10 +160,10 @@ page](http://www.datacarpentry.org/socialsci-workshop/data).
 >
 > **Important** Do not forget our first piece of advice, to create a new file
 > (or tab) for the cleaned data, never modify your original (raw) data.
-> 
+>
 > After you go through this exercise, we'll discuss as a group what was wrong
-> with this data and how you would fix it. 
-> 
+> with this data and how you would fix it.
+>
 > > ## Solution
 > >
 > > - Take about 10 minutes to work on this exercise.
@@ -170,52 +176,69 @@ page](http://www.datacarpentry.org/socialsci-workshop/data).
 {: .challenge}
 
 > ## Handy References
-> 
+>
 > Two excellent references on spreadsheet organization are:
-> 
+>
 > * Karl W. Broman & Kara H. Woo, *Data Organization in Spreadsheets*, Vol. 72,
 > Issue 1, 2018, The American Statistician.
 > <https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989>
-> 
+>
 > * Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
-> Statistical Software. <http://www.jstatsoft.org/v59/i10> 
+> Statistical Software. <http://www.jstatsoft.org/v59/i10>
 {: .callout}
 
 ### Metadata
 
 Recording data about your data (“metadata”) is essential. You may be on intimate
-terms with your dataset while you are 
-collecting and analysing it, but the chances that you will still remember 
+terms with your dataset while you are
+collecting and analysing it, but the chances that you will still remember
 the exact wording of the question you asked about your
 informants' water use (the data recorded in the column `water use`), for
 example, are slim.  
 
 As well, there are many reasons other people may want to examine or use your data - to understand your findings, to verify your findings,
-to review your submitted publication, to replicate your results, to design a 
-similar study, or even to archive your data for access and 
-re-use by others. While digital data by definition are machine-readable, 
-understanding their meaning is a job for human beings. The 
-importance of documenting your data during the collection and analysis phase of 
+to review your submitted publication, to replicate your results, to design a
+similar study, or even to archive your data for access and
+re-use by others. While digital data by definition are machine-readable,
+understanding their meaning is a job for human beings. The
+importance of documenting your data during the collection and analysis phase of
 your research cannot be overestimated, especially if your
 research is going to be part of the scholarly record.  
 
-However, metadata should not be contained in the data file itself. Unlike a table 
-in a paper or a supplemental file, metadata (in the 
-form of legends) should not be included in a data file since this information is 
-not data, and including it can disrupt how computer 
-programs interpret your data file. Rather, metadata should be stored as a 
-separate file in the same directory as your data file, 
-preferably in plain text format with a name that clearly associates it with your 
+However, metadata should not be contained in the data file itself. Unlike a table
+in a paper or a supplemental file, metadata (in the
+form of legends) should not be included in a data file since this information is
+not data, and including it can disrupt how computer
+programs interpret your data file. Rather, metadata should be stored as a
+separate file in the same directory as your data file,
+preferably in plain text format with a name that clearly associates it with your
 data file. Because metadata files are free text format,
-they also allow you to encode comments, units, information about how null values 
+they also allow you to encode comments, units, information about how null values
 are encoded, etc. that are important to document but can
 disrupt the formatting of your data file.  
 
-Additionally, file or database level metadata describes how files that make up 
-the dataset relate to each other; what format are they are 
-in; and whether they supercede or are superceded by previous files. A 
-folder-level readme.txt file is the classic way of accounting for 
+Some of this information may be familiar to learners who conduct analyses on
+survey data or other data sets that come with codebooks. Codebooks will often
+describe the way a variable has been constructed, what prompt was associated with
+it in an survey or interview, and what the meaning of various values are. For example,
+the [General Social Survey](http://gss.norc.org) maintains their entire codebook online.
+Looking at an entry for a particular variable, such as
+[the variable `SEX`](https://gssdataexplorer.norc.org/variables/81/vshow), provides
+valuable information about what survey waves the variable covers, and the meaning
+of particular values.
+
+Additionally, file or database level metadata describes how files that make up
+the dataset relate to each other; what format are they are
+in; and whether they supersede or are superseded by previous files. A
+folder-level readme.txt file is the classic way of accounting for
 all the files and folders in a project.  
+
+Metadata are most useful when they follow a standard. For example, the
+[Data Documentation Initiative (DDI)](http://www.ddialliance.org) provides a
+standardized way to document metadata at various points in the research cycle.
+Research librarians may have specific expertise in this area, and can be
+helpful resources for thinking about ways to purposefully document metatdata
+as part of your research.
 
 (Text on metadata adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).)
 
@@ -235,8 +258,8 @@ all the files and folders in a project.
 >
 > > ## Solution
 > >
-> > Some types of metadata that should be recorded and made available with the 
-> > data are: 
+> > Some types of metadata that should be recorded and made available with the
+> > data are:
 > > - the exact wording of questions used in the interviews (if interviews were
 > structured) or general prompts used (if interviews were semi-structured)
 > > - a description of the type of data allowed in each column (e.g. the allowed
