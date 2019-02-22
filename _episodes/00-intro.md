@@ -71,11 +71,11 @@ or entry of the data within it.
 Nevertheless it is important to be aware of the limitations these data may present, and know how to assess if any problems are present and how to overcome them.
 
 > ## What this lesson will not teach you
-> 
+>
 > - How to do *statistics* in a spreadsheet
 > - How to do *plotting* in a spreadsheet
 > - How to *write code* in spreadsheet programs
-> 
+>
 > If you're looking to do this, a good reference is
 > [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O'Reilly
 {: .callout}
@@ -89,11 +89,11 @@ Nevertheless it is important to be aware of the limitations these data may prese
 
 ### Using Spreadsheets for Data Entry and Cleaning
 
-However, there are circumstances where you might want to use a spreadsheet 
-program to produce “quick and dirty” calculations or figures, and some of 
-these features can be used in data cleaning, prior to importation into a 
-statistical analysis program. We will show you how to use some features of 
-spreadsheet programs to check your data quality along the way and produce 
+However, there are circumstances where you might want to use a spreadsheet
+program to produce “quick and dirty” calculations or figures, and some of
+these features can be used in data cleaning, prior to importation into a
+statistical analysis program. We will show you how to use some features of
+spreadsheet programs to check your data quality along the way and produce
 preliminary summary statistics.
 
 In this lesson, we will assume that you are most likely using Excel as
@@ -107,5 +107,31 @@ In this lesson we're going to talk about:
 3. [Dates as data](../03-dates-as-data/)
 4. [Quality control](../04-quality-assurance/)
 5. [Exporting data](../05-exporting-data/)
+
+
+
+> ## Introduce the Data
+>
+> If not already discussed, introduce the dataset that will be used in this
+> lesson, and in the other Social Sciences lessons, the [Studying African
+> Farmer-led Irrigation (SAFI)
+> Dataset](http://www.datacarpentry.org/socialsci-workshop/data).
+>
+> The data used in these lessons are taken from interviews of farmers in two
+> countries in eastern sub-Saharan Africa (Mozambique and Tanzania). These
+> interviews were conducted between November 2016 and June 2017 and probed
+> household features (e.g. construction materials used, number of household
+> members), agricultural practices (e.g. water usage), and assets (e.g. number
+> and types of livestock).
+>
+> This is a real dataset, however, it has been simplified for this workshop. If
+> you're interested in exploring the full dataset further, but you can download
+> it from Figshare and work with it using exactly the same tools we’ll learn
+> about today.
+>
+> For more information about the dataset and to download it from Figshare, check
+out the [Social Sciences workshop data
+page](http://www.datacarpentry.org/socialsci-workshop/data).
+{: .callout}
 
 {% include links.md %}
