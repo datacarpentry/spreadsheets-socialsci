@@ -110,7 +110,7 @@ right option from the list.
 
 ![Image of selecting a range of values to allow](../fig/select-range-of-values.png)
 
-5\. Type a list of all the values that you want to be accepted in this column, separated by commas. For us this will be "grass, muddaub, burntbricks, sunbricks". 
+5\. Type a list of all the values that you want to be accepted in this column, separated by commas. For us this will be "grass, muddaub, burntbricks, sunbricks, cement". 
 
 6\. Create a meaningful input message, then click OK.
 
@@ -126,7 +126,7 @@ If you type a value which is not on the list you will get an error message. This
 {: .challenge}
 
 > ## Tip
-> Typing a list of values where only a few possible values exist (like "grass, muddaub, burntbricks, sunbricks") might be convenient, but if the list is longer it makes sense to create it as a small table (in a separate tab of the workbook).
+> Typing a list of values where only a few possible values exist (like "grass, muddaub, burntbricks, sunbricks, cement") might be convenient, but if the list is longer it makes sense to create it as a small table (in a separate tab of the workbook).
 > We can give the table a name and then reference the table name as the source of acceptable inputs when the source box appears in the Data Validation pop-out.
 >
 > Using a table in this way makes the data entry process more flexible.
