@@ -68,7 +68,7 @@ Excel spreadsheet it may display as '07/12/1988' (depending on your version of E
 are different ways of formatting the same date.
 
 Different countries write dates differently. If you are in the UK, for example, you will interpret
-the date above as the 7th day of December, however a research from the US will interpret the same entry as the 12th day of July. This regional variation is handled automatically by your
+the date above as the 7th day of December, however a researcher from the US will interpret the same entry as the 12th day of July. This regional variation is handled automatically by your
 spreadsheet program so that when you are typing in dates they appear as you would expect. If you
 try to type in a US format date into a UK version of Excel, it may or may not be treated as a
 date.
