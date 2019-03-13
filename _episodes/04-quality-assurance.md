@@ -98,7 +98,7 @@ will provide you with a drop-downlist of the available items. So, instead of
 trying to remember how to spell "mabatisloping", or whether or not you capitalized "cement" you can select the
 right option from the list.
 
-1\. Select the `wall_type` column.
+1\. Select the `respondent_wall_type` column.
 
 2\. On the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
 
