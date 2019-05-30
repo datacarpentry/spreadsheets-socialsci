@@ -34,7 +34,7 @@ and plan new data collection so less data wrangling is needed.
 > ## Getting Started
 >
 > Data Carpentry's teaching is hands-on, so participants are encouraged to use
-> their own computers to insure the proper setup of tools for an efficient 
+> their own computers to ensure the proper setup of tools for an efficient 
 > workflow. <br>**These lessons assume no prior knowledge of the skills or tools.**
 >
 > To get started, follow the directions in the "[Setup](setup.html)" tab to 
