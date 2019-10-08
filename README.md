@@ -17,26 +17,25 @@ Hans C.; Manjichi, Angela; Venot, Jean-Philippe (2018): SAFI Survey Results. doi
 PROJECT INFORMATION
 **************************************************************************************************************
 1. Title of dataset: The SAFI (Studying African Farmer-led Irrigation) Teaching Database
-2. Author information
+2. Author information:
 
 	Principal Investigator
 	Name: Philip Woodhouse
 	Address: University of Manchester
 	Email: phil.woodhouse@manchester.ac.uk
 
-	Co-Investigators
+	Co-Investigators:
 	Name:Gert Jan Veldwisch
 	Name: Daniel Brockington
 	Name: Hans C Komakech
 	Name: Angela Manjichi
 	Name: Jean-Philippe Vernot
 	
-3. Data of data collection (single date or date range)
+3. Data of data collection: November 2016 - June 2017
 
-4. Funder
-	Name: DFID-ESRC Growth Research Programme (DEGRP) grant ES/L01239/1
+4. Funder Name: DFID-ESRC Growth Research Programme (DEGRP) grant ES/L01239/1
 	
-5. Publications
+5. Publications:
 Farmer-led irrigation development and investment strategies for food security, growth and employment in 
 Africa. Policy Brief. www.safi-research.org/resources
 
@@ -52,12 +51,12 @@ DATA ACCESS INFORMATION
 METHODS OF DATA COLLECTION
 *******************************************************************************************************
 
-1. Describe the methods for data collection and / or provide links to papers describing data collection methods
+1. Describe the methods for data collection and / or provide links to papers describing data collection methods:
 This is survey data relating to households and agriculture in Tanzania and Mozambique. The survey data was collected
 through interviews conducted between November 2016 and June 2017. This is a teaching version of the dataset, 
 not the full version. 
 
-2. Instrument information
+2. Instrument information:
 The survey was split into several sections: 
 A - General questions about when and where the survey was conducted
 B - Information about the household and how long they have been living in the area
@@ -68,15 +67,12 @@ F - Financial details including assets owned and sources of income
 G - Details of financial hardships
 X - Information collected directly from the smartphone (GPS) or automatically included in the form (InstanceID) 
 
-3. Data procesessing
+3. Data procesessing:
 The survey data was collected through interviews using forms downloaded to Android Smartphones. The survey forms were
 created using the ODK (Open Data Kit) software via an Excel spreadsheet. The collected data were then sent back to the server. 
 The server can be used to download the collected data in both JSON and CSV formats. 
 
-4. Quality assurance procedures
-Data validation was carried out at time of data collection and then at time of analysis. 
-
-5. Analysis methods
+4. Analysis methods:
 Descriptive and summary statistics were calculated using SPSS. 
 
 
@@ -84,7 +80,7 @@ Descriptive and summary statistics were calculated using SPSS.
 SUMMARY OF DATA FILES
 ********************************************************************************************************
 
-1. List of data files
+1. List of data files:
 	Filename: SAFI_clean.csv
 	Short description: CSV file containing the combined teaching data on one worksheet. 
 
@@ -96,7 +92,7 @@ SUMMARY OF DATA FILES
 	Short description: Excel file containing date data for understanding how to format dates in spreadsheets. 
 
 
-2. Relationships between files
+2. Relationships between files:
 No official linkages between files. 
 
 
