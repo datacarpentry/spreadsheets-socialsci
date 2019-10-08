@@ -58,14 +58,14 @@ not the full version.
 
 2. Instrument information:
 The survey was split into several sections: 
-A - General questions about when and where the survey was conducted
-B - Information about the household and how long they have been living in the area
-C - Details about the accommodation and other buildings on the farm
-D - Details about different plots of land they grow crops on
-E - Details about how they irrigate the land and availability of water
-F - Financial details including assets owned and sources of income
-G - Details of financial hardships
-X - Information collected directly from the smartphone (GPS) or automatically included in the form (InstanceID) 
+A - General questions about when and where the survey was conducted;
+B - Information about the household and how long they have been living in the area;
+C - Details about the accommodation and other buildings on the farm;
+D - Details about different plots of land they grow crops on;
+E - Details about how they irrigate the land and availability of water;
+F - Financial details including assets owned and sources of income;
+G - Details of financial hardships;
+X - Information collected directly from the smartphone (GPS) or automatically included in the form (InstanceID). 
 
 3. Data procesessing:
 The survey data was collected through interviews using forms downloaded to Android Smartphones. The survey forms were
