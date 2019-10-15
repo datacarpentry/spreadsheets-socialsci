@@ -122,3 +122,25 @@ This lesson depends on people working on the exercise and responding with things
 that are fixed. If your audience is reluctant to participate, start out with
 some things on your own, or ask a helper for their answers. This generally gets
 even a reluctant audience started.
+
+## Common questions raised by participants
+
+### How do you extract date components from the interview_date field in SAFI_clean.csv?
+
+The interview_date field in SAFI_clean.csv when saved to SAFI_clean.xlsx is difficult to 
+manage because there isn't a way to format the column as a date field, even using the 
+custom field formats. The easiest solution to this question is to show the student how to 
+extract the date information from the field. Make a new column and format it as a date. 
+In the first cell of the new column type =LEFT(C2,10) and then apply this to the column. 
+This function extracts the first 10 characters from the left side of the interview_date
+field and inserts them into a new column. 
+
+### How would you automatically transform the items_owned field into a usable format?
+
+If you are not following the course immediately with the OpenRefine lesson it is important
+to make it clear that in the current format SAFI_clean.csv is not ready for analysis. 
+The items_owned column ideally needs to be split into separate yes / no / null columns. 
+Example: set up a new column 'bicycle' and format it as a number. You then need to extract
+information from the items_owned column about whether the word 'bicycle' is in the column. 
+One way of doing this is to use an IF statement: =IF(ISNUMBER(SEARCH("bicycle",K2))1,0). 
+The IF statement can include a wild character e.g. "bicy*". 
