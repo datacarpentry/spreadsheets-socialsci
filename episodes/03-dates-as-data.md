@@ -97,7 +97,7 @@ example data collected in January of multiple years with data collected in Febru
 > Apply each of these formulas to its entire column.
 > Make sure the new column is formatted as a number and not as a date.
 >
-> We now have each component of our date isolated in it's own column. This will allow us
+> We now have each component of our date isolated in its own column. This will allow us
 > to group our data with respect to month, year, or day of month for our analyses and will
 > also prevent problems when passing data between different versions of spreadsheet
 > software (as for example when sharing data with collaborators in different countries).
