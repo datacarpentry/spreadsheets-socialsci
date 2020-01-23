@@ -13,7 +13,7 @@ title: Setup
 >   * [SAFI_dates.xlsx](https://ndownloader.figshare.com/files/11502827)
 >
 > 2. Place these 3 files in a folder you can easily find and access on your
-> computer (or instance in a `datacarpentry-spreadsheets` folder on your
+> computer (for instance in a `datacarpentry-spreadsheets` folder on your
 > Desktop or within your Home folder).
 >
 > #### About the data
