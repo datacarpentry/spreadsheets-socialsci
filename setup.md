@@ -68,4 +68,8 @@ title: Setup
 > - Install LibreOffice
 > - Once the installer is downloaded, double click on it and LibreOffice should
 >   install.
+> - package manager option:
+>   - pacman (Arch): `pacman -S libreoffice`
+>   - yum (Fedora, CentOS): `yum install libreoffice`
+>   - apt (Debian, Ubuntu): `apt install libreoffice`
 {: .prereq}
