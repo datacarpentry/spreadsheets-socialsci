@@ -128,7 +128,7 @@ later in this workshop.
 > and types of livestock).
 >
 > This is a real dataset, however, it has been simplified for this workshop. If
-> you're interested in exploring the full dataset further, but you can download
+> you're interested in exploring the full dataset further, you can download
 > it from Figshare and work with it using exactly the same tools we’ll learn
 > about today.
 >
