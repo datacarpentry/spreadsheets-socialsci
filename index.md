@@ -43,7 +43,7 @@ and plan new data collection so less data wrangling is needed.
 > #### Prerequisites
 >
 > This lesson requires a working copy of spreadsheet software, such as Microsoft
-> Excel or LibreOffice or OpenOffice.org (see more details in "[Setup](setup/)").
+> Excel or LibreOffice or OpenOffice.org (see more details in "[Setup](setup.html)").
 > <br>To most effectively use these materials, please make sure to install 
 > everything *before* working through this lesson.
 {: .prereq}
