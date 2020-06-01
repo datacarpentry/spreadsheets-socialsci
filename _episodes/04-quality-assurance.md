@@ -110,7 +110,7 @@ right option from the list.
 
 ![Image of selecting a range of values to allow](../fig/select-range-of-values.png)
 
-5\. Type a list of all the values that you want to be accepted in this column, separated by semicolon (with np spaces). For us this will be "grass, muddaub, burntbricks, sunbricks, cement". 
+5\. Type a list of all the values that you want to be accepted in this column, separated by semicolon (with no spaces). For us this will be "grass, muddaub, burntbricks, sunbricks, cement". 
 
 6\. Create a meaningful input message, then click OK.
 
