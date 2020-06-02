@@ -14,27 +14,23 @@ keypoints:
 
 ## Date formats in spreadsheets
 
-Dates in spreadsheets are often stored in a single column. While this seems the
-most natural way to record dates, it actually is not best
-practice. A spreadsheet application will display the dates in a
-seemingly correct way (to a human observer) but how it actually handles
-and stores the dates may be problematic.
+Dates in spreadsheets are often stored in a single column. 
 
-In particular, please remember that functions that are valid for a given
-spreadsheet program (be it LibreOffice, Microsoft Excel,
-Gnumeric, etc.) are usually guaranteed to be compatible only within the same
-family of products. If you will later need to export the data and need to
-conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
+While this seems like a logical way to record dates when you are entering them, or visually reviewing data, it's not actually a best practice for preparing data for analysis.
 
-Spreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.
+When working with data, your goal is to have as little ambiguity as possible. Ambiguity can creep into your data when working with dates when there are regional variations either in your observations and when you or your team might be working with different versions or suites of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric).
+
+To avoid ambiguity between regional differences in date formatting and compatability across spreadsheet software programs, a good practice is to divide dates into components in different columns - DAY, MONTH, and YEAR. 
+
+When working with dates it's also important to remember that functions are guaranteed to be compatible only within the same family of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric). If you need to export your data and conserve the timestamps, you are better off handling dates using one of the solutions discussed below than the single column method.
+
+One of the other reasons dates can be tricky is that most spreadsheet programs have “useful features” which can change the way dates are displayed - but not stored. The image below demonstrates some of the many date formatting options in Excel. 
 
 ![Many formats, many ambiguities](../fig/excel_dates_1.jpg)
 
-But these "features" often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible.
-
 ## Dates stored as integers
 
-The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
+The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. This serial number represents the number of days from December 31, 1899. In the example, July 2, 2014 is stored as the serial number 41822.
 
 > ## Excel's date systems
 > Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
@@ -42,11 +38,11 @@ The first thing you need to know is that Excel stores dates as numbers - see the
 > [dates must be checked for accuracy when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off).
 {: .callout}
 
-This serial number thing can actually be useful in some circumstances. By using
-the above functions we can easily add days, months or years to a given date.
+Using functions we can  add days, months or years to a given date.
 Say you had a research plan where you needed to conduct interviews with a
 set of informants every ninety days for a year.
-In another cell, you could type:
+
+In our example above, in a new cell you can  type:
 
 =B2+90
 
@@ -55,19 +51,18 @@ And it would return
 30-Sep
 
 because it understands the date as a number `41822`, and `41822 + 90 = 41912`
-which Excel interprets as the 30th day of September, 2014. It retains the format (for the most
-part) of the cell that is being operated upon, (unless you did some sort of
-formatting to the cell before, and then all bets are off). Month and year
-rollovers are internally tracked and applied.
+which Excel interprets as the 30th day of September, 2014. In most cases, it retains the format of the cell that is being operated upon. Month and year rollovers are internally tracked and applied.
 
 ## Regional date formatting
 
-When you enter a date into a spreadsheet it looks like a date although the spreadsheet may
-display different text from what you input. For example if you enter '7/12/88' into your
+When you enter a date into a spreadsheet it looks like a date although the spreadsheet program may
+display different text from what you input. It does this to be 'helpful' but it often is not. 
+
+For example if you enter '7/12/88' into your
 Excel spreadsheet it may display as '07/12/1988' (depending on your version of Excel). These
 are different ways of formatting the same date.
 
-Different countries write dates differently. If you are in the UK, for example, you will interpret
+Different countries also write dates differently. If you are in the UK, for example, you will interpret
 the date above as the 7th day of December, however a researcher from the US will interpret the same entry as the 12th day of July. This regional variation is handled automatically by your
 spreadsheet program so that when you are typing in dates they appear as you would expect. If you
 try to type in a US format date into a UK version of Excel, it may or may not be treated as a
