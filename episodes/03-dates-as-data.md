@@ -20,7 +20,7 @@ While this seems like a logical way to record dates when you are entering them, 
 
 When working with data, your goal is to have as little ambiguity as possible. Ambiguity can creep into your data when working with dates when there are regional variations either in your observations and when you or your team might be working with different versions or suites of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric).
 
-To avoid ambiguity between regional differences in date formatting and compatability across spreadsheet software programs, a good practice is to divide dates into components in different columns - DAY, MONTH, and YEAR. 
+To avoid ambiguity between regional differences in date formatting and compatibility across spreadsheet software programs, a good practice is to divide dates into components in different columns - DAY, MONTH, and YEAR. 
 
 When working with dates it's also important to remember that functions are guaranteed to be compatible only within the same family of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric). If you need to export your data and conserve the timestamps, you are better off handling dates using one of the solutions discussed below than the single column method.
 
