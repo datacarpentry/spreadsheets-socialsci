@@ -159,7 +159,7 @@ page](http://www.datacarpentry.org/socialsci-workshop/data).
 >    put them all together in one spreadsheet.
 >
 > **Important** Do not forget our first piece of advice, to create a new file
-> (or tab) for the cleaned data, never modify your original (raw) data.
+> for the cleaned data, never modify your original (raw) data.
 >
 > After you go through this exercise, we'll discuss as a group what was wrong
 > with this data and how you would fix it.
