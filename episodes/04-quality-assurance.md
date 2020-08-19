@@ -21,7 +21,7 @@ When we input data into a cell of a spreadsheet we are typically not constrained
 In any one column, the spreadsheets software will not warn us if we start to enter a mix of text, numbers or dates in different rows.
 Even if we are not facing constraints from the software, as a researcher we often anticipate that all data in one column will be of a certain type.
 It is also possible that the nature of the data contained in the table allows us place additional restrictions on the acceptable values for cells in a column.
-For example a column recording age should be numeric, greater than 0 and is unlikely to be greater than 120.
+For example a column recording age in years should be numeric, greater than 0 and is unlikely to be greater than 120.
 
 Excel allows us to specify a variety of data validations to be applied to cell contents.
 If the validation fails an error is raised and the data we entered does not go into the particular cell.
