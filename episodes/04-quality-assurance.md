@@ -60,7 +60,7 @@ here we will assume that there are no families with greater than 30 members.
 
 In Libre Office on the `Data` tab select `Validity...` the following popup will appear:
 
-![Image of data validation tab in LibreOffice](../fig/data-validation-numbers-LibreOffice.png)
+![Image of data validation tab in LibreOffice](../fig/data-validation-tab-LibreOffice.png)
 
 3\. In Excel, select 'Whole number' from the `Allow` drop down options.
 
@@ -74,7 +74,7 @@ In Excel you will see:
 
 In LibreOffice, you will see:
 
-![Image of data validation tab in LibreOffice](../fig/data-validation-numbers-LibreOffice.png)
+![Image of data validation tab in LibreOffice](../fig/data-validation-tab-LibreOffice.png)
 
 
 5\. Fill in the minimum and maximum values that make sense for your data and click `Ok`. Here we will choose a minimum of 1 and a maximum of 30.
