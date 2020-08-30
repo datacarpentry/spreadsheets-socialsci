@@ -74,7 +74,7 @@ In Excel you will see:
 
 In LibreOffice, you will see:
 
-![Image of data validation tab in LibreOffice](../fig/data-validation-tab-LibreOffice.png)
+![Image of data validation tab in LibreOffice](../fig/data-validation-numbers-LibreOffice.png)
 
 
 5\. Fill in the minimum and maximum values that make sense for your data and click `Ok`. Here we will choose a minimum of 1 and a maximum of 30.
@@ -125,19 +125,32 @@ right option from the list.
 
 1\. Select the `respondent_wall_type` column.
 
-2\. On the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
+2\. In Excel, on the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
 
 ![Image of data validation tab in Excel](../fig/data-validation-tab.png)
 
-3\. Select `List` from the `Allow` drop-down menu.
+In LibreOffice, on the `Data` tab select `Validity...`
 
-4\. The window will change to include a `Source` box.
+![Image of data validation tab in Excel](../fig/data-validation-tab-LibreOffice.png)
+
+3\. In Excel, select `List` from the `Allow` drop-down menu, and in LibreOffice, choose the `List` option.
+
+4\. In Excel, the window will change to include a `Source` box, you will see,
 
 ![Image of selecting a range of values to allow in Excel](../fig/select-range-of-values.png)
 
+In LibreOffice, you will see,
+
+![Image of selecting a range of values to allow in LibreOffice](../fig/select-range-of-values-LibreOffice.png)
+
 5\. Type a list of all the values that you want to be accepted in this column, separated by a comma (with no spaces). For us this will be "grass, muddaub, burntbricks, sunbricks, cement". 
 
-6\. Create a meaningful input message, then click OK.
+In LibreOffice, your entries of grass, muddaub, burntbricks, sunbricks and cement should be on new lines as shown below
+
+![Image of filled in range of values to allow in LibreOffice](../fig/filled-range-of-values-LibreOffice.png)
+
+
+6\. In Excel, create a meaningful input message, then click OK. In LibreOffice, there is no need to create an input message.
 
 We have now provided a restriction that will be validated each time we try and
 enter data into the selected cells. When a cell in this column is selected, a drop-down arrow will appear.
