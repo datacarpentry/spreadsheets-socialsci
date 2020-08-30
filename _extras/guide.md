@@ -65,7 +65,11 @@ up date as an issue during the responses, or at the end of the response time.
 functions won't work for them. They will need to type in their language's equivalent of that word in the formula.
 * The spreadsheet for this episode has two tabs. The first tab is data stored as `DD-MM-YYYY`,
 the second is `MM-DD-YYYY`. If learners use the wrong tab for their location, they will get a `#VALUE` error.
-
+* When using Libre Office, it is helpful to first save the file in ods format. Then be sure to convert
+the date column to type date by right clicking on the cell, choose "Format Cells..." then choose Date and
+take a type of date that uses `DD/MM/YYYY`, such as English (Botswana). Once you click ok, you will find that
+the date has been pre-pended by an apostrophe. For example 21/11/2016 becomes '21/11/2016. Edit the cell to 
+remove the apostrophe. You will then find that the day(), month() and year() functions work.
 #### [Quality assurance](../04-quality-assurance/)
 
 The challenge with this lesson is that the instructor's version of the spreadsheet software is going to look different than about half the room's. It makes
