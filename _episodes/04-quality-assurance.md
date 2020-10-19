@@ -144,6 +144,10 @@ If you type a value which is not on the list you will get an error message. This
 > in the `num_membrs` column before applying our data validation
 > rule, that cell would not be flagged with a warning. 
 > 
+> In some versions of Excel, you can click in the `Data` tab on 
+> `Data Validation` and then `Circle invalid data`. This will 
+> put red circles around invalid data entries. Note that it can be a bit slow with large data files.
+>
 > When using spreadsheets for data entry, it is a good idea to set up
 > data validation rules for each column when you set up your 
 > spreadsheet (i.e. before you enter any data). 
