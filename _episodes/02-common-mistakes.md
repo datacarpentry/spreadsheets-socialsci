@@ -47,7 +47,7 @@ which sees each row as an observation. You’re also potentially using the same
 field name in multiple places, which will make it harder to clean your data up
 into a usable form. The example below depicts the problem:
 
-![multiple tables](../fig/multiple-tables-example.png)
+![multiple tables](../fig/multiple-tables-example2.png)
 
 In the example above, the computer will see (for example) row 24 and assume that all columns A-J 
 refer to the same sample. This row actually represents two distinct samples 
