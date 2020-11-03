@@ -54,35 +54,60 @@ here we will assume that there are no families with greater than 30 members.
 
 1\. Select the `no_membrs` column.
 
-2\. On the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
+2\. In Excel on the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
 
-![Image of data validation tab](../fig/data-validation-tab.png)
+![Image of data validation tab in Excel](../fig/data-validation-tab.png)
 
-3\. Select 'Whole number' from the `Allow` drop down options.
+In Libre Office on the `Data` tab select `Validity...` the following popup will appear:
 
+![Image of data validation tab in LibreOffice](../fig/data-validation-tab-LibreOffice.png)
+
+3\. In Excel, select 'Whole number' from the `Allow` drop down options.
+
+In Libre Office choose `Allow: Whole Numbers` and then `Data: valid range`.
+ 
 4\. The window content will change.
-The value in the data box will say 'between' and `Minimum` and `Maximum` boxes will be provided for you to specify an allowed range.
+The value in the data box will say 'between' and `Minimum` and `Maximum` boxes will be provided for you to specify an allowed range. 
+In Excel you will see:
 
-![Image of data validation tab for number rules](../fig/data-validation-numbers.png)
+![Image of data validation tab for number rules in Excel](../fig/data-validation-numbers.png)
+
+In LibreOffice, you will see:
+
+![Image of data validation tab in LibreOffice](../fig/data-validation-numbers-LibreOffice.png)
+
 
 5\. Fill in the minimum and maximum values that make sense for your data and click `Ok`. Here we will choose a minimum of 1 and a maximum of 30.
 
 Your data table will now not allow you to enter a value that violates
 the data validation rule you have created. To test this out, try 
 to enter a new value into the `num_membrs` column that is not valid.
-The following error box will appear: 
+The following error box will appear in Excel: 
 
-![Image of error message for inputing invalid data](../fig/error-invalid-data.png)
+![Image of error message for inputing invalid data in Excel](../fig/error-invalid-data.png)
+
+The following error box will appear in LibreOffice: 
+
+![Image of error message for inputing invalid data in LibreOffice](../fig/error-invalid-data-LibreOffice.png)
 
 You can also customize the resulting message to be more informative by entering
 your own message in the `Input Message` tab when creating a data validation rule.
+In Excel, you will see:
 
-![Image of Input Message tab](../fig/input_message.png)
+![Image of Input Message tab in Excel](../fig/input_message.png)
 
-or allow invalid data to result in a warning rather than an error by modifying the `Style`
-option on the `Error Alert` tab.
+In LibreOffice, you will see:
 
-![Image of Error Alert tab](../fig/error_alert.png)
+![Image of Input Message tab in LibreOffice](../fig/input_message_LibreOffice.png)
+
+You can also allow invalid data to result in a warning rather than an error by modifying the `Style`
+option on the `Error Alert` tab. For Excel you will see:
+
+![Image of Error Alert tab in Excel](../fig/error_alert.png)
+
+In LibreOffice, you will see:
+
+![Image of Error Alert tab in LibreOffice](../fig/error_alert_LibreOffice.png)
 
 > ## Exercise
 > Apply a new data validation rule to one of the other numeric 
@@ -100,19 +125,32 @@ right option from the list.
 
 1\. Select the `respondent_wall_type` column.
 
-2\. On the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
+2\. In Excel, on the `Data` tab select `Data Tools` and then `Data Validation` or `Validation Tools` (depending on your version of Excel). The following popout will appear: 
 
-![Image of data validation tab](../fig/data-validation-tab.png)
+![Image of data validation tab in Excel](../fig/data-validation-tab.png)
 
-3\. Select `List` from the `Allow` drop-down menu.
+In LibreOffice, on the `Data` tab select `Validity...`
 
-4\. The window will change to include a `Source` box.
+![Image of data validation tab in Excel](../fig/data-validation-tab-LibreOffice.png)
 
-![Image of selecting a range of values to allow](../fig/select-range-of-values.png)
+3\. In Excel, select `List` from the `Allow` drop-down menu, and in LibreOffice, choose the `List` option.
+
+4\. In Excel, the window will change to include a `Source` box, you will see,
+
+![Image of selecting a range of values to allow in Excel](../fig/select-range-of-values.png)
+
+In LibreOffice, you will see,
+
+![Image of selecting a range of values to allow in LibreOffice](../fig/select-range-of-values-LibreOffice.png)
 
 5\. Type a list of all the values that you want to be accepted in this column, separated by a comma (with no spaces). For us this will be "grass, muddaub, burntbricks, sunbricks, cement". 
 
-6\. Create a meaningful input message, then click OK.
+In LibreOffice, your entries of grass, muddaub, burntbricks, sunbricks and cement should be on new lines as shown below
+
+![Image of filled in range of values to allow in LibreOffice](../fig/filled-range-of-values-LibreOffice.png)
+
+
+6\. In Excel, create a meaningful input message, then click OK. In LibreOffice, there is no need to create an input message.
 
 We have now provided a restriction that will be validated each time we try and
 enter data into the selected cells. When a cell in this column is selected, a drop-down arrow will appear.
