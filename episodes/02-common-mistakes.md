@@ -151,7 +151,7 @@ with numbers.
 
 Underscores (`_`) are a good alternative to spaces. Consider writing names in camel case (like this: ExampleFileName) to improve
 readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months, but don't overdo it with names
-that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your variable names.
+that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your variable names. Avoid starting variable names with numbers, as this may cause problems with some analysis software.
 
 **Examples**  
 
@@ -180,6 +180,11 @@ that are excessively long. Including the units in the field names avoids confusi
 	<td> Informant_01 </td>
 	<td> first_informant</td>
 	<td> 1st Inf</td>
+</tr>
+<tr>
+	<td> age_18 </td>
+	<td> years18</td>
+	<td> 18years</td>
 </tr>
 </table>
 
