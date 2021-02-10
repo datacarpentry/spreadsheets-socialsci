@@ -68,6 +68,7 @@ the date column to type date by right clicking on the cell, choose "Format Cells
 take a type of date that uses `DD/MM/YYYY`, such as English (Botswana). Once you click ok, you will find that
 the date has been pre-pended by an apostrophe. For example 21/11/2016 becomes '21/11/2016. Edit the cell to 
 remove the apostrophe. You will then find that the day(), month() and year() functions work.
+
 #### [Quality assurance](../04-quality-assurance/)
 
 The challenge with this lesson is that the instructor's version of the spreadsheet software is going to look different than about half the room's. It makes
