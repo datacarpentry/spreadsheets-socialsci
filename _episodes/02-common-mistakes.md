@@ -1,5 +1,5 @@
 ---
-title: "Formatting problems"
+title: "Formatting Problems"
 teaching: 20
 exercises: 0
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Dates as data"
+title: "Dates as Data"
 teaching: 10
 exercises: 10
 questions:
