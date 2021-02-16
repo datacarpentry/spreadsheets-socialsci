@@ -1,5 +1,5 @@
 ---
-title: "Quality assurance"
+title: "Quality Assurance"
 teaching: 15
 exercises: 10
 questions:
