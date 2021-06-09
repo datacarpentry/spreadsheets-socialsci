@@ -20,11 +20,11 @@ free of errors.
 When we input data into a cell of a spreadsheet we are typically not constrained in the type of data we enter.
 In any one column, the spreadsheets software will not warn us if we start to enter a mix of text, numbers or dates in different rows.
 Even if we are not facing constraints from the software, as a researcher we often anticipate that all data in one column will be of a certain type.
-It is also possible that the nature of the data contained in the table allows us place additional restrictions on the acceptable values for cells in a column.
+It is also possible that the nature of the data contained in the table allows us to place additional restrictions on the acceptable values for cells in a column.
 For example a column recording age in years should be numeric, greater than 0 and is unlikely to be greater than 120.
 
 Excel allows us to specify a variety of data validations to be applied to cell contents.
-If the validation fails an error is raised and the data we entered does not go into the particular cell.
+If the validation fails, an error is raised and the data we entered does not go into the particular cell.
 In addition to providing validation when we enter data, Excel allows us to add validations to data that has already been entered.
 The validation is not applied retrospectively, so that data are removed.
 Instead, if a particular cell would fail the validation check a triangle is placed in the top left corner of the cell as a warning.
@@ -81,7 +81,7 @@ In LibreOffice, you will see:
 
 Your data table will now not allow you to enter a value that violates
 the data validation rule you have created. To test this out, try 
-to enter a new value into the `num_membrs` column that is not valid.
+to enter a new value into the `no_membrs` column that is not valid.
 The following error box will appear in Excel: 
 
 ![Image of error message for inputing invalid data in Excel](../fig/error-invalid-data.png)
@@ -154,8 +154,8 @@ In LibreOffice, your entries of grass, muddaub, burntbricks, sunbricks and cemen
 
 We have now provided a restriction that will be validated each time we try and
 enter data into the selected cells. When a cell in this column is selected, a drop-down arrow will appear.
-When you click the arrow you will be able to select a value from your list.
-If you type a value which is not on the list you will get an error message. This not only prevents data input errors, but also makes it easier and faster to enter data. 
+When you click the arrow, you will be able to select a value from your list.
+If you type a value which is not on the list, you will get an error message. This not only prevents data input errors, but also makes it easier and faster to enter data. 
 
 > ## Exercise
 > Apply a new data validation rule to one of the other categorical 
@@ -179,7 +179,7 @@ If you type a value which is not on the list you will get an error message. This
 > you may have noticed that data validation rules are not applied
 > retroactively to data that is already present in the cell. 
 > This means, for example, that if we had already entered `150`
-> in the `num_membrs` column before applying our data validation
+> in the `no_membrs` column before applying our data validation
 > rule, that cell would not be flagged with a warning. 
 > 
 > In some versions of Excel, you can click in the `Data` tab on 
