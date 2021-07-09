@@ -113,7 +113,7 @@ total number of livestock. All we need to do is sum the values in each row to
 find a total. We'll be learning how to do this computationally and reproducibly
 later in this workshop.
 
-> ## Workshop Data
+> ## Workshop Data 
 >
 >> The data used in these lessons are taken from interviews of farmers in two
 > countries in eastern sub-Saharan Africa (Mozambique and Tanzania). These
