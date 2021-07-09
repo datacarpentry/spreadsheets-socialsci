@@ -113,14 +113,9 @@ total number of livestock. All we need to do is sum the values in each row to
 find a total. We'll be learning how to do this computationally and reproducibly
 later in this workshop.
 
-> ## Introduce the Data
+> ## Workshop Data
 >
-> If not already discussed, introduce the dataset that will be used in this
-> lesson, and in the other Social Sciences lessons, the [Studying African
-> Farmer-led Irrigation (SAFI)
-> Dataset](http://www.datacarpentry.org/socialsci-workshop/data).
->
-> The data used in these lessons are taken from interviews of farmers in two
+>> The data used in these lessons are taken from interviews of farmers in two
 > countries in eastern sub-Saharan Africa (Mozambique and Tanzania). These
 > interviews were conducted between November 2016 and June 2017 and probed
 > household features (e.g. construction materials used, number of household
