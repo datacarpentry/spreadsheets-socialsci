@@ -33,6 +33,7 @@ of the data in the spreadsheet. What are the pain points!?
 
 #### [Formatting data](../01-format-data/)
 
+* Introduce the dataset that will be used in this lesson, and in the other Social Sciences lessons, the [Studying African Farmer-led Irrigation (SAFI) Dataset](http://www.datacarpentry.org/socialsci-workshop/data).
 * Go through the point about keeping track of your steps and keeping raw data raw
 * Go through the cardinal rule of spreadsheets about columns, rows and cells
 * Hand them a messy data file and have them pair up and work together to clean up the data.
