@@ -65,8 +65,7 @@ This isn't good practice for two reasons:
 data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine
 tabs - and if the tabs are inconsistently formatted, you might even have to do it manually.
 
-The next time you’re entering data, and you go to create another tab or table,
-ask yourself if you could avoid adding this tab by adding another column to your original spreadsheet.
+For these and other reasons, it is good practice to avoid creating new tabs to organize your spreadsheet data. The next time you’re entering data, and you go to create another tab or table, ask yourself if you could avoid adding this tab by adding another column to your original spreadsheet. You may, however, use a new tab to store notes about your data, such as steps you've taken to clean or manipulate your data. 
 
 Your data sheet might get very long over the course of the experiment. This makes it harder to enter data if you can’t see your headers
 at the top of the spreadsheet. But don't repeat your header row. These can easily get mixed into the data, 
