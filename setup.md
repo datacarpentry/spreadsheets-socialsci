@@ -48,7 +48,7 @@ title: Setup
 > - Once the installer is downloaded, double click on it and LibreOffice should
 >   install.
 >
-> #### Mac OS X
+> #### macOS
 >
 > - Download the Installer
 >  - Install LibreOffice by going to [the installation
