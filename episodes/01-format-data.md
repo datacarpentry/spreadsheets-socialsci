@@ -99,7 +99,7 @@ the same field. So, if they wanted to
 look at the average number of livestock owned, or the average number of each type
 of livestock,
 it would be hard to do this using this data setup. If instead we put the count
-of each type of livestock in it's own column, this would make analysis
+of each type of livestock in its own column, this would make analysis
 much easier. The rule of thumb, when setting up a datasheet, is that each
 variable (in this case, each type of livestock) should have its own column,
 each observation should have its own row, and each cell should contain only a
