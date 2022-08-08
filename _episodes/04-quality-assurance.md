@@ -183,7 +183,8 @@ If you type a value which is not on the list, you will get an error message. Thi
 > rule, that cell would not be flagged with a warning. 
 > 
 > In some versions of Excel, you can click in the `Data` tab on 
-> `Data Validation` and then `Circle invalid data`. This will 
+> `Data Validation` and then `Circle invalid data`. In LibreOffice this option
+> can be found under `Tools`, then `Detective`, and then `Mark Invalid Data`. This will 
 > put red circles around invalid data entries. Note that it can be a bit slow with large data files.
 >
 > When using spreadsheets for data entry, it is a good idea to set up
