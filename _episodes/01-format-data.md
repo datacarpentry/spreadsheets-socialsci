@@ -223,7 +223,7 @@ valuable information about what survey waves the variable covers, and the meanin
 of particular values.
 
 Additionally, file or database level metadata describes how files that make up
-the dataset relate to each other; what format are they are
+the dataset relate to each other; what format they are
 in; and whether they supersede or are superseded by previous files. A
 folder-level readme.txt file is the classic way of accounting for
 all the files and folders in a project.  
