@@ -1,1 +1,106 @@
-{"contributors":[{"type":"Editor","name":"Chris Prener"},{"type":"Editor","name":"Peter Smyth"}],"creators":[{"name":"Peter Smyth"},{"name":"Lachlan Deer"},{"name":"David Mawdsley"},{"name":"Karen Word"},{"name":"François Michonneau"},{"name":"Erin Becker"}],"license":{"id":"CC-BY-4.0"}}
+{
+  "contributors": [
+    {
+      "type": "Editor",
+      "name": "Trevor Burrows"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Christopher Prener"
+    },
+    {
+      "name": "Trevor Burrows"
+    },
+    {
+      "name": "bkmgit"
+    },
+    {
+      "name": "Mara Sedlins"
+    },
+    {
+      "name": "AliNite"
+    },
+    {
+      "name": "Scott Carl Peterson",
+      "orcid": "0000-0002-1920-616X"
+    },
+    {
+      "name": "Angelique Trusler",
+      "orcid": "0000-0003-2340-8538"
+    },
+    {
+      "name": "Annajiat Alim Rasel",
+      "orcid": "0000-0003-0198-3734"
+    },
+    {
+      "name": "Maneesha Sane"
+    },
+    {
+      "name": "Peter Bugeia"
+    },
+    {
+      "name": "Phil Reed",
+      "orcid": "0000-0002-4479-715X"
+    },
+    {
+      "name": "Angela Li",
+      "orcid": "0000-0002-8956-419X"
+    },
+    {
+      "name": "Claudiu Forgaci",
+      "orcid": "0000-0003-3218-5102"
+    },
+    {
+      "name": "Dafne Erica van Kuppevelt",
+      "orcid": "0000-0002-2662-1994"
+    },
+    {
+      "name": "Emily Ferrier"
+    },
+    {
+      "name": "Fran Baseby"
+    },
+    {
+      "name": "Katherine E. Koziar",
+      "orcid": "0000-0003-0505-7973"
+    },
+    {
+      "name": "Kunal Marwaha",
+      "orcid": "0000-0001-9084-6971"
+    },
+    {
+      "name": "Naoe Tatara",
+      "orcid": "0000-0002-0049-1634"
+    },
+    {
+      "name": "Nathaniel Porter",
+    },
+    {
+      "name": "Sarah M Brown",
+      "orcid": "0000-0001-5728-0822"
+    },
+    {
+      "name": "Shiobhan Smith",
+      "orcid": "0000-0003-1738-9836"
+    },
+    {
+      "name": "Tugba Ozturk"
+    },
+    {
+      "name": "ecparke-utm"
+    },
+    {
+      "name": "geyslein"
+    },
+    {
+      "name": "marksnyders"
+    },
+    {
+      "name": "mlbecher"
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  }
+}
