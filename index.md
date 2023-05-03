@@ -1,7 +1,6 @@
 ---
-layout: lesson
-root: .
 permalink: index.html
+site: sandpaper::sandpaper_site
 ---
 
 Good data organization is the foundation of any research project. Most
@@ -31,25 +30,35 @@ learn how to think about data organization and some practices for more
 effective data wrangling. With this approach you can better format current data
 and plan new data collection so less data wrangling is needed.
 
+::::::::::::::::::::::::::::::::::::::::::  prereq
 
-> ## Getting Started
->
-> Data Carpentry's teaching is hands-on, so participants are encouraged to use
-> their own computers to ensure the proper setup of tools for an efficient
-> workflow. <br>**These lessons assume no prior knowledge of the skills or tools.**
->
-> To get started, follow the directions in the "[Setup](setup.html)" tab to
-> download data to your computer and follow any installation instructions.
->
-> #### Prerequisites
->
-> This lesson requires a working copy of spreadsheet software, such as Microsoft
-> Excel or LibreOffice or OpenOffice.org (see more details in "[Setup](setup.html)").
-> <br>To most effectively use these materials, please make sure to install
-> everything *before* working through this lesson.
-{: .prereq}
+## Getting Started
 
-> ## For Instructors
-> If you are teaching this lesson in a workshop, please see the
-> [Instructor notes](guide/index.html).
-{: .prereq}
+Data Carpentry's teaching is hands-on, so participants are encouraged to use
+their own computers to ensure the proper setup of tools for an efficient
+workflow. <br>**These lessons assume no prior knowledge of the skills or tools.**
+
+To get started, follow the directions in the "[Setup](learners/setup.md)" tab to
+download data to your computer and follow any installation instructions.
+
+#### Prerequisites
+
+This lesson requires a working copy of spreadsheet software, such as Microsoft
+Excel or LibreOffice or OpenOffice.org (see more details in "[Setup](learners/setup.md)").
+<br>To most effectively use these materials, please make sure to install
+everything *before* working through this lesson.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::  prereq
+
+## For Instructors
+
+If you are teaching this lesson in a workshop, please see the
+[Instructor notes](instructors/instructor-notes.md).
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
