@@ -92,7 +92,7 @@ which are a part of the data values will be interpreted as delimiters.
 
 If you are working with data that contains commas, the fields should be
 enclosed with double quotes. The spreadsheet software should do the right
-thing ([LibreOffice](https://www.libreoffice.org/download/download/) provides
+thing [LibreOffice](https://www.libreoffice.org/download/download/) provides
 comprehensive options to import and export CSV files). However, it is always a
 good idea to double check that the file you are exporting can be read in
 correctly. For more of a discussion on data formats and potential issues with
