@@ -162,8 +162,8 @@ that are excessively long. Including the units in the field names avoids confusi
 
 **Examples**
 
-| Null Values  | Good alternative  |Avoid|  
-| -----------  | ------------------| -------------- |
+| Good Name    | Good Alternative  | Avoid          |
+|--------------|-------------------|----------------|
 | wall_type    | WallType          | wall type      |
 | longitude    | GpsLongitude      | gps:Longitude  |
 | gender       | gender            | M/F            |
