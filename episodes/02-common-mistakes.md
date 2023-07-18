@@ -124,7 +124,7 @@ Blanks (most applications) and NA (for R) are good choices. White et al, 2013, e
 
 ![](fig/better-formatting.png){alt='good formatting'}
 
-## Using formatting to make the data sheet look pretty {#formatting\-pretty}
+## Using formatting to make the data sheet look pretty {#formatting-pretty}
 
 **Example**: merging cells.
 
@@ -150,7 +150,7 @@ another field and specify the units the cell is in.
 **Solution**: Don't include more than one piece of information in a cell. This will limit the ways in which you can analyze your data.
 If you need both these types of information (the total number of animals and the types), design your data sheet to include this information. For example, include a separate column for each type of livestock.
 
-## Using problematic field names {#field\-name}
+## Using problematic field names {#field-name}
 
 Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
 misinterpreted by parsers that use whitespace as delimiters and some programs don't like field names that are text strings that start
