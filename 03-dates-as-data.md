@@ -7,7 +7,7 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Recognise problematic or suspicious date formats.
-- Use formulas to separate dates into their component values (e.g. Month, Day, Year).
+- Use formulas to separate dates into their component values (e.g., Year, Month, Day).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -23,9 +23,9 @@ Dates in spreadsheets are often stored in a single column.
 
 While this seems like a logical way to record dates when you are entering them, or visually reviewing data, it's not actually a best practice for preparing data for analysis.
 
-When working with data, your goal is to have as little ambiguity as possible. Ambiguity can creep into your data when working with dates when there are regional variations either in your observations and when you or your team might be working with different versions or suites of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric).
+When working with data, your goal is to have as little ambiguity as possible. Ambiguity can creep into your data when working with dates when there are regional variations either in your observations or when you or your team might be working with different versions or suites of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric).
 
-To avoid ambiguity between regional differences in date formatting and compatibility across spreadsheet software programs, a good practice is to divide dates into components in different columns - DAY, MONTH, and YEAR.
+To avoid ambiguity between regional differences in date formatting and compatibility across spreadsheet software programs, a good practice is to divide dates into components in different columns - YEAR, MONTH, and DAY.
 
 When working with dates it's also important to remember that functions are guaranteed to be compatible only within the same family of software products (e.g., LibreOffice, Microsoft Excel, Gnumeric). If you need to export your data and conserve the timestamps, you are better off handling dates using one of the solutions discussed below than the single column method.
 
@@ -79,7 +79,7 @@ try to type in a US format date into a UK version of Excel, it may or may not be
 date.
 
 This regional variation is one good reason to treat dates, not as a single data point, but as
-three distinct pieces of data (month, day, and year). Separating dates into their component parts
+three distinct pieces of data (year, month, and day). Separating dates into their component parts
 will avoid this confusion, while also giving the added benefit of allowing you to compare, for
 example data collected in January of multiple years with data collected in February of multiple years.
 
@@ -95,17 +95,17 @@ Choose the tab of the spreadsheet that corresponds to the way you format dates i
 location (either day first `DD_MM_YEAR`, or month first `MM_DD_YEAR`).
 
 Extract the components of the date to new columns. For this we
-can use the built in Excel functions:
+can use the built-in Excel functions:
 
+`=YEAR()`
 `=MONTH()`  
 `=DAY()`  
-`=YEAR()`
 
 Apply each of these formulas to its entire column.
 Make sure the new column is formatted as a number and not as a date.
 
 We now have each component of our date isolated in its own column. This will allow us
-to group our data with respect to month, year, or day of month for our analyses and will
+to group our data with respect to year, month, or day of month for our analyses and will
 also prevent problems when passing data between different versions of spreadsheet
 software (as for example when sharing data with collaborators in different countries).
 
@@ -129,7 +129,7 @@ Note that this solution shows the dates in `MM_DD_YEAR` format.
 
 Using the same spreadsheet you used for the previous exercise, add another data point
 in the `interview_date` column by typing either `11/17` (if your location uses `MM/DD` formatting)
-or `17/11` (if your location uses `DD/MM` formatting). The `Day`, `Month`, and `Year` columns
+or `17/11` (if your location uses `DD/MM` formatting). The `Year`, `Month`, and `Day` columns
 should populate for this new data point. What year is shown in the `Year` column?
 
 :::::::::::::::  solution

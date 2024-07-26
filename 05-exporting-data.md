@@ -38,7 +38,7 @@ version) isn't a good idea. Why?
 
 - The above points also apply to other formats such as open data formats used by LibreOffice. These formats are not static and do not get parsed the same way by different software packages.
 
-As an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that
+As an example of inconsistencies in data storage, do you remember our earlier discussion about how Excel stores dates? It turns out that
 there are multiple defaults for different versions of the software, and you can switch between them all. So, say you're
 compiling Excel-stored data from multiple sources. There's dates in each file- Excel interprets them as their own internally consistent
 serial numbers. When you combine the data, Excel will take the serial number from the place you're importing it from, and interpret it

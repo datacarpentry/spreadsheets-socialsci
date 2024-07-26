@@ -21,7 +21,7 @@ exercises: 0
 This lesson is meant to be used as a reference for discussion as learners identify issues with the messy dataset discussed in the
 previous lesson. Instructors: don't go through this lesson except to refer to responses to the exercise in the previous lesson.
 
-There are a few potential errors to be on the lookout for in your own data as well as data from collaborators or the Internet. If you are aware of the errors and the possible negative effect on downstream data analysis and result interpretation, it might motivate yourself and your project members to try and avoid them. Making small changes to the way you format your data in spreadsheets, can have a great impact on efficiency and reliability when it comes to data cleaning and analysis.
+There are a few potential errors to be on the lookout for in your own data as well as data from collaborators or the Internet. If you are aware of the errors and the possible negative effect on downstream data analysis and result interpretation, it might motivate yourself and your project members to try and avoid them. Making small changes to the way you format your data in spreadsheets can have a great impact on efficiency and reliability when it comes to data cleaning and analysis.
 
 - [Using multiple tables](#tables)
 - [Using multiple tabs](#tabs)
@@ -37,7 +37,7 @@ There are a few potential errors to be on the lookout for in your own data as we
 ## Using multiple tables {#tables}
 
 A common strategy is creating multiple data tables within
-one spreadsheet. This confuses the computer, so don't do this!
+one spreadsheet. This confuses the computer, so try to avoid doing this!
 When you create multiple tables within one
 spreadsheet, you're drawing false associations between things for the computer,
 which sees each row as an observation. You're also potentially using the same
@@ -46,7 +46,7 @@ into a usable form. The example below depicts the problem:
 
 ![](fig/multiple-tables-example2.png){alt='multiple tables'}
 
-In the example above, the computer will see (for example) row 24 and assume that all columns A-J
+In the example above, the computer will see row 24 and assume that all columns A-J
 refer to the same sample. This row actually represents two distinct samples
 (information about livestock for informant 1 and information about plots for informant 2). Other rows are similarly problematic.
 
@@ -54,9 +54,9 @@ refer to the same sample. This row actually represents two distinct samples
 
 But what about workbook tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail
 to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or
-scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.
+scripting to ensure this connection).
 
-This isn't good practice for two reasons:
+Say you make a separate tab for each day you take a measurement. This isn't good practice for two reasons:
 
 1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
 2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the
@@ -98,7 +98,7 @@ subsequent calculations or analyses. For example, the average of a set of number
 **Solution**: One common practice is to record unknown or missing data as -999, 999, or 0. Many statistical programs will not recognize
 that these are intended to represent missing (null) values. How these values are interpreted will depend on the software you use to
 analyze your data. It is essential to use a clearly defined and consistent null indicator.
-Blanks (most applications) and NA (for R) are good choices. White et al, 2013, explain good choices for indicating null values for different software applications in their article:
+Blanks (most applications) and NA (for R) are good choices. White et al., 2013, explain good choices for indicating null values for different software applications in their article:
 [Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608) Ideas in Ecology and Evolution.
 
 | Null Values | Problems                                                                                                                                                                   | Compatibility         | Recommendation | 
@@ -116,7 +116,7 @@ Blanks (most applications) and NA (for R) are good choices. White et al, 2013, e
 
 ## Using formatting to convey information {#formatting}
 
-**Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
+**Example**: highlighting cells, rows or columns that should be excluded from an analysis, and leaving blank rows to indicate separations in data.
 
 ![](fig/bad-formatting.png){alt='formatting'}
 
