@@ -319,7 +319,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Dates as Data</h1>
-        <p>Last updated on 2023-05-03 |
+        <p>Last updated on 2024-07-26 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/03-dates-as-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -347,8 +347,8 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul><li>Recognise problematic or suspicious date formats.</li>
-<li>Use formulas to separate dates into their component values
-(e.g. Month, Day, Year).</li>
+<li>Use formulas to separate dates into their component values (e.g.,
+Year, Month, Day).</li>
 </ul></div>
 </div>
 </div>
@@ -362,13 +362,13 @@ entering them, or visually reviewing data, it’s not actually a best
 practice for preparing data for analysis.</p>
 <p>When working with data, your goal is to have as little ambiguity as
 possible. Ambiguity can creep into your data when working with dates
-when there are regional variations either in your observations and when
+when there are regional variations either in your observations or when
 you or your team might be working with different versions or suites of
 software products (e.g., LibreOffice, Microsoft Excel, Gnumeric).</p>
 <p>To avoid ambiguity between regional differences in date formatting
 and compatibility across spreadsheet software programs, a good practice
-is to divide dates into components in different columns - DAY, MONTH,
-and YEAR.</p>
+is to divide dates into components in different columns - YEAR, MONTH,
+and DAY.</p>
 <p>When working with dates it’s also important to remember that
 functions are guaranteed to be compatible only within the same family of
 software products (e.g., LibreOffice, Microsoft Excel, Gnumeric). If you
@@ -431,8 +431,8 @@ dates they appear as you would expect. If you try to type in a US format
 date into a UK version of Excel, it may or may not be treated as a
 date.</p>
 <p>This regional variation is one good reason to treat dates, not as a
-single data point, but as three distinct pieces of data (month, day, and
-year). Separating dates into their component parts will avoid this
+single data point, but as three distinct pieces of data (year, month,
+and day). Separating dates into their component parts will avoid this
 confusion, while also giving the added benefit of allowing you to
 compare, for example data collected in January of multiple years with
 data collected in February of multiple years.</p>
@@ -451,12 +451,12 @@ including the dates on which the interviews were conducted.</p>
 format dates in your location (either day first <code>DD_MM_YEAR</code>,
 or month first <code>MM_DD_YEAR</code>).</p>
 <p>Extract the components of the date to new columns. For this we can
-use the built in Excel functions:</p>
-<p><code>=MONTH()</code><br><code>=DAY()</code><br><code>=YEAR()</code></p>
+use the built-in Excel functions:</p>
+<p><code>=YEAR()</code> <code>=MONTH()</code><br><code>=DAY()</code></p>
 <p>Apply each of these formulas to its entire column. Make sure the new
 column is formatted as a number and not as a date.</p>
 <p>We now have each component of our date isolated in its own column.
-This will allow us to group our data with respect to month, year, or day
+This will allow us to group our data with respect to year, month, or day
 of month for our analyses and will also prevent problems when passing
 data between different versions of spreadsheet software (as for example
 when sharing data with collaborators in different countries).</p>
@@ -468,7 +468,7 @@ when sharing data with collaborators in different countries).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <figure><img src="fig/solution_exercise_1_dates.png" alt="dates exercise 1" class="figure mx-auto d-block"></figure><p>Note that this solution shows the dates in <code>MM_DD_YEAR</code>
 format.</p>
@@ -488,8 +488,8 @@ format.</p>
 another data point in the <code>interview_date</code> column by typing
 either <code>11/17</code> (if your location uses <code>MM/DD</code>
 formatting) or <code>17/11</code> (if your location uses
-<code>DD/MM</code> formatting). The <code>Day</code>,
-<code>Month</code>, and <code>Year</code> columns should populate for
+<code>DD/MM</code> formatting). The <code>Year</code>,
+<code>Month</code>, and <code>Day</code> columns should populate for
 this new data point. What year is shown in the <code>Year</code>
 column?</p>
 </div>
@@ -500,7 +500,7 @@ column?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>If no year is specified, the spreadsheet program will assume you mean
 the current year and will insert that value. This may be incorrect if
@@ -590,8 +590,8 @@ handle.</li>
   "url": "https://datacarpentry.github.io/spreadsheets-socialsci/03-dates-as-data.html",
   "identifier": "https://datacarpentry.github.io/spreadsheets-socialsci/03-dates-as-data.html",
   "dateCreated": "2017-05-25",
-  "dateModified": "2023-05-03",
-  "datePublished": "2024-07-23"
+  "dateModified": "2024-07-26",
+  "datePublished": "2024-07-26"
 }
 
   </script><script>

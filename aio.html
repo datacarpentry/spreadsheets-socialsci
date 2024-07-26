@@ -545,7 +545,7 @@ make them easier for you and others to use for analysis.</li>
 </div>
 </section></section><section id="aio-01-format-data"><p>Content from <a href="01-format-data.html">Formatting Data Tables in Spreadsheets</a></p>
 <hr>
-<p>Last updated on 2023-05-03 |
+<p>Last updated on 2024-07-26 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/01-format-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -658,9 +658,9 @@ data, and is required by most data repositories.</li>
 agricultural practices among farmers in two countries in eastern
 sub-Saharan Africa (Mozambique and Tanzania). Researchers conducted
 interviews with farmers in these countries to collect data on household
-statistics (e.g. number of household members, number of meals eaten per
-day, availability of water), farming practices (e.g. water usage), and
-assets (e.g. number of farm plots, number of livestock). They also
+statistics (e.g., number of household members, number of meals eaten per
+day, availability of water), farming practices (e.g., water usage), and
+assets (e.g., number of farm plots, number of livestock). They also
 recorded the dates and locations of each interview.</p>
 <p>If they were to keep track of the data like this:</p>
 <figure><img src="fig/multiple-info.png" alt="multiple-info example" class="figure mx-auto d-block"></figure><p>the problem is that number of livestock and type of livestock are in
@@ -690,9 +690,9 @@ computationally and reproducibly later in this workshop.</p>
 <p>The data used in these lessons are taken from interviews of farmers
 in two countries in eastern sub-Saharan Africa (Mozambique and
 Tanzania). These interviews were conducted between November 2016 and
-June 2017 and probed household features (e.g. construction materials
-used, number of household members), agricultural practices (e.g. water
-usage), and assets (e.g. number and types of livestock).</p>
+June 2017 and probed household features (e.g., construction materials
+used, number of household members), agricultural practices (e.g., water
+usage), and assets (e.g., number and types of livestock).</p>
 </blockquote>
 <p>This is a real dataset, however, it has been simplified for this
 workshop. If you’re interested in exploring the full dataset further,
@@ -756,7 +756,7 @@ wrong with this data and how you would fix it.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>Take about 10 minutes to work on this exercise.</li>
@@ -821,15 +821,15 @@ formatting of your data file.</p>
 <p>Some of this information may be familiar to learners who conduct
 analyses on survey data or other data sets that come with codebooks.
 Codebooks will often describe the way a variable has been constructed,
-what prompt was associated with it in an survey or interview, and what
+what prompt was associated with it in a survey or interview, and what
 the meaning of various values are. For example, the <a href="https://gss.norc.org" class="external-link">General Social Survey</a> maintains their
 entire codebook online. Looking at an entry for a particular variable,
 such as <a href="https://gssdataexplorer.norc.org/variables/81/vshow" class="external-link">the variable
 <code>SEX</code></a>, provides valuable information about what survey
 waves the variable covers, and the meaning of particular values.</p>
 <p>Additionally, file or database level metadata describes how files
-that make up the dataset relate to each other; what format are they are
-in; and whether they supersede or are superseded by previous files. A
+that make up the dataset relate to each other; what format they are in;
+and whether they supersede or are superseded by previous files. A
 folder-level readme.txt file is the classic way of accounting for all
 the files and folders in a project.</p>
 <p>Metadata are most useful when they follow a standard. For example,
@@ -838,8 +838,9 @@ the <a href="https://www.ddialliance.org" class="external-link">Data Documentati
 points in the research cycle. Research librarians may have specific
 expertise in this area, and can be helpful resources for thinking about
 ways to purposefully document metatdata as part of your research.</p>
-<p>(Text on metadata adapted from the online course Research Data <a href="https://datalib.edina.ac.uk/mantra" class="external-link">MANTRA</a> by EDINA and Data
-Library, University of Edinburgh. MANTRA is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">Creative Commons
+<p>(Text on metadata adapted from the online course <a href="https://mantra.ed.ac.uk/" class="external-link">MANTRA - Research Data Management
+Training</a> by Research Data Service and the Institute for Academic
+Development, University of Edinburgh. MANTRA is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">Creative Commons
 Attribution 4.0 International License</a>.)</p>
 <div id="exercise-1" class="callout challenge">
 <div class="callout-square">
@@ -866,7 +867,7 @@ in order to analyze and interpret this data?”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Some types of metadata that should be recorded and made available
 with the data are:</p>
@@ -874,14 +875,14 @@ with the data are:</p>
 <li>the exact wording of questions used in the interviews (if interviews
 were structured) or general prompts used (if interviews were
 semi-structured)</li>
-<li>a description of the type of data allowed in each column (e.g. the
+<li>a description of the type of data allowed in each column (e.g., the
 allowed range for numerical data with a restricted range, a list of
 allowed options for categorical variables, whether data in a numerical
 column should be continuous or discrete)</li>
-<li>definitions of any categorical variables (e.g. definitions of
+<li>definitions of any categorical variables (e.g., definitions of
 “burntbricks” and “sunbricks”)</li>
-<li>definitions of what was counted as a “room”, a “plot”, etc.
-(e.g. was there a minimum size)</li>
+<li>definitions of what was counted as a “room”, a “plot”, etc. (e.g.,
+was there a minimum size)</li>
 <li>learners may come up with additional questions to add to this
 list</li>
 </ul>
@@ -910,7 +911,7 @@ changes.</li>
 </div>
 </section></section><section id="aio-02-common-mistakes"><p>Content from <a href="02-common-mistakes.html">Formatting Problems</a></p>
 <hr>
-<p>Last updated on 2024-06-27 |
+<p>Last updated on 2024-07-26 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/02-common-mistakes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -955,7 +956,7 @@ data as well as data from collaborators or the Internet. If you are
 aware of the errors and the possible negative effect on downstream data
 analysis and result interpretation, it might motivate yourself and your
 project members to try and avoid them. Making small changes to the way
-you format your data in spreadsheets, can have a great impact on
+you format your data in spreadsheets can have a great impact on
 efficiency and reliability when it comes to data cleaning and
 analysis.</p>
 <ul>
@@ -977,17 +978,17 @@ cell</a></li>
 </h2>
 <hr class="half-width">
 <p>A common strategy is creating multiple data tables within one
-spreadsheet. This confuses the computer, so don’t do this! When you
-create multiple tables within one spreadsheet, you’re drawing false
-associations between things for the computer, which sees each row as an
-observation. You’re also potentially using the same field name in
+spreadsheet. This confuses the computer, so try to avoid doing this!
+When you create multiple tables within one spreadsheet, you’re drawing
+false associations between things for the computer, which sees each row
+as an observation. You’re also potentially using the same field name in
 multiple places, which will make it harder to clean your data up into a
 usable form. The example below depicts the problem:</p>
-<figure><img src="fig/multiple-tables-example2.png" alt="multiple tables" class="figure mx-auto d-block"></figure><p>In the example above, the computer will see (for example) row 24 and
-assume that all columns A-J refer to the same sample. This row actually
-represents two distinct samples (information about livestock for
-informant 1 and information about plots for informant 2). Other rows are
-similarly problematic.</p>
+<figure><img src="fig/multiple-tables-example2.png" alt="multiple tables" class="figure mx-auto d-block"></figure><p>In the example above, the computer will see row 24 and assume that
+all columns A-J refer to the same sample. This row actually represents
+two distinct samples (information about livestock for informant 1 and
+information about plots for informant 2). Other rows are similarly
+problematic.</p>
 </section><section><h2 class="section-heading" id="tabs">Using multiple tabs<a class="anchor" aria-label="anchor" href="#tabs"></a>
 <a class="anchor" aria-label="anchor" href="#tabs"></a>
 </h2>
@@ -996,9 +997,9 @@ similarly problematic.</p>
 data, right? Well, yes and no. When you create extra tabs, you fail to
 allow the computer to see connections in the data that are there (you
 have to introduce spreadsheet application-specific functions or
-scripting to ensure this connection). Say, for instance, you make a
-separate tab for each day you take a measurement.</p>
-<p>This isn’t good practice for two reasons:</p>
+scripting to ensure this connection).</p>
+<p>Say you make a separate tab for each day you take a measurement. This
+isn’t good practice for two reasons:</p>
 <ol style="list-style-type: decimal">
 <li>you are more likely to accidentally add inconsistencies to your data
 if each time you take a measurement, you start recording data in a new
@@ -1060,7 +1061,7 @@ recognize that these are intended to represent missing (null) values.
 How these values are interpreted will depend on the software you use to
 analyze your data. It is essential to use a clearly defined and
 consistent null indicator. Blanks (most applications) and NA (for R) are
-good choices. White et al, 2013, explain good choices for indicating
+good choices. White et al., 2013, explain good choices for indicating
 null values for different software applications in their article: <a href="https://ojs.library.queensu.ca/index.php/IEE/article/view/4608" class="external-link">Nine
 simple ways to make it easier to (re)use your data.</a> Ideas in Ecology
 and Evolution.</p>
@@ -1150,7 +1151,7 @@ software.</td>
 </h2>
 <hr class="half-width">
 <p><strong>Example</strong>: highlighting cells, rows or columns that
-should be excluded from an analysis, leaving blank rows to indicate
+should be excluded from an analysis, and leaving blank rows to indicate
 separations in data.</p>
 <figure><img src="fig/bad-formatting.png" alt="formatting" class="figure mx-auto d-block"></figure><p><strong>Solution</strong>: create a new field to encode which data
 should be excluded.</p>
@@ -1288,7 +1289,7 @@ spreadsheet look pretty.</li>
 </div>
 </section></section><section id="aio-03-dates-as-data"><p>Content from <a href="03-dates-as-data.html">Dates as Data</a></p>
 <hr>
-<p>Last updated on 2023-05-03 |
+<p>Last updated on 2024-07-26 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/03-dates-as-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1313,8 +1314,8 @@ spreadsheet look pretty.</li>
 <h3 class="card-title">Objectives</h3>
 <ul>
 <li>Recognise problematic or suspicious date formats.</li>
-<li>Use formulas to separate dates into their component values
-(e.g. Month, Day, Year).</li>
+<li>Use formulas to separate dates into their component values (e.g.,
+Year, Month, Day).</li>
 </ul>
 </div>
 </div>
@@ -1331,13 +1332,13 @@ entering them, or visually reviewing data, it’s not actually a best
 practice for preparing data for analysis.</p>
 <p>When working with data, your goal is to have as little ambiguity as
 possible. Ambiguity can creep into your data when working with dates
-when there are regional variations either in your observations and when
+when there are regional variations either in your observations or when
 you or your team might be working with different versions or suites of
 software products (e.g., LibreOffice, Microsoft Excel, Gnumeric).</p>
 <p>To avoid ambiguity between regional differences in date formatting
 and compatibility across spreadsheet software programs, a good practice
-is to divide dates into components in different columns - DAY, MONTH,
-and YEAR.</p>
+is to divide dates into components in different columns - YEAR, MONTH,
+and DAY.</p>
 <p>When working with dates it’s also important to remember that
 functions are guaranteed to be compatible only within the same family of
 software products (e.g., LibreOffice, Microsoft Excel, Gnumeric). If you
@@ -1404,8 +1405,8 @@ dates they appear as you would expect. If you try to type in a US format
 date into a UK version of Excel, it may or may not be treated as a
 date.</p>
 <p>This regional variation is one good reason to treat dates, not as a
-single data point, but as three distinct pieces of data (month, day, and
-year). Separating dates into their component parts will avoid this
+single data point, but as three distinct pieces of data (year, month,
+and day). Separating dates into their component parts will avoid this
 confusion, while also giving the added benefit of allowing you to
 compare, for example data collected in January of multiple years with
 data collected in February of multiple years.</p>
@@ -1424,12 +1425,12 @@ including the dates on which the interviews were conducted.</p>
 format dates in your location (either day first <code>DD_MM_YEAR</code>,
 or month first <code>MM_DD_YEAR</code>).</p>
 <p>Extract the components of the date to new columns. For this we can
-use the built in Excel functions:</p>
-<p><code>=MONTH()</code><br><code>=DAY()</code><br><code>=YEAR()</code></p>
+use the built-in Excel functions:</p>
+<p><code>=YEAR()</code> <code>=MONTH()</code><br><code>=DAY()</code></p>
 <p>Apply each of these formulas to its entire column. Make sure the new
 column is formatted as a number and not as a date.</p>
 <p>We now have each component of our date isolated in its own column.
-This will allow us to group our data with respect to month, year, or day
+This will allow us to group our data with respect to year, month, or day
 of month for our analyses and will also prevent problems when passing
 data between different versions of spreadsheet software (as for example
 when sharing data with collaborators in different countries).</p>
@@ -1441,7 +1442,7 @@ when sharing data with collaborators in different countries).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <figure><img src="fig/solution_exercise_1_dates.png" alt="dates exercise 1" class="figure mx-auto d-block"></figure><p>Note that this solution shows the dates in <code>MM_DD_YEAR</code>
 format.</p>
@@ -1461,8 +1462,8 @@ format.</p>
 another data point in the <code>interview_date</code> column by typing
 either <code>11/17</code> (if your location uses <code>MM/DD</code>
 formatting) or <code>17/11</code> (if your location uses
-<code>DD/MM</code> formatting). The <code>Day</code>,
-<code>Month</code>, and <code>Year</code> columns should populate for
+<code>DD/MM</code> formatting). The <code>Year</code>,
+<code>Month</code>, and <code>Day</code> columns should populate for
 this new data point. What year is shown in the <code>Year</code>
 column?</p>
 </div>
@@ -1473,7 +1474,7 @@ column?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>If no year is specified, the spreadsheet program will assume you mean
 the current year and will insert that value. This may be incorrect if
@@ -1758,7 +1759,7 @@ data.</li>
 </div>
 </section></section><section id="aio-05-exporting-data"><p>Content from <a href="05-exporting-data.html">Exporting Data</a></p>
 <hr>
-<p>Last updated on 2023-06-21 |
+<p>Last updated on 2024-07-26 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/05-exporting-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1810,8 +1811,8 @@ below.</p></li>
 formats used by LibreOffice. These formats are not static and do not get
 parsed the same way by different software packages.</p></li>
 </ul>
-<p>As an example of inconsistencies in data storage, do you remember how
-we talked about how Excel stores dates earlier? It turns out that there
+<p>As an example of inconsistencies in data storage, do you remember our
+earlier discussion about how Excel stores dates? It turns out that there
 are multiple defaults for different versions of the software, and you
 can switch between them all. So, say you’re compiling Excel-stored data
 from multiple sources. There’s dates in each file- Excel interprets them
@@ -1954,8 +1955,8 @@ in a format that can be used consistently by most programs.</li>
   "url": "https://datacarpentry.github.io/spreadsheets-socialsci/aio.html",
   "identifier": "https://datacarpentry.github.io/spreadsheets-socialsci/aio.html",
   "dateCreated": "2017-05-25",
-  "dateModified": "2024-07-23",
-  "datePublished": "2024-07-23"
+  "dateModified": "2024-07-26",
+  "datePublished": "2024-07-26"
 }
 
   </script><script>
