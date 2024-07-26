@@ -97,7 +97,7 @@ location (either day first `DD_MM_YEAR`, or month first `MM_DD_YEAR`).
 Extract the components of the date to new columns. For this we
 can use the built-in Excel functions:
 
-`=YEAR()`
+`=YEAR()`  
 `=MONTH()`  
 `=DAY()`  
 
