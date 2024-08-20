@@ -6,19 +6,20 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand how to organize data so computers can make the best use of the data
+- Define the scope of this lesson
+- Describe some drawbacks and advantages of using spreadsheet programs
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What are basic principles for using spreadsheets for good data organization?
+- What are spreadsheets useful for in a research project?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
-## Things You'll Need To Complete This Tutorial
+## Things You'll Need To Complete This Lesson
 
 #### Spreadsheet Software
 
@@ -131,7 +132,8 @@ In this lesson we're going to talk about:
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Organizing your data tables according to tidy data principles will make them easier for you and others to use for analysis.
+- Good data organization is the foundation of any research project.
+- Spreadsheets are good for data entry, but when doing data cleaning or analysis, it's not easy to show or replicate what you did.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
