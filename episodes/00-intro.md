@@ -75,8 +75,8 @@ Nevertheless it is important to be aware of the limitations these data may prese
 - How to do *plotting* in a spreadsheet
 - How to *write code* in spreadsheet programs
 
-If you're looking to do this, a good reference is
-[Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O'Reilly.
+If you're looking to do this, a couple of good references are the
+[Excel Cookbook](https://search.worldcat.org/title/1419271899), published by O'Reilly, and the [Microsoft Excel 365 bible](https://search.worldcat.org/en/title/1263023438).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
