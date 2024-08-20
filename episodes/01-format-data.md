@@ -72,9 +72,9 @@ what you did when Reviewer #3 asks for a different analysis, you should
 
 Put these principles in to practice today during the exercises.
 
-### Structuring data in spreadsheets
+### Tidy data in spreadsheets
 
-The cardinal rules of using spreadsheet programs for data:
+The tidy data principles when structuring data in spreadsheets are:
 
 1. Put all your variables in columns - the thing you're measuring,
   like 'weight' or 'temperature'.
@@ -86,6 +86,8 @@ The cardinal rules of using spreadsheet programs for data:
 5. Export the cleaned data to a text-based format like CSV (comma-separated values) format. This
   ensures that anyone can use the data, and is required by
   most data repositories.
+
+You can understand more easily these principles with the illustrations in the [Tidy Data Series by Lowndes & Horst](https://allisonhorst.com/other-r-fun).
 
 For instance, we're going to be working with data from a study of
 agricultural practices among farmers in two countries in eastern
@@ -198,15 +200,17 @@ with this data and how you would fix it.
 
 ## Handy References
 
-Two excellent references on spreadsheet organization are:
+Three excellent references on spreadsheet organization are:
+
+- Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
+  Statistical Software. [http://www.jstatsoft.org/v59/i10](https://www.jstatsoft.org/v59/i10)
+  
+- Julia Lowndes \& Allison Horst, *Tidy Data Series by Lowndes & Horst*. [https://allisonhorst.com/other-r-fun](https://allisonhorst.com/other-r-fun)
 
 - Karl W. Broman \& Kara H. Woo, *Data Organization in Spreadsheets*, Vol. 72,
   Issue 1, 2018, The American Statistician.
   [https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 
-- Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
-  Statistical Software. [http://www.jstatsoft.org/v59/i10](https://www.jstatsoft.org/v59/i10)
-  
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
