@@ -17,21 +17,6 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::  prereq
-
-## Things You'll Need To Complete This Lesson
-
-#### Spreadsheet Software
-
-To work through this tutorial you will need access to a spreadsheet program.
-Many computers come with a pre-installed spreadsheet program like Excel. macOS users who use Apple's Numbers application should note that it does not contain some of the features (particularly data validation) that we will be using. Please use LibreOffice or Microsoft Excel instead.
-
-If you do not have a spreadsheet program, install one using the instructions
-in the link below.
-
-- [Instructions to install a spreadsheet program.](../learners/setup.md)
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Good data organization is the foundation of your research
 project. Most researchers have data or do data entry in
@@ -119,14 +104,6 @@ preliminary summary statistics.
 In this lesson, we will assume that you are most likely using Excel as
 your primary spreadsheet program - there are other programs with similar functionality but Excel seems
 to be the most commonly used.
-
-In this lesson we're going to talk about:
-
-1. [Formatting data tables in spreadsheets](01-format-data.md)
-2. [Formatting problems](02-common-mistakes.md)
-3. [Dates as data](03-dates-as-data.md)
-4. [Quality control](04-quality-assurance.md)
-5. [Exporting data](05-exporting-data.md)
 
 
 
