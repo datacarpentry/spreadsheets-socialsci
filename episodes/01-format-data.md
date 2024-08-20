@@ -14,7 +14,7 @@ exercises: 15
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What are some common challenges with formatting data in spreadsheets and how can we avoid them?
+- How do we format data in spreadsheets for effective data use?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
