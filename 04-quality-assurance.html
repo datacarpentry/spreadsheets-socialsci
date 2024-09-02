@@ -316,7 +316,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Quality Assurance</h1>
-        <p>Last updated on 2023-05-03 |
+        <p>Last updated on 2024-09-02 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/04-quality-assurance.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -366,16 +366,12 @@ For example a column recording age in years should be numeric, greater
 than 0 and is unlikely to be greater than 120.</p>
 <p>Excel allows us to specify a variety of data validations to be
 applied to cell contents. If the validation fails, an error is raised
-and the data we entered does not go into the particular cell. In
-addition to providing validation when we enter data, Excel allows us to
-add validations to data that has already been entered. The validation is
-not applied retrospectively, so that data are removed. Instead, if a
-particular cell would fail the validation check a triangle is placed in
-the top left corner of the cell as a warning.</p>
+and the data we entered does not go into the particular cell.</p>
 <p>We will be working with a couple of examples of data validation rules
 but many others exist. For an overview of data validation rules
-available in Excel, check out the <a href="https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249" class="external-link">Excel
-support page on data validation</a>.</p>
+available, check out the <a href="https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249" class="external-link">Excel
+support page on data validation</a> or the <a href="https://books.libreoffice.org/en/CG24/CG2402-EnteringandEditingData.html#toc28" class="external-link">Validating
+cell contents section of the LibreOffice Calc Guide</a>.</p>
 <p>We will look at two examples:</p>
 <ol style="list-style-type: decimal"><li>Restricting data to a numeric range</li>
 <li>Restricting data to entries from a list</li>
@@ -393,39 +389,145 @@ reject values over a certain maximum - for example an entry like
 <code>0</code> key. It is up to you as the researcher to decide what a
 reasonable maximum value would be for your data, here we will assume
 that there are no families with greater than 30 members.</p>
+<p>Let’s start by opening the data validation feature using the
+<code>no_membrs</code> column.</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Excel" type="button" role="tab" aria-controls="nav-tabpanel-1-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Calc" type="button" role="tab" aria-controls="nav-tabpanel-1-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Excel">
 <p>1. Select the <code>no_membrs</code> column.</p>
-<p>2. In Excel on the <code>Data</code> tab select
-<code>Data Tools</code> and then <code>Data Validation</code> or
-<code>Validation Tools</code> (depending on your version of Excel). The
-following popout will appear:</p>
-<figure><img src="fig/data-validation-tab.png" alt="Image of data validation tab in Excel" class="figure mx-auto d-block"></figure><p>In Libre Office on the <code>Data</code> tab select
-<code>Validity...</code> the following popup will appear:</p>
-<figure><img src="fig/data-validation-tab-LibreOffice.png" alt="Image of data validation tab in LibreOffice" class="figure mx-auto d-block"></figure><p>3. In Excel, select ‘Whole number’ from the <code>Allow</code> drop
-down options.</p>
-<p>In Libre Office choose <code>Allow: Whole Numbers</code> and then
-<code>Data: valid range</code>.</p>
-<p>4. The window content will change. The value in the data box will say
-‘between’ and <code>Minimum</code> and <code>Maximum</code> boxes will
-be provided for you to specify an allowed range. In Excel you will
-see:</p>
-<figure><img src="fig/data-validation-numbers.png" alt="Image of data validation tab for number rules in Excel" class="figure mx-auto d-block"></figure><p>In LibreOffice, you will see:</p>
-<figure><img src="fig/data-validation-numbers-LibreOffice.png" alt="Image of data validation tab in LibreOffice" class="figure mx-auto d-block"></figure><p>5. Fill in the minimum and maximum values that make sense for your
-data and click <code>Ok</code>. Here we will choose a minimum of 1 and a
+<p>2. Select the <code>Data</code> tab, and in the
+<code>Data Tools</code> group, select the <code>Data Validation</code>
+or <code>Validation Tools</code> (depending on your version of Excel).
+The following pop-up will appear:</p>
+<figure><img src="fig/data-validation-tab-new.png" alt="Image of data validation tab in Excel" class="figure mx-auto d-block"></figure><p>3. Select ‘Whole number’ from the <code>Allow</code> drop down
+options.</p>
+<p>4. The window content will change. In the <code>Data</code> drop down
+box, check that ‘between’ is selected. <code>Minimum</code> and
+<code>Maximum</code> boxes will be provided for you to specify an
+allowed range. You will see this:</p>
+<figure><img src="fig/data-validation-numbers-new.png" alt="Image of data validation tab for number rules in Excel" class="figure mx-auto d-block"></figure><p>5. Fill in the minimum and maximum values that make sense for your
+data and click <code>OK</code>. Here we will choose a minimum of 1 and a
 maximum of 30.</p>
-<p>Your data table will now not allow you to enter a value that violates
+</div>
+<div id="nav-tabpanel-1-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Calc">
+<p>1. Select the <code>no_membrs</code> column.</p>
+<p>2. On the <code>Data</code> tab select <code>Validity...</code>. The
+following pop-up will appear:</p>
+<figure><img src="fig/data-validation-tab-LibreOffice-new.png" alt="Image of data validation tab in LibreOffice" class="figure mx-auto d-block"></figure><p>3. Select ‘Whole Numbers’ from the <code>Allow</code> drop down
+options.</p>
+<p>4. The window content will change. In the <code>Data</code> drop down
+box, check that ‘valid range’ is selected. <code>Minimum</code> and
+<code>Maximum</code> boxes will be provided for you to specify an
+allowed range. You will see this:</p>
+<figure><img src="fig/data-validation-numbers-LibreOffice-new.png" alt="Image of data validation tab in LibreOffice" class="figure mx-auto d-block"></figure><p>5. Fill in the minimum and maximum values that make sense for your
+data and click <code>OK</code>. Here we will choose a minimum of 1 and a
+maximum of 30.</p>
+</div>
+</div>
+</div>
+<p>Now your data table will not allow you to enter a value that violates
 the data validation rule you have created. To test this out, try to
 enter a new value into the <code>no_membrs</code> column that is not
-valid. The following error box will appear in Excel:</p>
-<figure><img src="fig/error-invalid-data.png" alt="Image of error message for inputing invalid data in Excel" class="figure mx-auto d-block"></figure><p>The following error box will appear in LibreOffice:</p>
-<figure><img src="fig/error-invalid-data-LibreOffice.png" alt="Image of error message for inputing invalid data in LibreOffice" class="figure mx-auto d-block"></figure><p>You can also customize the resulting message to be more informative
-by entering your own message in the <code>Input Message</code> tab when
-creating a data validation rule. In Excel, you will see:</p>
-<figure><img src="fig/input_message.png" alt="Image of Input Message tab in Excel" class="figure mx-auto d-block"></figure><p>In LibreOffice, you will see:</p>
-<figure><img src="fig/input_message_LibreOffice.png" alt="Image of Input Message tab in LibreOffice" class="figure mx-auto d-block"></figure><p>You can also allow invalid data to result in a warning rather than an
-error by modifying the <code>Style</code> option on the
-<code>Error Alert</code> tab. For Excel you will see:</p>
-<figure><img src="fig/error_alert.png" alt="Image of Error Alert tab in Excel" class="figure mx-auto d-block"></figure><p>In LibreOffice, you will see:</p>
-<figure><img src="fig/error_alert_LibreOffice.png" alt="Image of Error Alert tab in LibreOffice" class="figure mx-auto d-block"></figure><div id="exercise" class="callout discussion">
+valid. The following error box will appear</p>
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Excel" type="button" role="tab" aria-controls="nav-tabpanel-2-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Calc" type="button" role="tab" aria-controls="nav-tabpanel-2-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Excel">
+<figure><img src="fig/error-invalid-data-new.png" alt="Image of error message for inputing invalid data in Excel" class="figure mx-auto d-block"></figure></div>
+<div id="nav-tabpanel-2-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Calc">
+<figure><img src="fig/error-invalid-data-LibreOffice-new.png" alt="Image of error message for inputing invalid data in LibreOffice" class="figure mx-auto d-block"></figure></div>
+</div>
+</div>
+<p>You can also customize the resulting message to be more informative
+by entering your own message in the <code>Error Alert</code> tab when
+creating a data validation rule.</p>
+<div class="tabs">
+<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-3-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-Excel" type="button" role="tab" aria-controls="nav-tabpanel-3-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-3-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-3-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-Calc" type="button" role="tab" aria-controls="nav-tabpanel-3-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-3" class="tab-content">
+<div id="nav-tabpanel-3-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-Excel">
+<p>Check that the <code>Style</code> is ‘Stop’. You can write ‘Invalid
+number’ as the <code>Title</code> and ‘Number of households must be a
+whole number between 1 and 30’ as the <code>Error Message</code>.</p>
+<figure><img src="fig/error_alert-new.png" alt="Image of Error Alert tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
+</div>
+<div id="nav-tabpanel-3-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-Calc">
+<p>Check that the <code>Action</code> is ‘Stop’. You can write ‘Invalid
+number’ as the <code>Title</code> and ‘Number of households must be a
+whole number between 1 and 30’ as the <code>Error Message</code>.</p>
+<figure><img src="fig/error_alert_LibreOffice-new.png" alt="Image of Error Alert tab in LibreOffice" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
+</div>
+</div>
+</div>
+<p>You can also have an <code>Input message</code> that warns users of
+the spreadsheet what values are accepted in cell that has data
+validation.</p>
+<div class="tabs">
+<nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-4-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-Excel" type="button" role="tab" aria-controls="nav-tabpanel-4-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-4-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-4-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-Calc" type="button" role="tab" aria-controls="nav-tabpanel-4-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-4" class="tab-content">
+<div id="nav-tabpanel-4-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-Excel">
+<p>Select the <code>Input Message</code> tab. Add the title and input
+message that is convenient for your task. In this example, we will write
+‘Household members’ and ‘Please enter a whole number between 1 and
+30’.</p>
+<figure><img src="fig/input_message-new.png" alt="Image of Input Message tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens when you select a cell that has data
+validation.</p>
+</div>
+<div id="nav-tabpanel-4-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-Calc">
+<p>Select the <code>Input Help</code> tab. Add the title and input
+message that is convenient for your task. In this example, we will write
+‘Household members’ and ‘Please enter a whole number between 1 and
+30’.</p>
+<figure><img src="fig/input_message_LibreOffice-new.png" alt="Image of Input Message tab in LibreOffice" class="figure mx-auto d-block"></figure><p>Now check what happens when you select a cell that has data
+validation.</p>
+</div>
+</div>
+</div>
+<div id="exercise" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -435,7 +537,7 @@ error by modifying the <code>Style</code> option on the
 <p>Apply a new data validation rule to one of the other numeric columns
 in this data table. Discuss with the person sitting next to you what a
 reasonable rule would be for the column you’ve selected. Be sure to
-create an informative input message.</p>
+create an informative error alert and input message.</p>
 </div>
 </div>
 </div>
@@ -448,26 +550,53 @@ spreadsheet will provide you with a drop-downlist of the available
 items. So, instead of trying to remember how to spell “mabatisloping”,
 or whether or not you capitalized “cement” you can select the right
 option from the list.</p>
+<div class="tabs">
+<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-5-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-Excel" type="button" role="tab" aria-controls="nav-tabpanel-5-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-5-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-5-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-Calc" type="button" role="tab" aria-controls="nav-tabpanel-5-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-5-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-5" class="tab-content">
+<div id="nav-tabpanel-5-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-Excel">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
-<p>2. In Excel, on the <code>Data</code> tab select
-<code>Data Tools</code> and then <code>Data Validation</code> or
-<code>Validation Tools</code> (depending on your version of Excel). The
-following popout will appear:</p>
-<figure><img src="fig/data-validation-tab.png" alt="Image of data validation tab in Excel" class="figure mx-auto d-block"></figure><p>In LibreOffice, on the <code>Data</code> tab select
-<code>Validity...</code></p>
-<figure><img src="fig/data-validation-tab-LibreOffice.png" alt="Image of data validation tab in Excel" class="figure mx-auto d-block"></figure><p>3. In Excel, select <code>List</code> from the <code>Allow</code>
-drop-down menu, and in LibreOffice, choose the <code>List</code>
-option.</p>
-<p>4. In Excel, the window will change to include a <code>Source</code>
-box, you will see,</p>
-<figure><img src="fig/select-range-of-values.png" alt="Image of selecting a range of values to allow in Excel" class="figure mx-auto d-block"></figure><p>In LibreOffice, you will see,</p>
-<figure><img src="fig/select-range-of-values-LibreOffice.png" alt="Image of selecting a range of values to allow in LibreOffice" class="figure mx-auto d-block"></figure><p>5. Type a list of all the values that you want to be accepted in this
+<p>2. Select the <code>Data</code> tab, and in the
+<code>Data Tools</code> group, select the <code>Data Validation</code>
+or <code>Validation Tools</code> (depending on your version of
+Excel).</p>
+<p>3. Select <code>List</code> from the <code>Allow</code> drop-down
+menu.</p>
+<p>4. The window will change to include a <code>Source</code> box, you
+will see:</p>
+<figure><img src="fig/select-range-of-values-new.png" alt="Image of selecting a range of values to allow in Excel" class="figure mx-auto d-block"></figure><p>5. Type a list of all the values that you want to be accepted in this
 column, separated by a comma (with no spaces). For us this will be
-“grass, muddaub, burntbricks, sunbricks, cement”.</p>
-<p>In LibreOffice, your entries of grass, muddaub, burntbricks,
-sunbricks and cement should be on new lines as shown below</p>
-<figure><img src="fig/filled-range-of-values-LibreOffice.png" alt="Image of filled in range of values to allow in LibreOffice" class="figure mx-auto d-block"></figure><p>6. In Excel, create a meaningful input message, then click OK. In
-LibreOffice, there is no need to create an input message.</p>
+“grass,muddaub,burntbricks,sunbricks,cement”.</p>
+<p>6. Create a meaningful error alert and input message, then click
+‘OK’. In LibreOffice, there is no need to create an input message.</p>
+</div>
+<div id="nav-tabpanel-5-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-Calc">
+<p>1. Select the <code>respondent_wall_type</code> column.</p>
+<p>2. On the <code>Data</code> tab select <code>Validity...</code>.</p>
+<p>3. Select <code>List</code> from the <code>Allow</code> drop-down
+menu.</p>
+<p>4. The window will change to include an <code>Entries</code> box, you
+will see:</p>
+<figure><img src="fig/select-range-of-values-LibreOffice-new.png" alt="Image of selecting a range of values to allow in LibreOffice" class="figure mx-auto d-block"></figure><p>5. Type a list of all the values that you want to be accepted in this
+column, and insert a new line by clicking enter after each value. Make
+sure not to include spaces before or after the values. Your entries of
+grass, muddaub, burntbricks, sunbricks and cement should look like
+this:</p>
+<figure><img src="fig/filled-range-of-values-LibreOffice-new.png" alt="Image of filled in range of values to allow in LibreOffice" class="figure mx-auto d-block"></figure><p>6. Create a meaningful error alert and input message, then click
+‘OK’.</p>
+</div>
+</div>
+</div>
 <p>We have now provided a restriction that will be validated each time
 we try and enter data into the selected cells. When a cell in this
 column is selected, a drop-down arrow will appear. When you click the
@@ -523,11 +652,14 @@ that is already present in the cell. This means, for example, that if we
 had already entered <code>150</code> in the <code>no_membrs</code>
 column before applying our data validation rule, that cell would not be
 flagged with a warning.</p>
-<p>In some versions of Excel, you can click in the <code>Data</code> tab
-on <code>Data Validation</code> and then
+<p>In some versions of Excel, you can click in the <code>Data</code>
+tab, and in the <code>Data Tools</code> group, click in the little
+drop-down arrow next to <code>Data Validation</code>, and then
 <code>Circle invalid data</code>. This will put red circles around
 invalid data entries. Note that it can be a bit slow with large data
-files.</p>
+files. You can do the same in LibreOffice Calc by going to
+<code>Tools</code> tab, then <code>Detective</code> and selecting
+<code>Mark invalid data</code>.</p>
 <p>When using spreadsheets for data entry, it is a good idea to set up
 data validation rules for each column when you set up your spreadsheet
 (i.e. before you enter any data).</p>
@@ -607,8 +739,8 @@ data.</li>
   "url": "https://datacarpentry.github.io/spreadsheets-socialsci/04-quality-assurance.html",
   "identifier": "https://datacarpentry.github.io/spreadsheets-socialsci/04-quality-assurance.html",
   "dateCreated": "2017-05-25",
-  "dateModified": "2023-05-03",
-  "datePublished": "2024-08-30"
+  "dateModified": "2024-09-02",
+  "datePublished": "2024-09-02"
 }
 
   </script><script>
