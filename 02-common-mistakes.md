@@ -12,7 +12,7 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What are some common challenges with formatting data in spreadsheets and how can we avoid them?
+- What common mistakes are made when formatting spreadsheets?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
