@@ -359,7 +359,7 @@
         
 <section id="aio-00-intro"><p>Content from <a href="00-intro.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2023-05-03 |
+<p>Last updated on 2024-09-02 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/00-intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -373,8 +373,7 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What are basic principles for using spreadsheets for good data
-organization?</li>
+<li>What are spreadsheets useful for in a research project?</li>
 </ul>
 </div>
 </div>
@@ -384,35 +383,12 @@ organization?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Understand how to organize data so computers can make the best use
-of the data</li>
+<li>Define the scope of this lesson</li>
+<li>Describe some drawbacks and advantages of using spreadsheet
+programs</li>
 </ul>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div id="things-youll-need-to-complete-this-tutorial" class="callout prereq">
-<div class="callout-square">
-<i class="callout-icon" data-feather="check"></i>
-</div>
-<div id="things-youll-need-to-complete-this-tutorial" class="callout-inner">
-<h3 class="callout-title">Things You’ll Need To Complete This Tutorial</h3>
-<div class="section level4 callout-content">
-<h4 id="spreadsheet-software">Spreadsheet Software<a class="anchor" aria-label="anchor" href="#spreadsheet-software"></a>
-</h4>
-<p>To work through this tutorial you will need access to a spreadsheet
-program. Many computers come with a pre-installed spreadsheet program
-like Excel. macOS users who use Apple’s Numbers application should note
-that it does not contain some of the features (particularly data
-validation) that we will be using. Please use LibreOffice or Microsoft
-Excel instead.</p>
-<p>If you do not have a spreadsheet program, install one using the
-instructions in the link below.</p>
-<ul>
-<li><a href="index.html#setup">Instructions to install a spreadsheet
-program.</a></li>
-</ul>
 </div>
 </div>
 </div>
@@ -482,8 +458,9 @@ them.</p>
 <li>How to do <em>plotting</em> in a spreadsheet</li>
 <li>How to <em>write code</em> in spreadsheet programs</li>
 </ul>
-<p>If you’re looking to do this, a good reference is <a href="https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&amp;qid=1491594584&amp;sr=8-1&amp;keywords=head+first+excel" class="external-link">Head
-First Excel</a>, published by O’Reilly.</p>
+<p>If you’re looking to do this, a couple of good references are the <a href="https://search.worldcat.org/title/1419271899" class="external-link">Excel Cookbook</a>,
+published by O’Reilly, and the <a href="https://search.worldcat.org/en/title/1263023438" class="external-link">Microsoft Excel
+365 bible</a>.</p>
 </div>
 </div>
 </div>
@@ -514,15 +491,6 @@ along the way and produce preliminary summary statistics.</p>
 <p>In this lesson, we will assume that you are most likely using Excel
 as your primary spreadsheet program - there are other programs with
 similar functionality but Excel seems to be the most commonly used.</p>
-<p>In this lesson we’re going to talk about:</p>
-<ol style="list-style-type: decimal">
-<li><a href="01-format-data.html">Formatting data tables in
-spreadsheets</a></li>
-<li><a href="02-common-mistakes.html">Formatting problems</a></li>
-<li><a href="03-dates-as-data.html">Dates as data</a></li>
-<li><a href="04-quality-assurance.html">Quality control</a></li>
-<li><a href="05-exporting-data.html">Exporting data</a></li>
-</ol>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -531,8 +499,10 @@ spreadsheets</a></li>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul>
-<li>Organizing your data tables according to tidy data principles will
-make them easier for you and others to use for analysis.</li>
+<li>Good data organization is the foundation of any research
+project.</li>
+<li>Spreadsheets are good for data entry, but when doing data cleaning
+or analysis, it’s not easy to show or replicate what you did.</li>
 </ul>
 </div>
 </div>
@@ -540,7 +510,7 @@ make them easier for you and others to use for analysis.</li>
 </div>
 </section></section><section id="aio-01-format-data"><p>Content from <a href="01-format-data.html">Formatting Data Tables in Spreadsheets</a></p>
 <hr>
-<p>Last updated on 2024-07-26 |
+<p>Last updated on 2024-09-02 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/01-format-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -554,8 +524,7 @@ make them easier for you and others to use for analysis.</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What are some common challenges with formatting data in spreadsheets
-and how can we avoid them?</li>
+<li>How do we format data in spreadsheets for effective data use?</li>
 </ul>
 </div>
 </div>
@@ -632,9 +601,10 @@ together.</li>
 <p>Put these principles in to practice today during the exercises.</p>
 </div>
 <div class="section level3">
-<h3 id="structuring-data-in-spreadsheets">Structuring data in spreadsheets<a class="anchor" aria-label="anchor" href="#structuring-data-in-spreadsheets"></a>
+<h3 id="tidy-data-in-spreadsheets">Tidy data in spreadsheets<a class="anchor" aria-label="anchor" href="#tidy-data-in-spreadsheets"></a>
 </h3>
-<p>The cardinal rules of using spreadsheet programs for data:</p>
+<p>The tidy data principles when structuring data in spreadsheets
+are:</p>
 <ol style="list-style-type: decimal">
 <li>Put all your variables in columns - the thing you’re measuring, like
 ‘weight’ or ‘temperature’.</li>
@@ -647,6 +617,9 @@ want to be able to use or sort that data.</li>
 (comma-separated values) format. This ensures that anyone can use the
 data, and is required by most data repositories.</li>
 </ol>
+<p>You can understand more easily these principles with the
+illustrations in the <a href="https://allisonhorst.com/other-r-fun" class="external-link">Tidy
+Data Series by Lowndes &amp; Horst</a>.</p>
 <p>For instance, we’re going to be working with data from a study of
 agricultural practices among farmers in two countries in eastern
 sub-Saharan Africa (Mozambique and Tanzania). Researchers conducted
@@ -767,12 +740,14 @@ the point they brought up.</li>
 <div id="handy-references" class="callout-inner">
 <h3 class="callout-title">Handy References</h3>
 <div class="callout-content">
-<p>Two excellent references on spreadsheet organization are:</p>
+<p>Three excellent references on spreadsheet organization are:</p>
 <ul>
-<li><p>Karl W. Broman &amp; Kara H. Woo, <em>Data Organization in
-Spreadsheets</em>, Vol. 72, Issue 1, 2018, The American Statistician. <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989" class="external-link">https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989</a></p></li>
 <li><p>Hadley Wickham, <em>Tidy Data</em>, Vol. 59, Issue 10, Sep 2014,
 Journal of Statistical Software. <a href="https://www.jstatsoft.org/v59/i10" class="external-link">http://www.jstatsoft.org/v59/i10</a></p></li>
+<li><p>Julia Lowndes &amp; Allison Horst, <em>Tidy Data Series by
+Lowndes &amp; Horst</em>. <a href="https://allisonhorst.com/other-r-fun" class="external-link">https://allisonhorst.com/other-r-fun</a></p></li>
+<li><p>Karl W. Broman &amp; Kara H. Woo, <em>Data Organization in
+Spreadsheets</em>, Vol. 72, Issue 1, 2018, The American Statistician. <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989" class="external-link">https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989</a></p></li>
 </ul>
 </div>
 </div>
@@ -898,7 +873,7 @@ changes.</li>
 </div>
 </section></section><section id="aio-02-common-mistakes"><p>Content from <a href="02-common-mistakes.html">Formatting Problems</a></p>
 <hr>
-<p>Last updated on 2024-07-26 |
+<p>Last updated on 2024-09-02 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/02-common-mistakes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -912,8 +887,7 @@ changes.</li>
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What are some common challenges with formatting data in spreadsheets
-and how can we avoid them?</li>
+<li>What common mistakes are made when formatting spreadsheets?</li>
 </ul>
 </div>
 </div>
@@ -1264,7 +1238,7 @@ spreadsheet look pretty.</li>
 </div>
 </section></section><section id="aio-03-dates-as-data"><p>Content from <a href="03-dates-as-data.html">Dates as Data</a></p>
 <hr>
-<p>Last updated on 2024-07-26 |
+<p>Last updated on 2024-09-02 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/03-dates-as-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1330,22 +1304,6 @@ many date formatting options in Excel.</p>
 numbers - see the last column in the above figure. This serial number
 represents the number of days from December 31, 1899. In the example,
 July 2, 2014 is stored as the serial number 41822.</p>
-<div id="excels-date-systems" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="excels-date-systems" class="callout-inner">
-<h3 class="callout-title">Excel’s date systems</h3>
-<div class="callout-content">
-<p>Excel also entertains a second date system, the 1904 date system, as
-the default in Excel for Macintosh. This system will assign a different
-serial number than the <a href="https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel" class="external-link">1900
-date system</a>. Because of this, <a href="https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/" class="external-link">dates
-must be checked for accuracy when exporting data from Excel</a> (look
-for dates that are ~4 years off).</p>
-</div>
-</div>
-</div>
 <p>Using functions we can add days, months or years to a given date. Say
 you had a research plan where you needed to conduct interviews with a
 set of informants every ninety days for a year.</p>
