@@ -31,55 +31,53 @@ page](https://www.datacarpentry.org/socialsci-workshop/data).
 
 ## Software
 
-To interact with spreadsheets, we can use [LibreOffice](https://www.libreoffice.org/),
-Microsoft Excel, [Gnumeric](https://www.gnumeric.org/),
-[Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/)
-or other programs. Commands may differ a bit between programs, but
+To work through this tutorial you will need access to a spreadsheet program. For this you have many options: [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel),  [LibreOffice](https://www.libreoffice.org/), [Apple Numbers](https://support.apple.com/numbers), [Gnumeric](http://www.gnumeric.org/), [Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/), among others. Commands may differ a bit between programs, but
 the general ideas for thinking about spreadsheets are the same.
 
-For this lesson, if you don't have a spreadsheet program already, you can use
-LibreOffice. It's a free, open source spreadsheet program.
+For this lesson, we encourage you to use LibreOffice or Microsoft Excel, as the tasks we will
+be doing have been tested in these programs. If you don't have Microsoft Excel, you can use
+LibreOffice. It's a free, open source spreadsheet program. Here are the instructions to install it:
 
-macOS users who use Apple's Numbers application should note that it does not
-contain some of the features (particularly data validation) that we will
-be using. Please use LibreOffice or Microsoft Excel instead.
+
 
 #### Windows
 
-- Download the Installer
-- Install LibreOffice by going to [the installation
-  page](https://www.libreoffice.org/download/libreoffice-fresh/). The version
-  for Windows should automatically be selected. Click Download Version X.X.X
-  (whichever is the most recent version).
-- Install LibreOffice
-- Once the installer is downloaded, double click on it and LibreOffice should
+- **Download the Installer**  
+  Install LibreOffice by going to the [installation
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for Windows should automatically be selected. Click
+  **Download**. You will go to a page that asks about a
+  donation, but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  Once the installer is downloaded, double click on it and it should
   install.
 
-#### macOS
+#### Mac OS X
 
-- Download the Installer
-- Install LibreOffice by going to [the installation
-  page](https://www.libreoffice.org/download/libreoffice-fresh/). The version
-  for Mac should automatically be selected. Click Download Version X.X.X
-  (whichever is the most recent version).
-- Install LibreOffice
-- Once the installer is downloaded, double click on it and LibreOffice should
-  install.
+- **Download the Installer**  
+  Install LibreOffice by going to the [installation
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for macOS should automatically be selected. Click
+  **Download**. You will go to a page that asks about a
+  donation, but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  The file *LibreOffice\_X.X.X\_MacOS\_x86-64* (whichever version of LibreOffice you have selected) should have been
+  downloaded. Double click on this file, and LibreOffice will be
+  installed.
 
 #### Linux
 
-- Download the Installer
-- Install LibreOffice by going to [the installation
-  page](https://www.libreoffice.org/download/libreoffice-fresh/). The version
-  for Linux should automatically be selected. Click Download Version X.X.X
-  (whichever is the most recent version).
-- Install LibreOffice
-- Once the installer is downloaded, double click on it and LibreOffice should
+- **Download the Installer**  
+  Install LibreOffice by going to the [installation
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for Linux should automatically be selected. Click **Download**. You will go to a page that asks about a donation,
+  but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  Once the installer is downloaded, double click on it and it should
   install.
-- package manager option:
-  - pacman (Arch): `pacman -S libreoffice`
-  - yum (Fedora, CentOS): `yum install libreoffice`
-  - apt (Debian, Ubuntu): `apt install libreoffice`
     
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

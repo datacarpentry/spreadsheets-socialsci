@@ -6,31 +6,17 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand how to organize data so computers can make the best use of the data
+- Define the scope of this lesson
+- Describe some drawbacks and advantages of using spreadsheet programs
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What are basic principles for using spreadsheets for good data organization?
+- What are spreadsheets useful for in a research project?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::  prereq
-
-## Things You'll Need To Complete This Tutorial
-
-#### Spreadsheet Software
-
-To work through this tutorial you will need access to a spreadsheet program.
-Many computers come with a pre-installed spreadsheet program like Excel. macOS users who use Apple's Numbers application should note that it does not contain some of the features (particularly data validation) that we will be using. Please use LibreOffice or Microsoft Excel instead.
-
-If you do not have a spreadsheet program, install one using the instructions
-in the link below.
-
-- [Instructions to install a spreadsheet program.](../learners/setup.md)
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Good data organization is the foundation of your research
 project. Most researchers have data or do data entry in
@@ -89,8 +75,8 @@ Nevertheless it is important to be aware of the limitations these data may prese
 - How to do *plotting* in a spreadsheet
 - How to *write code* in spreadsheet programs
 
-If you're looking to do this, a good reference is
-[Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O'Reilly.
+If you're looking to do this, a couple of good references are the
+[Excel Cookbook](https://search.worldcat.org/title/1419271899), published by O'Reilly, and the [Microsoft Excel 365 bible](https://search.worldcat.org/en/title/1263023438).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -119,19 +105,12 @@ In this lesson, we will assume that you are most likely using Excel as
 your primary spreadsheet program - there are other programs with similar functionality but Excel seems
 to be the most commonly used.
 
-In this lesson we're going to talk about:
-
-1. [Formatting data tables in spreadsheets](01-format-data.md)
-2. [Formatting problems](02-common-mistakes.md)
-3. [Dates as data](03-dates-as-data.md)
-4. [Quality control](04-quality-assurance.md)
-5. [Exporting data](05-exporting-data.md)
-
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Organizing your data tables according to tidy data principles will make them easier for you and others to use for analysis.
+- Good data organization is the foundation of any research project.
+- Spreadsheets are good for data entry, but when doing data cleaning or analysis, it's not easy to show or replicate what you did.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

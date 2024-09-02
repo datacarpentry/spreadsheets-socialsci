@@ -2,6 +2,7 @@
 episodes/*html
 site/*
 !site/README.md
+*.Rproj
 
 # History files
 .Rhistory

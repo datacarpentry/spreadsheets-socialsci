@@ -37,17 +37,6 @@ One of the other reasons dates can be tricky is that most spreadsheet programs h
 
 The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. This serial number represents the number of days from December 31, 1899. In the example, July 2, 2014 is stored as the serial number 41822.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Excel's date systems
-
-Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
-different serial number than the [1900 date system](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel). Because of this,
-[dates must be checked for accuracy when exporting data from Excel](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off).
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 Using functions we can  add days, months or years to a given date.
 Say you had a research plan where you needed to conduct interviews with a
 set of informants every ninety days for a year.
