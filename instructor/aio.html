@@ -723,7 +723,7 @@ wrong with this data and how you would fix it.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Take about 10 minutes to work on this exercise.</li>
@@ -834,7 +834,7 @@ in order to analyze and interpret this data?”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Some types of metadata that should be recorded and made available
 with the data are:</p>
@@ -1536,7 +1536,7 @@ that there are no families with greater than 30 members.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Excel">
+<div id="nav-tabpanel-1-Excel" class="tab-pane show active" aria-labelledby="nav-tab-1-Excel" role="tabpanel">
 <p>1. Select the <code>no_membrs</code> column.</p>
 <p>2. Select the <code>Data</code> tab, and in the
 <code>Data Tools</code> group, select the <code>Data Validation</code>
@@ -1552,7 +1552,7 @@ allowed range. You will see this:</p>
 data and click <code>OK</code>. Here we will choose a minimum of 1 and a
 maximum of 30.</p>
 </div>
-<div id="nav-tabpanel-1-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Calc">
+<div id="nav-tabpanel-1-Calc" class="tab-pane" aria-labelledby="nav-tab-1-Calc" role="tabpanel">
 <p>1. Select the <code>no_membrs</code> column.</p>
 <p>2. On the <code>Data</code> tab select <code>Validity...</code>. The
 following pop-up will appear:</p>
@@ -1586,10 +1586,10 @@ valid. The following error box will appear</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Excel">
+<div id="nav-tabpanel-2-Excel" class="tab-pane show active" aria-labelledby="nav-tab-2-Excel" role="tabpanel">
 <figure><img src="../fig/error-invalid-data-new.png" alt="Image of error message for inputing invalid data in Excel" class="figure mx-auto d-block"></figure>
 </div>
-<div id="nav-tabpanel-2-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Calc">
+<div id="nav-tabpanel-2-Calc" class="tab-pane" aria-labelledby="nav-tab-2-Calc" role="tabpanel">
 <figure><img src="../fig/error-invalid-data-LibreOffice-new.png" alt="Image of error message for inputing invalid data in LibreOffice" class="figure mx-auto d-block"></figure>
 </div>
 </div>
@@ -1611,13 +1611,13 @@ creating a data validation rule.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-Excel">
+<div id="nav-tabpanel-3-Excel" class="tab-pane show active" aria-labelledby="nav-tab-3-Excel" role="tabpanel">
 <p>Check that the <code>Style</code> is ‘Stop’. You can write ‘Invalid
 number’ as the <code>Title</code> and ‘Number of households must be a
 whole number between 1 and 30’ as the <code>Error Message</code>.</p>
 <figure><img src="../fig/error_alert-new.png" alt="Image of Error Alert tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
 </div>
-<div id="nav-tabpanel-3-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-Calc">
+<div id="nav-tabpanel-3-Calc" class="tab-pane" aria-labelledby="nav-tab-3-Calc" role="tabpanel">
 <p>Check that the <code>Action</code> is ‘Stop’. You can write ‘Invalid
 number’ as the <code>Title</code> and ‘Number of households must be a
 whole number between 1 and 30’ as the <code>Error Message</code>.</p>
@@ -1642,7 +1642,7 @@ validation.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-Excel">
+<div id="nav-tabpanel-4-Excel" class="tab-pane show active" aria-labelledby="nav-tab-4-Excel" role="tabpanel">
 <p>Select the <code>Input Message</code> tab. Add the title and input
 message that is convenient for your task. In this example, we will write
 ‘Household members’ and ‘Please enter a whole number between 1 and
@@ -1650,7 +1650,7 @@ message that is convenient for your task. In this example, we will write
 <figure><img src="../fig/input_message-new.png" alt="Image of Input Message tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens when you select a cell that has data
 validation.</p>
 </div>
-<div id="nav-tabpanel-4-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-Calc">
+<div id="nav-tabpanel-4-Calc" class="tab-pane" aria-labelledby="nav-tab-4-Calc" role="tabpanel">
 <p>Select the <code>Input Help</code> tab. Add the title and input
 message that is convenient for your task. In this example, we will write
 ‘Household members’ and ‘Please enter a whole number between 1 and
@@ -1698,7 +1698,7 @@ option from the list.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-5" class="tab-content">
-<div id="nav-tabpanel-5-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-Excel">
+<div id="nav-tabpanel-5-Excel" class="tab-pane show active" aria-labelledby="nav-tab-5-Excel" role="tabpanel">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
 <p>2. Select the <code>Data</code> tab, and in the
 <code>Data Tools</code> group, select the <code>Data Validation</code>
@@ -1714,7 +1714,7 @@ column, separated by a comma (with no spaces). For us this will be
 <p>6. Create a meaningful error alert and input message, then click
 ‘OK’. In LibreOffice, there is no need to create an input message.</p>
 </div>
-<div id="nav-tabpanel-5-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-Calc">
+<div id="nav-tabpanel-5-Calc" class="tab-pane" aria-labelledby="nav-tab-5-Calc" role="tabpanel">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
 <p>2. On the <code>Data</code> tab select <code>Validity...</code>.</p>
 <p>3. Select <code>List</code> from the <code>Allow</code> drop-down
@@ -1991,7 +1991,7 @@ in a format that can be used consistently by most programs.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.11" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.7" class="external-link">pegboard (0.7.7)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.5" class="external-link">varnish (1.0.5)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.11" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.5" class="external-link">varnish (1.0.5)</a></p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -2014,8 +2014,8 @@ in a format that can be used consistently by most programs.</li>
   "url": "https://datacarpentry.github.io/spreadsheets-socialsci/instructor/aio.html",
   "identifier": "https://datacarpentry.github.io/spreadsheets-socialsci/instructor/aio.html",
   "dateCreated": "2017-05-25",
-  "dateModified": "2025-02-18",
-  "datePublished": "2025-02-18"
+  "dateModified": "2025-02-25",
+  "datePublished": "2025-02-25"
 }
 
   </script><script>
