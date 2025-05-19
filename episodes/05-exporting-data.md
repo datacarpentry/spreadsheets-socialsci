@@ -46,8 +46,7 @@ using the rule set for the version of Excel you're using. Essentially, you could
 necessarily be flagged by any data cleaning methods if your ranges overlap.
 
 Storing data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values
-or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas,
-hence 'comma separated values' or CSV. The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file
+or TSV) or comma-delimited (comma separated values or CSV). The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and read a CSV file
 using just about any software, including plain text editors like TextEdit or NotePad.
 Data in a CSV file can also be easily imported into other formats and
 environments, such as SQLite and R. We're not tied to a certain version of a certain expensive program when we work with CSV files, so
