@@ -48,7 +48,7 @@ by commas, hence 'comma separated values' or CSV. CSV is a format commonly used 
 which we will discuss further in the next episode.
 
 To open this CSV file, one option is to double-click the file once it's in your Downloads folder. 
-But doing this can yield different results, as it depends on your computer configuration. To avoid this, 
+However, doing this can lead to different results depending on your computer's configuration. To avoid this, 
 the following box shows a more reliable method to load the data in Excel or Calc.
 
 ::: group-tab
@@ -63,6 +63,8 @@ the following box shows a more reliable method to load the data in Excel or Calc
 
 4\. In the new window, make sure the Delimiter is set to `Comma` at the top. Review the data preview. If everything looks correct, click `Load`.
 
+![](fig/load-csv-excel.png){alt='Load CSV in Excel'}
+
 ### Calc
 
 1\. Open LibreOffice Calc.
@@ -72,6 +74,8 @@ the following box shows a more reliable method to load the data in Excel or Calc
 3\. In the pop-up window, navigate to the folder that contains your file, select the file, and click `Open`.
 
 4\. In the new window, you'll see several options. For now, make sure that under `Separator Options`, only `Separated by` > `Comma` is selected. Review the data preview. If everything looks correct, click `OK`.
+
+![](fig/load-csv-calc.png){alt='Load CSV in Calc'}
 
 :::
 
