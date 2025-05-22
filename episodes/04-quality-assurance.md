@@ -42,8 +42,44 @@ We will look at two examples:
 
 ### Restricting data to a numeric range
 
-Looking again at the [clean version of the SAFI
-dataset](https://ndownloader.figshare.com/files/11492171), we see that there are
+First, we'll open the [clean version of the SAFI dataset](https://ndownloader.figshare.com/files/11492171),
+which is a CSV file. CSV files are plain text files where the columns are separated 
+by commas, hence 'comma separated values' or CSV. CSV is a format commonly used for tabular data, 
+which we will discuss further in the next episode.
+
+To open this CSV file, one option is to double-click the file once it's in your Downloads folder. 
+However, doing this can lead to different results depending on your computer's configuration. To avoid this, 
+the following box shows a more reliable method to load the data in Excel or Calc.
+
+::: group-tab
+
+### Excel
+
+1\. Open Excel and start a blank workbook.
+
+2\. Select the `Data` tab. In the `Get & Transform Data` group, choose `Get Data` > `From File` > `From Text/CSV`
+
+3\. In the pop-up window, navigate to the folder that contains your file, select the file, and click `Open`.
+
+4\. In the new window, make sure the Delimiter is set to `Comma` at the top. Review the data preview. If everything looks correct, click `Load`.
+
+![](fig/load-csv-excel.png){alt='Load CSV in Excel'}
+
+### Calc
+
+1\. Open LibreOffice Calc.
+
+2\. Click `File` > `Open...`
+
+3\. In the pop-up window, navigate to the folder that contains your file, select the file, and click `Open`.
+
+4\. In the new window, you'll see several options. For now, make sure that under `Separator Options`, only `Separated by` > `Comma` is selected. Review the data preview. If everything looks correct, click `OK`.
+
+![](fig/load-csv-calc.png){alt='Load CSV in Calc'}
+
+:::
+
+When we open the file, we see that there are
 several columns with numeric data. One example of this is the column `no_membrs`
 representing the number of people in the household. We would expect this always
 to be a positive integer, and so we should reject values like `1.5` and `-8` as
@@ -61,7 +97,7 @@ Let's start by opening the data validation feature using the `no_membrs` column.
 
 1\. Select the `no_membrs` column.
 
-2\. Select the `Data` tab, and in the `Data Tools` group, select the `Data Validation` or `Validation Tools` (depending on your version of Excel). The following pop-up will appear:
+2\. Select the `Data` tab, and in the `Data Tools` group, select `Data Validation` or `Validation Tools` (depending on your version of Excel). The following pop-up will appear:
 
 ![](fig/data-validation-tab-new.png){alt='Image of data validation tab in Excel'}
 
@@ -190,7 +226,7 @@ right option from the list.
 
 1\. Select the `respondent_wall_type` column.
 
-2\. Select the `Data` tab, and in the `Data Tools` group, select the `Data Validation` or `Validation Tools` (depending on your version of Excel).
+2\. Select the `Data` tab, and in the `Data Tools` group, select `Data Validation` or `Validation Tools` (depending on your version of Excel).
 
 3\. Select `List` from the `Allow` drop-down menu.
 
