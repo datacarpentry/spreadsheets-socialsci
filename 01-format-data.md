@@ -269,6 +269,16 @@ as part of your research.
 
 (Text on metadata adapted from the online course [MANTRA - Research Data Management Training](https://mantra.ed.ac.uk/) by Research Data Service and the Institute for Academic Development, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).)
 
+::::::::::::::::::::::::::::::::::::: instructor
+For the next exercise, learners will open a CSV file. 
+Instructions on how to load the file correctly (ensuring the delimiter is 
+interpreted properly regardless of the learner's computer settings)
+are provided in the 
+[Quality Assurance episode](04-quality-assurance.md#restricting-data-to-a-numeric-range).
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Exercise
