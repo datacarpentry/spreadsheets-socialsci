@@ -316,7 +316,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Quality Assurance</h1>
-        <p>Last updated on 2024-09-02 |
+        <p>Last updated on 2025-05-22 |
 
         <a href="https://github.com/datacarpentry/spreadsheets-socialsci/edit/main/episodes/04-quality-assurance.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -377,20 +377,16 @@ cell contents section of the LibreOffice Calc Guide</a>.</p>
 <li>Restricting data to entries from a list</li>
 </ol><div class="section level3">
 <h3 id="restricting-data-to-a-numeric-range">Restricting data to a numeric range<a class="anchor" aria-label="anchor" href="#restricting-data-to-a-numeric-range"></a></h3>
-<p>Looking again at the <a href="https://ndownloader.figshare.com/files/11492171" class="external-link">clean version of
-the SAFI dataset</a>, we see that there are several columns with numeric
-data. One example of this is the column <code>no_membrs</code>
-representing the number of people in the household. We would expect this
-always to be a positive integer, and so we should reject values like
-<code>1.5</code> and <code>-8</code> as entry errors. We would also
-reject values over a certain maximum - for example an entry like
-<code>90</code> is probably the result of the researcher inputting
-<code>9</code> and their finger slipping and also hitting the
-<code>0</code> key. It is up to you as the researcher to decide what a
-reasonable maximum value would be for your data, here we will assume
-that there are no families with greater than 30 members.</p>
-<p>Let’s start by opening the data validation feature using the
-<code>no_membrs</code> column.</p>
+<p>First, we’ll open the <a href="https://ndownloader.figshare.com/files/11492171" class="external-link">clean version of
+the SAFI dataset</a>, which is a CSV file. CSV files are plain text
+files where the columns are separated by commas, hence ‘comma separated
+values’ or CSV. CSV is a format commonly used for tabular data, which we
+will discuss further in the next episode.</p>
+<p>To open this CSV file, one option is to double-click the file once
+it’s in your Downloads folder. However, doing this can lead to different
+results depending on your computer’s configuration. To avoid this, the
+following box shows a more reliable method to load the data in Excel or
+Calc.</p>
 <div class="tabs">
 <nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
 <button class="nav-link active" id="nav-tab-1-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Excel" type="button" role="tab" aria-controls="nav-tabpanel-1-Excel" aria-selected="true">
@@ -406,11 +402,63 @@ that there are no families with greater than 30 members.</p>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
 <div id="nav-tabpanel-1-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Excel">
+<p>1. Open Excel and start a blank workbook.</p>
+<p>2. Select the <code>Data</code> tab. In the
+<code>Get &amp; Transform Data</code> group, choose
+<code>Get Data</code> &gt; <code>From File</code> &gt;
+<code>From Text/CSV</code></p>
+<p>3. In the pop-up window, navigate to the folder that contains your
+file, select the file, and click <code>Open</code>.</p>
+<p>4. In the new window, make sure the Delimiter is set to
+<code>Comma</code> at the top. Review the data preview. If everything
+looks correct, click <code>Load</code>.</p>
+<figure><img src="fig/load-csv-excel.png" alt="Load CSV in Excel" class="figure mx-auto d-block"></figure></div>
+<div id="nav-tabpanel-1-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Calc">
+<p>1. Open LibreOffice Calc.</p>
+<p>2. Click <code>File</code> &gt; <code>Open...</code></p>
+<p>3. In the pop-up window, navigate to the folder that contains your
+file, select the file, and click <code>Open</code>.</p>
+<p>4. In the new window, you’ll see several options. For now, make sure
+that under <code>Separator Options</code>, only
+<code>Separated by</code> &gt; <code>Comma</code> is selected. Review
+the data preview. If everything looks correct, click
+<code>OK</code>.</p>
+<figure><img src="fig/load-csv-calc.png" alt="Load CSV in Calc" class="figure mx-auto d-block"></figure></div>
+</div>
+</div>
+<p>When we open the file, we see that there are several columns with
+numeric data. One example of this is the column <code>no_membrs</code>
+representing the number of people in the household. We would expect this
+always to be a positive integer, and so we should reject values like
+<code>1.5</code> and <code>-8</code> as entry errors. We would also
+reject values over a certain maximum - for example an entry like
+<code>90</code> is probably the result of the researcher inputting
+<code>9</code> and their finger slipping and also hitting the
+<code>0</code> key. It is up to you as the researcher to decide what a
+reasonable maximum value would be for your data, here we will assume
+that there are no families with greater than 30 members.</p>
+<p>Let’s start by opening the data validation feature using the
+<code>no_membrs</code> column.</p>
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Excel" type="button" role="tab" aria-controls="nav-tabpanel-2-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Calc" type="button" role="tab" aria-controls="nav-tabpanel-2-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Excel">
 <p>1. Select the <code>no_membrs</code> column.</p>
 <p>2. Select the <code>Data</code> tab, and in the
-<code>Data Tools</code> group, select the <code>Data Validation</code>
-or <code>Validation Tools</code> (depending on your version of Excel).
-The following pop-up will appear:</p>
+<code>Data Tools</code> group, select <code>Data Validation</code> or
+<code>Validation Tools</code> (depending on your version of Excel). The
+following pop-up will appear:</p>
 <figure><img src="fig/data-validation-tab-new.png" alt="Image of data validation tab in Excel" class="figure mx-auto d-block"></figure><p>3. Select ‘Whole number’ from the <code>Allow</code> drop down
 options.</p>
 <p>4. The window content will change. In the <code>Data</code> drop down
@@ -421,7 +469,7 @@ allowed range. You will see this:</p>
 data and click <code>OK</code>. Here we will choose a minimum of 1 and a
 maximum of 30.</p>
 </div>
-<div id="nav-tabpanel-1-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Calc">
+<div id="nav-tabpanel-2-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Calc">
 <p>1. Select the <code>no_membrs</code> column.</p>
 <p>2. On the <code>Data</code> tab select <code>Validity...</code>. The
 following pop-up will appear:</p>
@@ -442,29 +490,6 @@ the data validation rule you have created. To test this out, try to
 enter a new value into the <code>no_membrs</code> column that is not
 valid. The following error box will appear</p>
 <div class="tabs">
-<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-2-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Excel" type="button" role="tab" aria-controls="nav-tabpanel-2-Excel" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-2-Excel">
-  Excel
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-2-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Calc" type="button" role="tab" aria-controls="nav-tabpanel-2-Calc" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-2-Calc">
-  Calc
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Excel">
-<figure><img src="fig/error-invalid-data-new.png" alt="Image of error message for inputing invalid data in Excel" class="figure mx-auto d-block"></figure></div>
-<div id="nav-tabpanel-2-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Calc">
-<figure><img src="fig/error-invalid-data-LibreOffice-new.png" alt="Image of error message for inputing invalid data in LibreOffice" class="figure mx-auto d-block"></figure></div>
-</div>
-</div>
-<p>You can also customize the resulting message to be more informative
-by entering your own message in the <code>Error Alert</code> tab when
-creating a data validation rule.</p>
-<div class="tabs">
 <nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
 <button class="nav-link active" id="nav-tab-3-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-Excel" type="button" role="tab" aria-controls="nav-tabpanel-3-Excel" aria-selected="true">
   <h3 class="tab-header" id="nav-tab-heading-3-Excel">
@@ -479,22 +504,14 @@ creating a data validation rule.</p>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
 <div id="nav-tabpanel-3-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-Excel">
-<p>Check that the <code>Style</code> is ‘Stop’. You can write ‘Invalid
-number’ as the <code>Title</code> and ‘Number of households must be a
-whole number between 1 and 30’ as the <code>Error Message</code>.</p>
-<figure><img src="fig/error_alert-new.png" alt="Image of Error Alert tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
-</div>
+<figure><img src="fig/error-invalid-data-new.png" alt="Image of error message for inputing invalid data in Excel" class="figure mx-auto d-block"></figure></div>
 <div id="nav-tabpanel-3-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-Calc">
-<p>Check that the <code>Action</code> is ‘Stop’. You can write ‘Invalid
-number’ as the <code>Title</code> and ‘Number of households must be a
-whole number between 1 and 30’ as the <code>Error Message</code>.</p>
-<figure><img src="fig/error_alert_LibreOffice-new.png" alt="Image of Error Alert tab in LibreOffice" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
+<figure><img src="fig/error-invalid-data-LibreOffice-new.png" alt="Image of error message for inputing invalid data in LibreOffice" class="figure mx-auto d-block"></figure></div>
 </div>
 </div>
-</div>
-<p>You can also have an <code>Input message</code> that warns users of
-the spreadsheet what values are accepted in cell that has data
-validation.</p>
+<p>You can also customize the resulting message to be more informative
+by entering your own message in the <code>Error Alert</code> tab when
+creating a data validation rule.</p>
 <div class="tabs">
 <nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
 <button class="nav-link active" id="nav-tab-4-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-Excel" type="button" role="tab" aria-controls="nav-tabpanel-4-Excel" aria-selected="true">
@@ -510,6 +527,37 @@ validation.</p>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
 <div id="nav-tabpanel-4-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-Excel">
+<p>Check that the <code>Style</code> is ‘Stop’. You can write ‘Invalid
+number’ as the <code>Title</code> and ‘Number of households must be a
+whole number between 1 and 30’ as the <code>Error Message</code>.</p>
+<figure><img src="fig/error_alert-new.png" alt="Image of Error Alert tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
+</div>
+<div id="nav-tabpanel-4-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-Calc">
+<p>Check that the <code>Action</code> is ‘Stop’. You can write ‘Invalid
+number’ as the <code>Title</code> and ‘Number of households must be a
+whole number between 1 and 30’ as the <code>Error Message</code>.</p>
+<figure><img src="fig/error_alert_LibreOffice-new.png" alt="Image of Error Alert tab in LibreOffice" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
+</div>
+</div>
+</div>
+<p>You can also have an <code>Input message</code> that warns users of
+the spreadsheet what values are accepted in cell that has data
+validation.</p>
+<div class="tabs">
+<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-5-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-Excel" type="button" role="tab" aria-controls="nav-tabpanel-5-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-5-Excel">
+  Excel
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-5-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-Calc" type="button" role="tab" aria-controls="nav-tabpanel-5-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-5-Calc">
+  Calc
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-5" class="tab-content">
+<div id="nav-tabpanel-5-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-Excel">
 <p>Select the <code>Input Message</code> tab. Add the title and input
 message that is convenient for your task. In this example, we will write
 ‘Household members’ and ‘Please enter a whole number between 1 and
@@ -517,7 +565,7 @@ message that is convenient for your task. In this example, we will write
 <figure><img src="fig/input_message-new.png" alt="Image of Input Message tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens when you select a cell that has data
 validation.</p>
 </div>
-<div id="nav-tabpanel-4-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-Calc">
+<div id="nav-tabpanel-5-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-Calc">
 <p>Select the <code>Input Help</code> tab. Add the title and input
 message that is convenient for your task. In this example, we will write
 ‘Household members’ and ‘Please enter a whole number between 1 and
@@ -551,25 +599,24 @@ items. So, instead of trying to remember how to spell “mabatisloping”,
 or whether or not you capitalized “cement” you can select the right
 option from the list.</p>
 <div class="tabs">
-<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-5-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-Excel" type="button" role="tab" aria-controls="nav-tabpanel-5-Excel" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-5-Excel">
+<nav><div id="nav-tab-6" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-6-Excel" name="Excel" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-Excel" type="button" role="tab" aria-controls="nav-tabpanel-6-Excel" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-6-Excel">
   Excel
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-5-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-Calc" type="button" role="tab" aria-controls="nav-tabpanel-5-Calc" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-5-Calc">
+<button class="nav-link" id="nav-tab-6-Calc" name="Calc" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-Calc" type="button" role="tab" aria-controls="nav-tabpanel-6-Calc" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-6-Calc">
   Calc
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-5" class="tab-content">
-<div id="nav-tabpanel-5-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-Excel">
+</nav><div id="nav-tabContent-6" class="tab-content">
+<div id="nav-tabpanel-6-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-Excel">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
 <p>2. Select the <code>Data</code> tab, and in the
-<code>Data Tools</code> group, select the <code>Data Validation</code>
-or <code>Validation Tools</code> (depending on your version of
-Excel).</p>
+<code>Data Tools</code> group, select <code>Data Validation</code> or
+<code>Validation Tools</code> (depending on your version of Excel).</p>
 <p>3. Select <code>List</code> from the <code>Allow</code> drop-down
 menu.</p>
 <p>4. The window will change to include a <code>Source</code> box, you
@@ -580,7 +627,7 @@ column, separated by a comma (with no spaces). For us this will be
 <p>6. Create a meaningful error alert and input message, then click
 ‘OK’. In LibreOffice, there is no need to create an input message.</p>
 </div>
-<div id="nav-tabpanel-5-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-Calc">
+<div id="nav-tabpanel-6-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-Calc">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
 <p>2. On the <code>Data</code> tab select <code>Validity...</code>.</p>
 <p>3. Select <code>List</code> from the <code>Allow</code> drop-down
@@ -739,8 +786,8 @@ data.</li>
   "url": "https://datacarpentry.github.io/spreadsheets-socialsci/04-quality-assurance.html",
   "identifier": "https://datacarpentry.github.io/spreadsheets-socialsci/04-quality-assurance.html",
   "dateCreated": "2017-05-25",
-  "dateModified": "2024-09-02",
-  "datePublished": "2025-05-20"
+  "dateModified": "2025-05-22",
+  "datePublished": "2025-05-22"
 }
 
   </script><script>
