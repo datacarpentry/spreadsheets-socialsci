@@ -2,9 +2,9 @@
 title: Setup
 ---
 
-::::::::::::::::::::::::::::::::::::::::::  prereq
+## Setup instructions
 
-## Data
+### Data
 
 You need to download some files to follow this lesson:
 
@@ -18,32 +18,27 @@ You need to download some files to follow this lesson:
   computer (for instance in a `datacarpentry-spreadsheets` folder on your
   Desktop or within your Home folder).
 
-#### About the data
-
 For more information about the dataset and to
-download it from Figshare, check out the [Social Sciences workshop data
+download it from the original source on Figshare, check out the [Social Sciences workshop data
 page](https://www.datacarpentry.org/socialsci-workshop/data).
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+### Software
 
-::::::::::::::::::::::::::::::::::::::::::  prereq
+To work through this tutorial you will need access to a spreadsheet program. For this you have many options: [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel),  [LibreOffice Calc](https://www.libreoffice.org/discover/calc/), [Apple Numbers](https://support.apple.com/numbers), [Google Sheets](https://workspace.google.com/products/sheets/), [Gnumeric](http://www.gnumeric.org/), [Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/), among others.
+Commands may differ a bit between programs, but the general ideas for thinking about spreadsheets are the same.
 
-## Software
+For this lesson, **we encourage you to use LibreOffice Calc or Microsoft Excel**, as the step-by-step instructions are provided for those programs.
+If you don't have Microsoft Excel, you can use LibreOffice.
+It's a free, open source spreadsheet program.
+Here are the instructions to install it:
 
-To work through this tutorial you will need access to a spreadsheet program. For this you have many options: [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel),  [LibreOffice](https://www.libreoffice.org/), [Apple Numbers](https://support.apple.com/numbers), [Gnumeric](http://www.gnumeric.org/), [Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/), among others. Commands may differ a bit between programs, but
-the general ideas for thinking about spreadsheets are the same.
+::: tab
 
-For this lesson, we encourage you to use LibreOffice or Microsoft Excel, as the tasks we will
-be doing have been tested in these programs. If you don't have Microsoft Excel, you can use
-LibreOffice. It's a free, open source spreadsheet program. Here are the instructions to install it:
-
-
-
-#### Windows
+### Windows
 
 - **Download the Installer**  
-  Install LibreOffice by going to the [installation
+  Install LibreOffice by going to the [download
   page](https://www.libreoffice.org/download/download-libreoffice/). The
   version for Windows should automatically be selected. Click
   **Download**. You will go to a page that asks about a
@@ -53,10 +48,10 @@ LibreOffice. It's a free, open source spreadsheet program. Here are the instruct
   Once the installer is downloaded, double click on it and it should
   install.
 
-#### Mac OS X
+### Mac OS X
 
 - **Download the Installer**  
-  Install LibreOffice by going to the [installation
+  Install LibreOffice by going to the [download
   page](https://www.libreoffice.org/download/download-libreoffice/). The
   version for macOS should automatically be selected. Click
   **Download**. You will go to a page that asks about a
@@ -64,13 +59,12 @@ LibreOffice. It's a free, open source spreadsheet program. Here are the instruct
   automatically.
 - **Install LibreOffice**  
   The file *LibreOffice\_X.X.X\_MacOS\_x86-64* (whichever version of LibreOffice you have selected) should have been
-  downloaded. Double click on this file, and LibreOffice will be
-  installed.
+  downloaded. Double click on this file, and LibreOffice will be installed.
 
-#### Linux
+### Linux
 
 - **Download the Installer**  
-  Install LibreOffice by going to the [installation
+  Install LibreOffice by going to the [download
   page](https://www.libreoffice.org/download/download-libreoffice/). The
   version for Linux should automatically be selected. Click **Download**. You will go to a page that asks about a donation,
   but you don't need to make one. Your download should begin
@@ -78,8 +72,5 @@ LibreOffice. It's a free, open source spreadsheet program. Here are the instruct
 - **Install LibreOffice**  
   Once the installer is downloaded, double click on it and it should
   install.
-    
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
+  
+:::
