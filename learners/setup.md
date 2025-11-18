@@ -37,7 +37,7 @@ However, please note the following before choosing to use Google Sheets in your 
 
 ::::::::::::::::::::::::::::::::::
 
-To work through this tutorial you will need access to a spreadsheet program. For this you have many options: [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel),  [LibreOffice Calc](https://www.libreoffice.org/discover/calc/), [Apple Numbers](https://support.apple.com/numbers), [Google Sheets](https://workspace.google.com/products/sheets/), [Gnumeric](http://www.gnumeric.org/), [Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/), among others.
+To work through this tutorial you will need access to a spreadsheet program. For this you have many options: [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel),  [LibreOffice Calc](https://www.libreoffice.org/discover/calc/), [Apple Numbers](https://support.apple.com/numbers), [Google Sheets](https://workspace.google.com/products/sheets/), [Gnumeric](https://www.gnumeric.org/), [Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/), among others.
 Commands may differ a bit between programs, but the general ideas for thinking about spreadsheets are the same.
 
 For this lesson, **we encourage you to use LibreOffice Calc or Microsoft Excel**, as the step-by-step instructions are provided for those programs.
