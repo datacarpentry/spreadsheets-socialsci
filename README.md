@@ -1,10 +1,8 @@
-[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://slack-invite.carpentries.org/)
-[![Slack Status](https://img.shields.io/badge/Slack_Channel-dc--socsci--data--org-E01563.svg)](https://carpentries.slack.com/messages/C9X34DJ9Z)
-[![DOI](https://zenodo.org/badge/92422634.svg)](https://zenodo.org/badge/latestdoi/92422634)
+[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://slack-invite.carpentries.org/) [![Slack Status](https://img.shields.io/badge/Slack_Channel-dc--socsci--data--org-E01563.svg)](https://carpentries.slack.com/messages/C9X34DJ9Z) [![DOI](https://zenodo.org/badge/92422634.svg)](https://zenodo.org/badge/latestdoi/92422634)
 
 # Data Organization in Spreadsheets for Social Scientists
 
-This is the GitHub repository for the "Data Organization in Spreadsheets for Social Scientists" lesson, part of the [Data Carpentry - Social Science curriculum](https://datacarpentry.org/lessons/#social-science). To see the lesson content go to [http://datacarpentry.github.io/spreadsheets-socialsci/](http://datacarpentry.github.io/spreadsheets-socialsci/)
+This is the GitHub repository for the "Data Organization in Spreadsheets for Social Scientists" lesson, part of the [Data Carpentry - Social Science curriculum](https://datacarpentry.org/lessons/#social-science). To see the lesson content go to <http://datacarpentry.github.io/spreadsheets-socialsci/>
 
 ## Contributing
 
@@ -18,18 +16,18 @@ If you want to know more about contributing to this lesson and other Carpentries
 
 ### Current:
 
-- [Allie Tatarian](https://github.com/allie-tatarian)
-- [Jose Niño Muriel](https://github.com/josenino95)
+-   [Allie Tatarian](https://github.com/allie-tatarian)
+-   [Jose Niño Muriel](https://github.com/josenino95)
 
 ### Alumni:
 
-- April Moreno
-- [Bernard Kwame Solodzi](Bernard Kwame Solodzi)
-- [Benson Muite](https://github.com/bkmgit)
-- [Chris Prener](https://github.com/chris-prener)
-- [Lachlan Deer](https://github.com/lachlandeer)
-- [Peter Smyth](https://github.com/PeterSmyth12)
-- Trevor Burrows
+-   April Moreno
+-   [Bernard Kwame Solodzi](https://github.com/Bsolodzi)
+-   [Benson Muite](https://github.com/bkmgit)
+-   [Chris Prener](https://github.com/chris-prener)
+-   [Lachlan Deer](https://github.com/lachlandeer)
+-   [Peter Smyth](https://github.com/PeterSmyth12)
+-   Trevor Burrows
 
 ## About the data for the lesson
 
