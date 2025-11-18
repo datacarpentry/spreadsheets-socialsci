@@ -46,8 +46,6 @@ Recommended citation for the dataset: Woodhouse, Philip; Veldwisch, Gert Jan; Br
 
 ### DATA-SPECIFIC INFORMATION FOR SAFI_clean.csv
 
-------------------------------------------------------------------------
-
 1.  Number of variables: 14
 
 2.  Number of cases: 131
