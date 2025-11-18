@@ -65,7 +65,7 @@ Different countries also write dates differently. If you are in the UK, for exam
 the date above as the 7th day of December, however a researcher from the US will interpret the same entry as the 12th day of July. This regional variation is handled automatically by your
 spreadsheet program so that when you are typing in dates they appear as you would expect. If you
 try to type in a US format date into a UK version of Excel, it may or may not be treated as a
-date.
+date. Which format is used by your spreadsheet program depends on how your computer is configured, and what country your computer thinks it is in.
 
 This regional variation is one good reason to treat dates, not as a single data point, but as
 three distinct pieces of data (year, month, and day). Separating dates into their component parts
@@ -81,9 +81,9 @@ contains a subset of the data from the SAFI interviews, including the dates on w
 interviews were conducted.
 
 Choose the tab of the spreadsheet that corresponds to the way you format dates in your
-location (either day first `DD_MM_YEAR`, or month first `MM_DD_YEAR`).
+location (either day first `DD_MM_YEAR`, or month first `MM_DD_YEAR`).  Which tab works will depend on the configuration of your computer.
 
-Extract the components of the date to new columns. For this we
+Extract the components of the date to new columns at the end of the existing data, starting at column H. For this we
 can use the built-in Excel functions:
 
 `=YEAR()`  
