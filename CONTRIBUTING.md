@@ -101,7 +101,7 @@ community listed at <https://carpentries.org/connect/> including via social
 media, slack, newsletters, and email lists. You can also [reach us by
 email][contact].
 
-[repo]: https://example.com/FIXME](https://github.com/datacarpentry/spreadsheets-socialsci
+[repo]: https://github.com/datacarpentry/spreadsheets-socialsci
 [contact]: mailto:team@carpentries.org
 [cp-site]: https://carpentries.org/
 [dc-issues]: https://github.com/issues?q=user%3Adatacarpentry
@@ -112,7 +112,7 @@ email][contact].
 [github-flow]: https://guides.github.com/introduction/flow/
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
-[issues]: https://carpentries.org/help-wanted-issues/
+[issues]: https://github.com/datacarpentry/spreadsheets-socialsci/issues
 [lc-issues]: https://github.com/issues?q=user%3ALibraryCarpentry
 [swc-issues]: https://github.com/issues?q=user%3Aswcarpentry
 [swc-lessons]: https://software-carpentry.org/lessons/
