@@ -58,7 +58,7 @@
         </ul></div>
     </div>
   </div>
-  <hr></header><nav class="navbar navbar-expand-xl bottom-nav data" aria-label="Main Navigation"><div class="container-fluid nav-container">
+</header><nav class="navbar navbar-expand-xl bottom-nav data" aria-label="Main Navigation"><div class="container-fluid nav-container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
@@ -107,12 +107,8 @@
     -->
     <a id="search-button" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div><!--/div.container-fluid -->
-</nav><aside class="col-md-12 lesson-progress"><div style="width: 69%" class="percentage">
-    69%
-  </div>
-  <div class="progress data">
-    <div class="progress-bar data" role="progressbar" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="69" style="width: 69%">
-    </div>
+</nav><aside class="col-md-12 lesson-progress"><div class="progress data">
+    <div class="progress-bar data" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">69%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -168,7 +164,7 @@
               </div><!--div.sidenav-view-selector -->
             </div><!--/div.col -->
 
-            <hr></div><!--/div.mobile-row -->
+          </div><!--/div.mobile-row -->
 
           <div class="accordion accordion-flush" id="accordion-chapters-toggle">
             <div class="accordion-item">
@@ -297,8 +293,8 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter Top"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="03-dates-as-data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="05-exporting-data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="03-dates-as-data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link float-end" href="05-exporting-data.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -311,7 +307,7 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
-      <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
+    </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Quality Assurance</h1>
         <p>Last updated on 2025-05-22 |
 
@@ -398,7 +394,7 @@ Calc.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Excel">
+<div id="nav-tabpanel-1-Excel" class="tab-pane show active" aria-labelledby="nav-tab-1-Excel" role="tabpanel">
 <p>1. Open Excel and start a blank workbook.</p>
 <p>2. Select the <code>Data</code> tab. In the
 <code>Get &amp; Transform Data</code> group, choose
@@ -410,7 +406,7 @@ file, select the file, and click <code>Open</code>.</p>
 <code>Comma</code> at the top. Review the data preview. If everything
 looks correct, click <code>Load</code>.</p>
 <figure><img src="fig/load-csv-excel.png" alt="Load CSV in Excel" class="figure mx-auto d-block"></figure></div>
-<div id="nav-tabpanel-1-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Calc">
+<div id="nav-tabpanel-1-Calc" class="tab-pane" aria-labelledby="nav-tab-1-Calc" role="tabpanel">
 <p>1. Open LibreOffice Calc.</p>
 <p>2. Click <code>File</code> &gt; <code>Open...</code></p>
 <p>3. In the pop-up window, navigate to the folder that contains your
@@ -450,7 +446,7 @@ that there are no families with greater than 30 members.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Excel">
+<div id="nav-tabpanel-2-Excel" class="tab-pane show active" aria-labelledby="nav-tab-2-Excel" role="tabpanel">
 <p>1. Select the <code>no_membrs</code> column.</p>
 <p>2. Select the <code>Data</code> tab, and in the
 <code>Data Tools</code> group, select <code>Data Validation</code> or
@@ -466,7 +462,7 @@ allowed range. You will see this:</p>
 data and click <code>OK</code>. Here we will choose a minimum of 1 and a
 maximum of 30.</p>
 </div>
-<div id="nav-tabpanel-2-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Calc">
+<div id="nav-tabpanel-2-Calc" class="tab-pane" aria-labelledby="nav-tab-2-Calc" role="tabpanel">
 <p>1. Select the <code>no_membrs</code> column.</p>
 <p>2. On the <code>Data</code> tab select <code>Validity...</code>. The
 following pop-up will appear:</p>
@@ -500,9 +496,9 @@ valid. The following error box will appear</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-Excel">
+<div id="nav-tabpanel-3-Excel" class="tab-pane show active" aria-labelledby="nav-tab-3-Excel" role="tabpanel">
 <figure><img src="fig/error-invalid-data-new.png" alt="Image of error message for inputing invalid data in Excel" class="figure mx-auto d-block"></figure></div>
-<div id="nav-tabpanel-3-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-Calc">
+<div id="nav-tabpanel-3-Calc" class="tab-pane" aria-labelledby="nav-tab-3-Calc" role="tabpanel">
 <figure><img src="fig/error-invalid-data-LibreOffice-new.png" alt="Image of error message for inputing invalid data in LibreOffice" class="figure mx-auto d-block"></figure></div>
 </div>
 </div>
@@ -523,13 +519,13 @@ creating a data validation rule.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-Excel">
+<div id="nav-tabpanel-4-Excel" class="tab-pane show active" aria-labelledby="nav-tab-4-Excel" role="tabpanel">
 <p>Check that the <code>Style</code> is ‘Stop’. You can write ‘Invalid
 number’ as the <code>Title</code> and ‘Number of households must be a
 whole number between 1 and 30’ as the <code>Error Message</code>.</p>
 <figure><img src="fig/error_alert-new.png" alt="Image of Error Alert tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens if you try to enter an invalid value.</p>
 </div>
-<div id="nav-tabpanel-4-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-Calc">
+<div id="nav-tabpanel-4-Calc" class="tab-pane" aria-labelledby="nav-tab-4-Calc" role="tabpanel">
 <p>Check that the <code>Action</code> is ‘Stop’. You can write ‘Invalid
 number’ as the <code>Title</code> and ‘Number of households must be a
 whole number between 1 and 30’ as the <code>Error Message</code>.</p>
@@ -554,7 +550,7 @@ validation.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-5" class="tab-content">
-<div id="nav-tabpanel-5-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-Excel">
+<div id="nav-tabpanel-5-Excel" class="tab-pane show active" aria-labelledby="nav-tab-5-Excel" role="tabpanel">
 <p>Select the <code>Input Message</code> tab. Add the title and input
 message that is convenient for your task. In this example, we will write
 ‘Household members’ and ‘Please enter a whole number between 1 and
@@ -562,7 +558,7 @@ message that is convenient for your task. In this example, we will write
 <figure><img src="fig/input_message-new.png" alt="Image of Input Message tab in Excel" class="figure mx-auto d-block"></figure><p>Now check what happens when you select a cell that has data
 validation.</p>
 </div>
-<div id="nav-tabpanel-5-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-Calc">
+<div id="nav-tabpanel-5-Calc" class="tab-pane" aria-labelledby="nav-tab-5-Calc" role="tabpanel">
 <p>Select the <code>Input Help</code> tab. Add the title and input
 message that is convenient for your task. In this example, we will write
 ‘Household members’ and ‘Please enter a whole number between 1 and
@@ -610,7 +606,7 @@ option from the list.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-6" class="tab-content">
-<div id="nav-tabpanel-6-Excel" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-Excel">
+<div id="nav-tabpanel-6-Excel" class="tab-pane show active" aria-labelledby="nav-tab-6-Excel" role="tabpanel">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
 <p>2. Select the <code>Data</code> tab, and in the
 <code>Data Tools</code> group, select <code>Data Validation</code> or
@@ -625,7 +621,7 @@ column, separated by a comma (with no spaces). For us this will be
 <p>6. Create a meaningful error alert and input message, then click
 ‘OK’. In LibreOffice, there is no need to create an input message.</p>
 </div>
-<div id="nav-tabpanel-6-Calc" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-Calc">
+<div id="nav-tabpanel-6-Calc" class="tab-pane" aria-labelledby="nav-tab-6-Calc" role="tabpanel">
 <p>1. Select the <code>respondent_wall_type</code> column.</p>
 <p>2. On the <code>Data</code> tab select <code>Validity...</code>.</p>
 <p>3. Select <code>List</code> from the <code>Allow</code> drop-down
@@ -767,7 +763,7 @@ data.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.1)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -790,7 +786,7 @@ data.</li>
   "identifier": "https://datacarpentry.github.io/spreadsheets-socialsci/04-quality-assurance.html",
   "dateCreated": "2017-05-25",
   "dateModified": "2025-05-22",
-  "datePublished": "2026-05-19"
+  "datePublished": "2026-05-26"
 }
 
   </script><script>
