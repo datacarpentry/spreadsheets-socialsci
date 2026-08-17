@@ -17,6 +17,9 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+::::: instructor
+If you are editing this lesson, feel free to open a Codespace in GitHub to make changes and preview without doing any local installation. The .devcontainer has everything configured for you!
+:::::
 
 Good data organization is the foundation of your research
 project. Most researchers have data or do data entry in
