@@ -1,0 +1,88 @@
+---
+title: Setup
+---
+
+## Setup instructions
+
+### Data
+
+You need to download some files to follow this lesson:
+
+1. Download the following three files:
+
+- [SAFI\_clean.csv](https://ndownloader.figshare.com/files/11492171)
+- [SAFI\_messy.xlsx](https://ndownloader.figshare.com/files/11502824)
+- [SAFI\_dates.xlsx](https://ndownloader.figshare.com/files/11502827)
+
+2. Place these 3 files in a folder you can easily find and access on your
+  computer (for instance in a `datacarpentry-spreadsheets` folder on your
+  Desktop or within your Home folder).
+
+For more information about the dataset and to
+download it from the original source on Figshare, check out the [Social Sciences workshop data
+page](https://www.datacarpentry.org/socialsci-workshop/data).
+
+
+### Software
+
+::::::::::::::::::::::: instructor
+
+Google Sheets is a popular and free spreadsheet program that can be easy for your learners to use, especially if they don't have other software installed.
+
+However, please note the following before choosing to use Google Sheets in your workshop:
+
+- **Missing Instructions:** The current "Quality Assurance" episode provides step-by-step instructions for data validation using Microsoft Excel and LibreOffice Calc, but not Google Sheets.
+  The layout and options in Sheets are different, while learners can use Excel or Calc interchangeably without significant problems.
+- **Data Privacy Warning:** For working with sensitive data (such as personal or health information), there are some caveats to using Google Sheets or Google Drive. According to [Google's Terms of Service](https://policies.google.com/terms), Google has the right to access content on standard consumer accounts for the purposes of operating and improving their services. Sensitive data should only be stored on cloud services if your home institution has officially approved its use for such purposes.
+
+::::::::::::::::::::::::::::::::::
+
+To work through this tutorial you will need access to a spreadsheet program. For this you have many options: [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel),  [LibreOffice Calc](https://www.libreoffice.org/discover/calc/), [Apple Numbers](https://support.apple.com/numbers), [Google Sheets](https://workspace.google.com/products/sheets/), [Gnumeric](https://www.gnumeric.org/), [Onlyoffice](https://www.onlyoffice.com/), [WPS office](https://www.wps.com/), among others.
+Commands may differ a bit between programs, but the general ideas for thinking about spreadsheets are the same.
+
+For this lesson, **we encourage you to use LibreOffice Calc or Microsoft Excel**, as the step-by-step instructions are provided for those programs.
+If you don't have Microsoft Excel, you can use LibreOffice.
+It's a free, open source spreadsheet program.
+Here are the instructions to install it:
+
+::: tab
+
+### Windows
+
+- **Download the Installer**  
+  Install LibreOffice by going to the [download
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for Windows should automatically be selected. Click
+  **Download**. You will go to a page that asks about a
+  donation, but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  Once the installer is downloaded, double click on it and it should
+  install.
+
+### Mac OS X
+
+- **Download the Installer**  
+  Install LibreOffice by going to the [download
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for macOS should automatically be selected. Click
+  **Download**. You will go to a page that asks about a
+  donation, but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  The file *LibreOffice\_X.X.X\_MacOS\_x86-64* (whichever version of LibreOffice you have selected) should have been
+  downloaded. Double click on this file, and LibreOffice will be installed.
+
+### Linux
+
+- **Download the Installer**  
+  Install LibreOffice by going to the [download
+  page](https://www.libreoffice.org/download/download-libreoffice/). The
+  version for Linux should automatically be selected. Click **Download**. You will go to a page that asks about a donation,
+  but you don't need to make one. Your download should begin
+  automatically.
+- **Install LibreOffice**  
+  Once the installer is downloaded, double click on it and it should
+  install.
+  
+:::
