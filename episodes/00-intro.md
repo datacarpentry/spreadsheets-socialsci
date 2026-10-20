@@ -92,18 +92,16 @@ If you're looking to do this, a couple of good references are the
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Using Spreadsheets for Data Entry and Cleaning
+### Best uses for spreadsheets
 
 However, there are circumstances where you might want to use a spreadsheet
-program to produce "quick and dirty" calculations or figures, and some of
-these features can be used in data cleaning, prior to importation into a
-statistical analysis program. We will show you how to use some features of
-spreadsheet programs to check your data quality along the way and produce
-preliminary summary statistics.
+program to produce "quick and dirty" calculations or figures.
+Some of its features can be used in data cleaning, prior to importation into a
+statistical analysis program.
+We will show you how to use some features of spreadsheet programs to ensure proper data entry and check your data quality along the way.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
 
-## The data for our workshop
+## Workshop Data
 
 If you are not already familiar with the data, for this lesson and the other lessons in the Social Science curriculum we will be using the [Studying African Farmer-led Irrigation (SAFI) Dataset](http://www.datacarpentry.org/socialsci-workshop/data).
 
@@ -113,7 +111,6 @@ These interviews were conducted between November 2016 and June 2017 and probed h
 This is a real dataset, however, it has been simplified for this workshop.
 If you're interested in exploring the full dataset further, you can [download it from Figshare](https://doi.org/10.6084/m9.figshare.6262019) and work with it using exactly the same tools we’ll learn about today.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
