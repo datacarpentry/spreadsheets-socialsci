@@ -103,7 +103,7 @@ We will show you how to use some features of spreadsheet programs to ensure prop
 
 ## Workshop Data
 
-If you are not already familiar with the data, for this lesson and the other lessons in the Social Science curriculum we will be using the [Studying African Farmer-led Irrigation (SAFI) Dataset](http://www.datacarpentry.org/socialsci-workshop/data).
+If you are not already familiar with the data, for this lesson and the other lessons in the Social Science curriculum we will be using the [Studying African Farmer-led Irrigation (SAFI) Dataset](https://datacarpentry.github.io/socialsci-workshop/data).
 
 The data used in these lessons are taken from interviews of farmers in two countries in eastern sub-Saharan Africa (Mozambique and Tanzania).
 These interviews were conducted between November 2016 and June 2017 and probed household features (e.g. construction materials used, number of household members), agricultural practices (e.g. water usage), and assets (e.g. number and types of livestock).
