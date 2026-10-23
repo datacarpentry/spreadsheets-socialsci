@@ -45,9 +45,7 @@ it in a survey or interview, and what the meaning of various values are.
 For example, the [General Social Survey](https://gss.norc.org) maintains their entire codebook online.
 Looking at an entry for a particular variable, such as [the variable `SEX`](https://gssdataexplorer.norc.org/variables/81/vshow), provides valuable information about what survey waves the variable covers, and the meaning of particular values.
 
-Additionally, file or database level metadata describes how files that make up the dataset relate to each other;
-what format they are in;
-and whether they supersede or are superseded by previous files.
+Additionally, file or database level metadata describes how files that make up the dataset relate to each other, what format they are in, and whether they supersede or are superseded by previous files.
 A folder-level readme.txt file is the classic way of accounting for all the files and folders in a project.
 
 ## Standards
@@ -97,19 +95,10 @@ Some types of metadata that should be recorded and made available with the data 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Never modify your raw data. Always make a copy before making any changes.
-- Keep track of all of the steps you take to clean your data.
-- Organize your data according to tidy data principles.
-- Record metadata in a separate plain text file.
-- Avoid using multiple tables within one spreadsheet.
-- Avoid spreading data across multiple tabs (but do use a new tab to record data cleaning or manipulations).
-- Record zeros as zeros.
-- Use an appropriate null value to record missing data.
-- Don't use formatting to convey information or to make your spreadsheet look pretty.
-- Place comments in a separate column.
-- Record units in column headers.
-- Include only one piece of information in a cell.
-- Avoid spaces, numbers and special characters in column headers.
-- Avoid special characters in your data.
+- Metadata is "data about data" that keeps your dataset understandable, verifiable, and reusable over time.
+- Keep metadata in a separate plain text file.
+- Use metadata to record details you can't keep with the data (exact survey questions, variable definitions, units, allowed value ranges, etc).
+- Use folder-level documentation to clarify how different files in a dataset relate to one another.
+- Follow established standards to make your metadata consistent and easy for others to navigate.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
