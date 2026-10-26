@@ -40,19 +40,16 @@ quality control in a spreadsheet program.
   as the default for LibreOffice is to treat tabs, commas, and semicolons as delimiters. This
   can be fixed when opening LibreOffice by deselecting the "semicolons" and "tabs" checkboxes.
 - Ask for what people did to clean the data. As they bring up different points you can
-  refer to them in the [Common formatting problems](../episodes/02-common-mistakes.md) file, or expand a bit on the point they brought up.
-  All these mistakes are present in the messy
-  dataset.
+  refer to them in the [Common Spreadsheet Errors](../episodes/01-format-data.md##common-spreadsheet-errors) section, or expand a bit on the point they brought up.
+  All these mistakes are present in the messy dataset.
 - If you get a response where they've fixed the date, you can pause and go to the
   [dates](../episodes/03-dates-as-data.md) lesson. Or you can say you'll come back to dates at the end.
   There's an exercise in that file about how to change the
   date into three columns using Excel's built in MONTH, DAY, YEAR functions. Have them
   run through that exercise.
 
-### [Common formatting problems](../episodes/02-common-mistakes.md)
+### [Metadata](../episodes/02-metadata.md)
 
-- **Don't go through this chapter** except to refer to as responses to the exercise in
-  the previous chapter.
 
 ### [Dates as data](../episodes/03-dates-as-data.md)
 

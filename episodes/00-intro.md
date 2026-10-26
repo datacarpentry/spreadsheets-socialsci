@@ -92,19 +92,24 @@ If you're looking to do this, a couple of good references are the
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Using Spreadsheets for Data Entry and Cleaning
+### Best uses for spreadsheets
 
 However, there are circumstances where you might want to use a spreadsheet
-program to produce "quick and dirty" calculations or figures, and some of
-these features can be used in data cleaning, prior to importation into a
-statistical analysis program. We will show you how to use some features of
-spreadsheet programs to check your data quality along the way and produce
-preliminary summary statistics.
+program to produce "quick and dirty" calculations or figures.
+Some of its features can be used in data cleaning, prior to importation into a
+statistical analysis program.
+We will show you how to use some features of spreadsheet programs to ensure proper data entry and check your data quality along the way.
 
-In this lesson, we will assume that you are most likely using Excel as
-your primary spreadsheet program - there are other programs with similar functionality but Excel seems
-to be the most commonly used.
 
+## Workshop Data
+
+If you are not already familiar with the data, for this lesson and the other lessons in the Social Science curriculum we will be using the [Studying African Farmer-led Irrigation (SAFI) Dataset](https://datacarpentry.github.io/socialsci-workshop/data).
+
+The data used in these lessons are taken from interviews of farmers in two countries in eastern sub-Saharan Africa (Mozambique and Tanzania).
+These interviews were conducted between November 2016 and June 2017 and probed household features (e.g. construction materials used, number of household members), agricultural practices (e.g. water usage), and assets (e.g. number and types of livestock).
+
+This is a real dataset, however, it has been simplified for this workshop.
+If you're interested in exploring the full dataset further, you can [download it from Figshare](https://doi.org/10.6084/m9.figshare.6262019) and work with it using exactly the same tools we’ll learn about today.
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
