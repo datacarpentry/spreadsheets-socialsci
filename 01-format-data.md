@@ -1,35 +1,36 @@
 ---
 title: Formatting Data Tables in Spreadsheets
-teaching: 15
-exercises: 15
+teaching: 40
+exercises: 20
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Recognise and resolve common spreadsheet formatting problems.
-- Describe the importance of metadata.
-- Identify metadata that should be included with a dataset.
+- Identify best practices for organizing data to make it machine-readable  
+- Recognize and resolve common spreadsheet formatting problems
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How do we format data in spreadsheets for effective data use?
+- How do we format data in spreadsheets for effective data use and analysis?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Data formatting problems
+## Data Formatting Principles
 
-The most common mistake made is treating spreadsheet programs like lab notebooks, that is,
+It can be tempting to treat spreadsheet programs like lab notebooks, that is,
 relying on context, notes in the margin,
 spatial layout of data and fields to convey information. As humans, we
 can (usually) interpret these things, but computers don't view information the same way, and
 unless we explain to the computer what every single thing means (and
 that can be hard!), it will not be able to see how our data fit
 together.
+The goal of a spreadsheet is to balance being human and machine-readable, so there are special organizing principles at play here.
+
 
 Using the power of computers, we can manage and analyze data in much more
-effective and faster ways, but to use that power, we have to set up
+effective and faster ways. But to use that power, we have to set up
 our data for the computer to be able to understand it (and computers are very
 literal).
 
@@ -44,6 +45,8 @@ but some of these choices can limit your ability to work with the data in other 
 have the you-of-6-months-from-now or your collaborator work with the
 data.
 
+For this purpose, we are going to introduce a set of principles called "Tidy Data", with the goal of making data machine-readable and easier to analyze.
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Tip
@@ -52,6 +55,77 @@ The best layouts/formats (as well as software and
 interfaces) for data entry and data analysis might be
 different. It is important to take this into account, and ideally
 automate the conversion from one to another.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+### Tidy data in spreadsheets
+
+The tidy data principles when structuring data in spreadsheets are:
+
+1. Put all your variables in columns - the thing you're measuring,
+  like 'weight' or 'temperature'.
+2. Put each observation in its own row.
+3. Don't combine multiple pieces of information in one
+  cell. Sometimes it just seems like one thing, but think if that's
+  the only way you'll want to be able to use or sort that data.
+4. Leave the raw data raw - don't change it!
+5. Export the cleaned data to a text-based format like CSV (comma-separated values) format. This
+  ensures that anyone can use the data, and is required by
+  most data repositories.
+
+You can understand these principles more easily with the illustrations in the [Tidy Data Series by Lowndes & Horst](https://allisonhorst.com/other-r-fun).
+
+For instance, we're going to be working with data from a study of
+agricultural practices among farmers in two countries in eastern
+sub-Saharan Africa (Mozambique and Tanzania). Researchers conducted
+interviews with farmers in these countries to collect data on
+household statistics (e.g., number of household members,
+number of meals eaten per day, availability of water),
+farming practices (e.g., water usage), and assets (e.g., number of farm plots,
+number of livestock). They also recorded the dates and locations of
+each interview.
+
+If they were to keep track of the data like this:
+
+![](fig/multiple-info.png){alt='Data not following tidy data principles, as multiple variables (lifestock number and types) are stored in the same cell'}
+
+The problem is that the number of livestock and type of livestock are in
+the same field. So, if they wanted to
+look at the average number of livestock owned, or the average number of each type
+of livestock,
+it would be hard to do.
+If instead we put the count of each type of livestock in its own column, this would make analysis
+much easier.
+
+The rule of thumb, when setting up a datasheet, is that each
+variable (in this case, each type of livestock) should have its own column,
+each observation should have its own row, and each cell should contain only a
+single value. Thus, the example above should look like this:
+
+![](fig/single-info.png){alt='Data following tidy data principles, as there is one column for each type of lifestock owned, each representing the number of animals of each type'}
+
+Notice that this now allows us to make statements about the number of each type of
+animal that a farmer owns, while still allowing us to say things about the
+total number of livestock. All we need to do is sum the values in each row to
+find a total. We'll be learning how to do this computationally and reproducibly
+later in this workshop.
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Handy References
+
+Three excellent references on spreadsheet organization are:
+
+- Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
+  Statistical Software. [http://www.jstatsoft.org/v59/i10](https://www.jstatsoft.org/v59/i10)
+  
+- Julia Lowndes \& Allison Horst, *Tidy Data Series by Lowndes & Horst*. [https://allisonhorst.com/other-r-fun](https://allisonhorst.com/other-r-fun)
+
+- Karl W. Broman \& Kara H. Woo, *Data Organization in Spreadsheets*, Vol. 72,
+  Issue 1, 2018, The American Statistician.
+  [https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -72,90 +146,14 @@ what you did when Reviewer #3 asks for a different analysis, you should
 
 Put these principles in to practice today during the exercises.
 
-### Tidy data in spreadsheets
+:::::::::::::::::::::::: instructor
 
-The tidy data principles when structuring data in spreadsheets are:
+If this exercise is done during a workshop, ask people what they saw as wrong with the data.
+As they bring up different points, you can refer to the next section or expand a bit on the point they brought up.
 
-1. Put all your variables in columns - the thing you're measuring,
-  like 'weight' or 'temperature'.
-2. Put each observation in its own row.
-3. Don't combine multiple pieces of information in one
-  cell. Sometimes it just seems like one thing, but think if that's
-  the only way you'll want to be able to use or sort that data.
-4. Leave the raw data raw - don't change it!
-5. Export the cleaned data to a text-based format like CSV (comma-separated values) format. This
-  ensures that anyone can use the data, and is required by
-  most data repositories.
-
-You can understand more easily these principles with the illustrations in the [Tidy Data Series by Lowndes & Horst](https://allisonhorst.com/other-r-fun).
-
-For instance, we're going to be working with data from a study of
-agricultural practices among farmers in two countries in eastern
-sub-Saharan Africa (Mozambique and Tanzania). Researchers conducted
-interviews with farmers in these countries to collect data on
-household statistics (e.g., number of household members,
-number of meals eaten per day, availability of water),
-farming practices (e.g., water usage), and assets (e.g., number of farm plots,
-number of livestock). They also recorded the dates and locations of
-each interview.
-
-If they were to keep track of the data like this:
-
-![](fig/multiple-info.png){alt='multiple-info example'}
-
-the problem is that number of livestock and type of livestock are in
-the same field. So, if they wanted to
-look at the average number of livestock owned, or the average number of each type
-of livestock,
-it would be hard to do this using this data setup. If instead we put the count
-of each type of livestock in its own column, this would make analysis
-much easier. The rule of thumb, when setting up a datasheet, is that each
-variable (in this case, each type of livestock) should have its own column,
-each observation should have its own row, and each cell should contain only a
-single value. Thus, the example above should look like this:
-
-![](fig/single-info.png){alt='single-info example'}
-
-Notice that this now allows us to make statements about the number of each type of
-animal that a farmer owns, while still allowing us to say things about the
-total number of livestock. All we need to do is sum the values in each row to
-find a total. We'll be learning how to do this computationally and reproducibly
-later in this workshop.
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Workshop Data
-
-> The data used in these lessons are taken from interviews of farmers in two
-> countries in eastern sub-Saharan Africa (Mozambique and Tanzania). These
-> interviews were conducted between November 2016 and June 2017 and probed
-> household features (e.g., construction materials used, number of household
-> members), agricultural practices (e.g., water usage), and assets (e.g., number
-> and types of livestock).
-
-This is a real dataset, however, it has been simplified for this workshop. If
-you're interested in exploring the full dataset further, you can download
-it from Figshare and work with it using exactly the same tools we'll learn
-about today.
-
-For more information about the dataset and to download it from Figshare, check
-out the [Social Sciences workshop data
-page](https://www.datacarpentry.org/socialsci-workshop/data).
+:::::::::::::::::::::::::::::::::::
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## LibreOffice Users
-
-The default for LibreOffice is to treat tabs, commas, and semicolons as delimiters.
-This behavior can cause problems with both the data for this lesson and other data
-you might want to use. This can be fixed when opening LibreOffice by deselecting
-the "semicolons" and "tabs" checkboxes.
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -184,11 +182,8 @@ with this data and how you would fix it.
 ## Solution
 
 - Take about 10 minutes to work on this exercise.
-- All the mistakes listed in [the next episode](02-common-mistakes.md) are
-  present in the messy dataset. If this
-  exercise is done during a workshop, ask people what they saw as wrong with
-  the data. As they bring up different points, you can refer to [the next episode](02-common-mistakes.md)
-  or expand a bit on the point they brought up.
+- All the mistakes listed in [the next section](#common-spreadsheet-errors) are
+  present in the messy dataset.
   
   
 
@@ -196,130 +191,175 @@ with this data and how you would fix it.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+## Common Spreadsheet Errors
 
-## Handy References
+There are a few potential errors to be on the lookout for in your own data as well as data from collaborators or the Internet. If you are aware of the errors and the possible negative effect on downstream data analysis and result interpretation, it might motivate yourself and your project members to try and avoid them. Making small changes to the way you format your data in spreadsheets can have a great impact on efficiency and reliability when it comes to data cleaning and analysis.
 
-Three excellent references on spreadsheet organization are:
+- [Using multiple tables](#tables)
+- [Using multiple tabs](#tabs)
+- [Not filling in zeros](#zeros)
+- [Using problematic null values](#null)
+- [Using formatting to convey information](#formatting)
+- [Using formatting to make the data sheet look pretty](#formatting-pretty)
+- [Placing comments or units in cells](#units)
+- [Entering more than one piece of information in a cell](#info)
+- [Using problematic field names](#field-name)
+- [Using special characters in data](#special)
 
-- Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
-  Statistical Software. [http://www.jstatsoft.org/v59/i10](https://www.jstatsoft.org/v59/i10)
-  
-- Julia Lowndes \& Allison Horst, *Tidy Data Series by Lowndes & Horst*. [https://allisonhorst.com/other-r-fun](https://allisonhorst.com/other-r-fun)
+### Using multiple tables {#tables}
 
-- Karl W. Broman \& Kara H. Woo, *Data Organization in Spreadsheets*, Vol. 72,
-  Issue 1, 2018, The American Statistician.
-  [https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+A common strategy is creating multiple data tables within one spreadsheet.
+This confuses the computer, so try to avoid doing this!
+When you create multiple tables within one spreadsheet, you're drawing false associations between things for the computer, which sees each row as an observation.
+You're also potentially using the same field name in multiple places, which will make it harder to clean your data up into a usable form. The example below depicts the problem:
 
+![](fig/multiple-tables-example2.png){alt='Screenshot of a spreadsheet with multiple tables of data next to each other'}
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+In the example above, the computer will see row 24 and assume that all columns A-J refer to the same observation.
+This row actually represents two distinct samples (information about livestock for informant 1 and information about plots for informant 2).
+Other rows are similarly problematic.
 
-### Metadata
+### Using multiple tabs {#tabs}
 
-Recording data about your data ("metadata") is essential. You may be on intimate
-terms with your dataset while you are
-collecting and analysing it, but the chances that you will still remember
-the exact wording of the question you asked about your
-informants' water use (the data recorded in the column `water use`), for
-example, are slim.
+But what about workbook tabs?
+That seems like an easy way to organize data, right?
+Well, yes and no.
+When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection).
 
-As well, there are many reasons other people may want to examine or use your data - to understand your findings, to verify your findings,
-to review your submitted publication, to replicate your results, to design a
-similar study, or even to archive your data for access and
-re-use by others. While digital data by definition are machine-readable,
-understanding their meaning is a job for human beings. The
-importance of documenting your data during the collection and analysis phase of
-your research cannot be overestimated, especially if your
-research is going to be part of the scholarly record.
+Say you make a separate tab for each day you take a measurement.
+This isn't good practice for two reasons:
 
-However, metadata should not be contained in the data file itself. Unlike a table
-in a paper or a supplemental file, metadata (in the
-form of legends) should not be included in a data file since this information is
-not data, and including it can disrupt how computer
-programs interpret your data file. Rather, metadata should be stored as a
-separate file in the same directory as your data file,
-preferably in plain text format with a name that clearly associates it with your
-data file. Because metadata files are free text format,
-they also allow you to encode comments, units, information about how null values
-are encoded, etc. that are important to document but can
-disrupt the formatting of your data file.
+1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
+2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single datatable.
+  You will have to explicitly tell the computer how to combine tabs - and if the tabs are inconsistently formatted, you might even have to do it manually.
 
-Some of this information may be familiar to learners who conduct analyses on
-survey data or other data sets that come with codebooks. Codebooks will often
-describe the way a variable has been constructed, what prompt was associated with
-it in a survey or interview, and what the meaning of various values are. For example,
-the [General Social Survey](https://gss.norc.org) maintains their entire codebook online.
-Looking at an entry for a particular variable, such as
-[the variable `SEX`](https://gssdataexplorer.norc.org/variables/81/vshow), provides
-valuable information about what survey waves the variable covers, and the meaning
-of particular values.
+For these and other reasons, it is good practice to avoid creating new tabs to organize your spreadsheet data. 
+The next time you're entering data, and you go to create another tab or table, ask yourself if you could avoid adding this tab by adding another column to your original spreadsheet.
+You may, however, use a new tab to store notes about your data, such as steps you've taken to clean or manipulate your data.
 
-Additionally, file or database level metadata describes how files that make up
-the dataset relate to each other; what format they are
-in; and whether they supersede or are superseded by previous files. A
-folder-level readme.txt file is the classic way of accounting for
-all the files and folders in a project.
+Your data sheet might get very long over the course of the experiment.
+This makes it harder to enter data if you can't see your headers at the top of the spreadsheet.
+But don't repeat your header row.
+These can easily get mixed into the data, leading to problems down the road.
 
-Metadata are most useful when they follow a standard. For example, the
-[Data Documentation Initiative (DDI)](https://www.ddialliance.org) provides a
-standardized way to document metadata at various points in the research cycle.
-Research librarians may have specific expertise in this area, and can be
-helpful resources for thinking about ways to purposefully document metatdata
-as part of your research.
+Instead you can freeze the column headers so that they remain visible even when you have a spreadsheet with many rows.
+Read here documentation on [how to freeze column headers in Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a) and [LibreOffice Calc](https://help.libreoffice.org/latest/en-US/text/scalc/guide/line_fix.html).
 
-(Text on metadata adapted from the online course [MANTRA - Research Data Management Training](https://mantra.ed.ac.uk/) by Research Data Service and the Institute for Academic Development, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).)
+### Not filling in zeros {#zeros}
 
-::::::::::::::::::::::::::::::::::::: instructor
-For the next exercise, learners will open a CSV file. 
-Instructions on how to load the file correctly (ensuring the delimiter is 
-interpreted properly regardless of the learner's computer settings)
-are provided in the 
-[Quality Assurance episode](04-quality-assurance.md#restricting-data-to-a-numeric-range).
+It might be that when you're measuring something, it's usually a zero, say the number of cows that an informant has, in a region where most farmers have goats and no cows.
+Why bother
+writing in the number zero in that column, when it's mostly zeros?
 
+![](fig/zeros-example.png){alt='Table of data with empty values for lifestock for multiple observations'}
 
-:::::::::::::::::::::::::::::::::::::::::::::::::
+However, there's a difference between a zero and a blank cell in a spreadsheet.
+To the computer, a zero is actually data.
+You measured or counted it.
+A blank cell means that it wasn't measured and the computer will interpret it as an unknown value (otherwise known as a null value).
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+The spreadsheets or statistical programs will likely misinterpret blank cells that you intend to be zeros.
+By not entering the value of your observation, you are telling your computer to represent that data as unknown or missing (null).
+This can cause problems with subsequent calculations or analyses.
+For example, the average of a set of numbers which includes a single null value is always null, because the computer can't guess the value of the missing observations.
+Because of this, it's very important to record zeros as zeros and truly missing data as nulls.
 
-## Exercise
+### Using problematic null values {#null}
 
-Download a [clean version of this
-dataset](https://ndownloader.figshare.com/files/11492171) and open the file
-with your spreadsheet program. This data has many more variables that were not
-included in the messy spreadsheet and is formatted according to tidy data
-principles.
+**Example**: using -999 or other numerical values (or zero) to represent missing data.
 
-Discuss this data with a partner and make a list of some of the types of
-metadata that should be recorded about this dataset. It may be helpful to
-start by asking yourself, "What is not immediately obvious to me about this
-data? What questions would I need to know the answers to in order to analyze
-and interpret this data?"
+**Solution**: One common practice is to record unknown or missing data as -999, 999, or 0.
+Many statistical programs will not recognize that these are intended to represent missing (null) values.
+How these values are interpreted will depend on the software you use to analyze your data.
+It is essential to use a clearly defined and consistent null indicator.
+Blanks (most applications) and NA (for R) are good choices.
+White et al., 2013, explain good choices for indicating null values for different software applications in their article: [Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608).
 
-:::::::::::::::  solution
+| Null Values | Problems                                                                                                                                                                   | Compatibility         | Recommendation | 
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | -------------- |
+| 0           | Indistinguishable from a true zero                                                                                                                                         |                       | NEVER use      | 
+| Blank       | Hard to distinguish values that are missing from those overlooked on entry. Hard to distinguish blanks from spaces, which behave differently.                              | R, Python, SQL, Excel | Best option    | 
+| \-999, 999   | Not recognized as null by many programs without user input. Can be inadvertently entered into calculations.                                                                |                       | Avoid          | 
+| NA, na      | Can also be an abbreviation (e.g., North America), can cause problems with data type (turn a numerical column into a text column). NA is more commonly recognized than na. | R                     | Good option    | 
+| N/A         | An alternate form of NA, but often not compatible with software.                                                                                                           |                       | Avoid          | 
+| NULL        | Can cause problems with data type.                                                                                                                                         | SQL                   | Good option    | 
+| None        | Uncommon. Can cause problems with data type.                                                                                                                               | Python                | Avoid          | 
+| No data     | Uncommon. Can cause problems with data type, contains a space.                                                                                                             |                       | Avoid          | 
+| Missing     | Uncommon. Can cause problems with data type.                                                                                                                               |                       | Avoid          | 
+| \-, +, .     | Uncommon. Can cause problems with data type.                                                                                                                               |                       | Avoid          | 
 
-## Solution
+### Using formatting to convey information {#formatting}
 
-Some types of metadata that should be recorded and made available with the
-data are:
+**Example**: highlighting cells, rows or columns that should be excluded from an analysis, and leaving blank rows to indicate separations in data.
 
-- the exact wording of questions used in the interviews (if interviews were
-  structured) or general prompts used (if interviews were semi-structured)
-- a description of the type of data allowed in each column (e.g., the allowed
-  range for numerical data with a restricted range, a list of allowed options
-  for categorical variables, whether data in a numerical column should be
-  continuous or discrete)
-- definitions of any categorical variables (e.g., definitions of
-  "burntbricks" and "sunbricks")
-- definitions of what was counted as a "room", a "plot", etc. (e.g., was
-  there a minimum size)
-- learners may come up with additional questions to add to this list
-  
-  
+![](fig/bad-formatting.png){alt='Table showing a cell highlighted in yellow to convey information about the data, which is a bad practice'}
 
-:::::::::::::::::::::::::
+**Solution**: create a new field to encode which data should be excluded.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+![](fig/better-formatting.png){alt='Table with a new column to convey the information previously recorded via highligted cells'}
 
+### Using formatting to make the data sheet look pretty {#formatting-pretty}
+
+**Example**: merging cells.
+
+**Solution**: If you're not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer's ability to see associations in the data.
+Merged cells will make your data unreadable by statistics software.
+Consider restructuring your data in such a way that you will not need to merge cells to organize your data.
+
+### Placing comments or units in cells {#units}
+
+**Example**: Some of your informants only irrigate their plots at certain times of the year.
+You've added this information as notes directly into the cell with the data.
+
+**Solution**: Most analysis software can't see Excel or LibreOffice comments, and would be confused by comments placed within your data cells.
+As described above for formatting, create another field if you need to add notes to cells.
+Similarly, don't include units in cells: ideally, all the measurements you place in one column should be in the same unit, but if for some reason they aren't, create another field and specify the units the cell is in.
+
+![](fig/comments-in-cells.png){alt='Table where one column has no standarization and includes comments about the value recorded'}
+
+### Entering more than one piece of information in a cell {#info}
+
+**Example**: Your informant has multiple livestock of different types.
+You record this information as "3, (oxen , cows)" to indicate that there are three total livestock, which is a mixture of oxen and cows.
+
+**Solution**: Don't include more than one piece of information in a cell.
+This will limit the ways in which you can analyze your data.
+If you need both these types of information (the total number of animals and the types), design your data sheet to include this information.
+For example, include a separate column for each type of livestock.
+
+### Using problematic field names {#field-name}
+
+Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind.
+Spaces can be misinterpreted by parsers that use whitespace as delimiters and some programs don't like field names that are text strings that start with numbers.
+
+Underscores (`_`) are a good alternative to spaces.
+Consider writing names in camel case (like this: ExampleFileName) to improve readability.
+Remember that abbreviations that make sense at the moment may not be so obvious in 6 months, but don't overdo it with names that are excessively long.
+Including the units in the field names avoids confusion and enables others to readily interpret your variable names.
+Avoid starting variable names with numbers, as this may cause problems with some analysis software.
+
+**Examples:**
+
+| Good Name    | Good Alternative  | Avoid          |
+|--------------|-------------------|----------------|
+| wall_type    | WallType          | wall type      |
+| longitude    | GpsLongitude      | gps:Longitude  |
+| gender       | gender            | M/F            |
+| Informant_01 | first_informant   | 1st Inf        |
+| age_18       | years18           | 18years        |
+
+### Using special characters in data {#special}
+
+**Example**: You treat your spreadsheet program as a word processor when writing notes, for example copying data directly from Word or other applications.
+
+**Solution**: This is a common strategy.
+For example, when writing longer text in a cell, people often include line breaks, em-dashes, etc in their spreadsheet. 
+Also, when copying data in from applications such as Word, formatting and fancy non-standard characters (such
+as left- and right-aligned quotation marks) are included.
+When exporting this data into a coding/statistical environment or into a relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.
+
+General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.
+In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
@@ -328,6 +368,16 @@ data are:
 - Keep track of all of the steps you take to clean your data.
 - Organize your data according to tidy data principles.
 - Record metadata in a separate plain text file.
+- Avoid using multiple tables within one spreadsheet.
+- Avoid spreading data across multiple tabs (but do use a new tab to record data cleaning or manipulations).
+- Record zeros as zeros.
+- Use an appropriate null value to record missing data.
+- Don't use formatting to convey information or to make your spreadsheet look pretty.
+- Place comments in a separate column.
+- Record units in column headers.
+- Include only one piece of information in a cell.
+- Avoid spaces, numbers and special characters in column headers.
+- Avoid special characters in your data.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

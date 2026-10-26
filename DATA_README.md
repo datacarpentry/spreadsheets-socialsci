@@ -1,6 +1,6 @@
 Readme file for The SAFI Teaching Database Generated on 2019-09-19 for teaching purposes.
 
-Recommended citation for the dataset: Woodhouse, Philip; Veldwisch, Gert Jan; Brockington, Daniel; Komakech, Hans C.; Manjichi, Angela; Venot, Jean-Philippe (2018): SAFI Survey Results. <doi:10.6084/m9.figshare.6262019.v1>
+Recommended citation for the dataset: Woodhouse, Philip; Veldwisch, Gert Jan; Brockington, Daniel; Komakech, Hans C.; Manjichi, Angela; Venot, Jean-Philippe (2018): SAFI Survey Results. [https://doi.org/10.6084/m9.figshare.6262019](https://doi.org/10.6084/m9.figshare.6262019)
 
 ## PROJECT INFORMATION
 
@@ -20,7 +20,7 @@ Recommended citation for the dataset: Woodhouse, Philip; Veldwisch, Gert Jan; Br
 
 ## DATA ACCESS INFORMATION
 
-1.  Licences / restrictions placed on access to the dataset: CC0 2: Access through figshare: <doi:10.6084/m9.figshare.6262019.v1>
+1.  Licences / restrictions placed on access to the dataset: CC0 2: Access through figshare: [https://doi.org/10.6084/m9.figshare.6262019](https://doi.org/10.6084/m9.figshare.6262019)
 
 ## METHODS OF DATA COLLECTION
 
